@@ -1,0 +1,66 @@
+
+nseq =  55
+distance =  ktuples
+iterate =  0
+cycle =  2
+nthread = 0
+generating 200PAM scoring matrix for nucleotides ... done
+done
+done
+scoremtx = -1
+Gap Penalty = -1.53, +0.00, +0.00
+
+tuplesize = 6, dorp = d
+
+
+Making a distance matrix ..
+
+WARNING : 129 unknown characters
+    1 / 55   11 / 55   21 / 55   31 / 55   41 / 55   51 / 55
+done.
+
+Constructing a UPGMA tree ... 
+    0 / 55   10 / 55   20 / 55   30 / 55   40 / 55   50 / 55
+done.
+
+Progressive alignment ... 
+STEP     1 / 54 fSTEP     2 / 54 fSTEP     3 / 54 fSTEP     4 / 54 fSTEP     5 / 54 fSTEP     6 / 54 fSTEP     7 / 54 fSTEP     8 / 54 fSTEP     9 / 54 fSTEP    10 / 54 fSTEP    11 / 54 fSTEP    12 / 54 fSTEP    13 / 54 fSTEP    14 / 54 fSTEP    15 / 54 fSTEP    16 / 54 fSTEP    17 / 54 fSTEP    18 / 54 fSTEP    19 / 54 fSTEP    20 / 54 fSTEP    21 / 54 fSTEP    22 / 54 fSTEP    23 / 54 fSTEP    24 / 54 fSTEP    25 / 54 fSTEP    26 / 54 fSTEP    27 / 54 fSTEP    28 / 54 fSTEP    29 / 54 fSTEP    30 / 54 fSTEP    31 / 54 fSTEP    32 / 54 fSTEP    33 / 54 fSTEP    34 / 54 fSTEP    35 / 54 fSTEP    36 / 54 fSTEP    37 / 54 fSTEP    38 / 54 fSTEP    39 / 54 fSTEP    40 / 54 fSTEP    41 / 54 fSTEP    42 / 54 fSTEP    43 / 54 fSTEP    44 / 54 fSTEP    45 / 54 fSTEP    46 / 54 fSTEP    47 / 54 fSTEP    48 / 54 fSTEP    49 / 54 fSTEP    50 / 54 f
+Reallocating..done. *alloclen = 3923
+STEP    51 / 54 fSTEP    52 / 54 fSTEP    53 / 54 fSTEP    54 / 54 d
+done.
+
+disttbfast (nuc) Version 7.157b alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+0 thread(s)
+nthread = 0
+blosum 62 / kimura 200
+generating 200PAM scoring matrix for nucleotides ... done
+done
+done
+scoremtx = -1
+Gap Penalty = -1.53, +0.00, +0.00
+Making a distance matrix .. 
+    0 / 54   10 / 54   20 / 54   30 / 54   40 / 54   50 / 54
+done.
+
+Constructing a UPGMA tree ... 
+    0 / 55   10 / 55   20 / 55   30 / 55   40 / 55   50 / 55
+done.
+
+Progressive alignment ... 
+STEP     1 /54 fSTEP     2 /54 fSTEP     3 /54 fSTEP     4 /54 fSTEP     5 /54 fSTEP     6 /54 fSTEP     7 /54 fSTEP     8 /54 fSTEP     9 /54 fSTEP    10 /54 fSTEP    11 /54 fSTEP    12 /54 fSTEP    13 /54 fSTEP    14 /54 fSTEP    15 /54 fSTEP    16 /54 fSTEP    17 /54 fSTEP    18 /54 fSTEP    19 /54 fSTEP    20 /54 fSTEP    21 /54 fSTEP    22 /54 fSTEP    23 /54 fSTEP    24 /54 fSTEP    25 /54 fSTEP    26 /54 fSTEP    27 /54 fSTEP    28 /54 fSTEP    29 /54 fSTEP    30 /54 fSTEP    31 /54 fSTEP    32 /54 fSTEP    33 /54 fSTEP    34 /54 fSTEP    35 /54 fSTEP    36 /54 fSTEP    37 /54 fSTEP    38 /54 fSTEP    39 /54 fSTEP    40 /54 fSTEP    41 /54 fSTEP    42 /54 fSTEP    43 /54 fSTEP    44 /54 fSTEP    45 /54 fSTEP    46 /54 fSTEP    47 /54 fSTEP    48 /54 fSTEP    49 /54 fSTEP    50 /54 fSTEP    51 /54 fSTEP    52 /54 fSTEP    53 /54 fSTEP    54 /54 d
+done.
+tbfast (nuc) Version 7.157b alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+0 thread(s)
+
+
+Strategy:
+ FFT-NS-2 (Fast but rough)
+ Progressive method (guide trees were built 2 times.)
+
+If unsure which option to use, try 'mafft --auto input > output'.
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+It tends to insert more gaps into gap-rich regions than previous versions.
+To disable this change, add the --legacygappenalty option.
+

@@ -1,0 +1,81 @@
+starting log: 06/05/16 03:41
+concat
+in filename: ITS.aln.fasta_clean_05.aln
+in filename: matK.v2.aln.nex_clean_05.aln
+in filename: rbcL.aln.fasta_clean_05.aln
+in filename: atpB.v2.aln.nex_clean_05.aln
+in filename: ndhF.v2.aln.nex_clean_05.aln
+in filename: trn.v2.aln.nex_clean_05.aln
+outfile: sawtooth.160506.clean.concat.nex
+starting log: 06/05/16 03:41
+concat
+in filename: ITS.aln.nex_clean_05.aln
+in filename: matK.v2.aln.nex_clean_05.aln
+in filename: rbcL.aln.nex_clean_05.aln
+in filename: atpB.v2.aln.nex_clean_05.aln
+in filename: ndhF.v2.aln.nex_clean_05.aln
+in filename: trn.v2.aln.nex_clean_05.aln
+outfile: sawtooth.160506.clean.concat.nex
+starting log: 06/05/16 04:01
+concat
+in filename: ITS.aln.nex_clean_05.aln
+in filename: matK.v2.aln.nex_clean_05.aln
+in filename: rbcL.aln.nex_clean_05.aln
+in filename: atpB.v2.aln.nex_clean_05.aln
+in filename: ndhF.v2.aln.nex_clean_05.aln
+in filename: trn.v2.aln.nex_clean_05.aln
+outfile: sawtooth.160506.clean.concat.nex
+starting log: 06/05/16 08:12
+concat
+in filename: ITS.aln.nex_clean_05.aln
+in filename: matK.v2.aln.clean.nex
+in filename: rbcL.aln.nex_clean_05.aln
+in filename: atpB.v2.aln.clean.nex
+in filename: ndhF.v2.aln.clean.nex
+in filename: trn_ab.160426.cat.v3.aln.fasta
+outfile: sawtooth.160506.clean.concat.nex
+starting log: 06/05/16 08:15
+concat
+in filename: ITS.aln.nex_clean_05.aln
+in filename: matK.v2.aln.clean.nex
+in filename: rbcL.aln.nex_clean_05.aln
+in filename: atpB.v2.aln.clean.nex
+in filename: ndhF.v2.aln.clean.nex
+in filename: trnTLF.v2.aln.clean.nex
+outfile: sawtooth.160506.clean.concat.nex
+starting log: 10/05/16 03:22
+concat
+in filename: ITS.160510.aln.nex_clean_05.aln
+in filename: matK.v2.aln.nex_clean_05.aln
+in filename: rbcL.aln.nex_clean_05.aln
+in filename: atpB.v2.aln.nex_clean_05.aln
+in filename: ndhF.v2.aln.nex_clean_05.aln
+in filename: trnTLF.160510.aln.clean.nex
+outfile: sawtooth.160510.clean.concat.nex
+starting log: 10/05/16 03:29
+concat
+in filename: ITS.160510.aln.nex_clean_05.aln
+in filename: matK.v2.aln.nex_clean_05.aln
+in filename: rbcL.aln.nex_clean_05.aln
+in filename: atpB.v2.aln.nex_clean_05.aln
+in filename: ndhF.v2.aln.nex_clean_05.aln
+in filename: trnTLF.160510.aln.clean.nex
+outfile: sawtooth.160510.clean.concat.nex
+starting log: 10/05/16 03:31
+concat
+in filename: ITS.160510.aln.nex_clean_05.aln
+in filename: matK.v2.aln.clean.nex
+in filename: rbcL.aln.nex_clean_05.aln
+in filename: atpB.v2.aln.clean.nex
+in filename: ndhF.v2.aln.nex_clean_05.aln
+in filename: trnTLF.160510.aln.clean.nex
+outfile: sawtooth.160510.clean.concat.nex
+starting log: 10/05/16 03:32
+concat
+in filename: ITS.160510.aln.nex_clean_05.aln
+in filename: matK.v2.aln.clean.nex
+in filename: rbcL.aln.nex_clean_05.aln
+in filename: atpB.v2.aln.clean.nex
+in filename: ndhF.v2.aln.clean.nex
+in filename: trnTLF.160510.aln.clean.nex
+outfile: sawtooth.160510.clean.concat.nex

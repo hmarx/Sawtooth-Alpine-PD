@@ -1,0 +1,22 @@
+starting log: 06/05/16 03:15
+concat
+in filename: ndhF1.160426.R1_R2.v2.aln.fasta
+in filename: ndhF2.160426.merged.v3.aln.fasta
+in filename: ndhF3.160426.R1_R2.v2.aln.fasta
+starting log: 06/05/16 03:24
+concat
+in filename: ndhF1.160426.R1_R2.v2.aln.fasta
+in filename: ndhF2.160426.merged.v3.aln.fasta
+in filename: ndhF3.160426.R1_R2.v2.aln.fasta
+starting log: 11/05/16 10:15
+concat
+in filename: ndhF1.160426.R1_R2.v2.aln.fasta
+in filename: ndhF2.160426.merged.v4.aln.fasta
+in filename: ndhF3.160426.R1_R2.v2.aln.fasta
+outfile: ndhF.v3.aln.nex
+starting log: 11/05/16 11:23
+concat
+in filename: ndhF1.160426.R1_R2.v2.aln.fasta
+in filename: ndhF2.160426.merged.v4.aln.fasta
+in filename: ndhF3.160426.R1_R2.v2.aln.fasta
+outfile: ndhF.v3.aln.nex

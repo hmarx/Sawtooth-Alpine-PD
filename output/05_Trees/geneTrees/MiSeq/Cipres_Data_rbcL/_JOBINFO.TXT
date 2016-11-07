@@ -1,0 +1,14 @@
+Task\ label=rbcL.aln
+Task\ ID=929532
+Tool=RAXMLHPC8_XSEDE
+created\ on=2016-06-13 20:24:52.0
+JobHandle=NGBW-JOB-RAXMLHPC8_XSEDE-A84CBADDA7964477ACC56E015DC8B18F
+resource=comet
+User\ ID=90014
+User\ Name=hmarx
+email=h.marx.h@gmail.com
+
+Output=(all_outputfiles,*,UNKNOWN,UNKNOWN,UNKNOWN)
+ChargeFactor=1.000000
+cores=48
+JOBID=3095859

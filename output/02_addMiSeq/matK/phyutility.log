@@ -1,0 +1,22 @@
+starting log: 06/05/16 03:09
+concat
+in filename: matK1.160426.cat.v3.aln.fasta
+in filename: matK2.160426.R1_R2.v3.aln.fasta
+starting log: 06/05/16 03:12
+concat
+in filename: matK1.160426.cat.v3.aln.fasta
+in filename: matK2.160426.R1_R2.v3.aln.fasta
+starting log: 06/05/16 03:22
+concat
+in filename: matK1.160426.cat.v3.aln.fasta
+in filename: matK2.160426.R1_R2.v3.aln.fasta
+starting log: 11/05/16 10:11
+concat
+in filename: matK1.160426.cat.v4.aln.fasta
+in filename: matK2.160426.R1_R2.v3.aln.fasta
+outfile: matK.v3.aln.nex
+starting log: 11/05/16 11:24
+concat
+in filename: matK1.160426.cat.v4.aln.fasta
+in filename: matK2.160426.R1_R2.v3.aln.fasta
+outfile: matK.v3.aln.nex

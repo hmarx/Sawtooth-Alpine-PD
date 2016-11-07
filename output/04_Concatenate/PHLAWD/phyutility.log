@@ -1,0 +1,8 @@
+starting log: 02/05/16 11:04
+concat
+in filename: ITS.unique.fasta.clean
+in filename: atpB.unique.fasta.clean
+in filename: matK.unique.fasta.clean
+in filename: ndhF.unique.fasta.clean
+in filename: rbcL.unique.fasta.clean
+outfile: sawtooth.phlawdALN.clean.concat.nex

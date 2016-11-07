@@ -1,0 +1,12 @@
+clade = Tracheophyta 
+search = rbcL, ribulose-1,5-bisphosphate carboxylase large subunit
+gene = rbcL
+mad =  0.01
+coverage = 0.2
+identity = 0.2
+db = /Users/hannahmarx/Desktop/pln042016.db
+knownfile = rcL.keep
+numthreads = 8
+listfile = ../SawtoothSpList
+#excludelistfile = exclude
+containswild

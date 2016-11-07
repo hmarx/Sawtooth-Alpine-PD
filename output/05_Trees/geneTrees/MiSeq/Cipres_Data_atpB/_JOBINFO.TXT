@@ -1,0 +1,14 @@
+Task\ label=atpB.v3.aln
+Task\ ID=929535
+Tool=RAXMLHPC8_XSEDE
+created\ on=2016-06-13 20:28:00.0
+JobHandle=NGBW-JOB-RAXMLHPC8_XSEDE-233BB1D55106447C96AA74938EBFFCB7
+resource=comet
+User\ ID=90014
+User\ Name=hmarx
+email=h.marx.h@gmail.com
+
+Output=(all_outputfiles,*,UNKNOWN,UNKNOWN,UNKNOWN)
+ChargeFactor=1.000000
+cores=48
+JOBID=3095864

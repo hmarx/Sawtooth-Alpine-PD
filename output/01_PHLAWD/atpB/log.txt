@@ -1,0 +1,82 @@
+assembly
+number of threads: 8
+search clade: Tracheophyta
+search: atpB
+search: ATP synthase beta subunit
+gene name: atpB
+gene database: atpB.db
+mad cutoff: 0.01
+coverage: 0.2
+identity: 0.2
+using names in list file: ../SawtoothSpList
+connected to atpB.db
+successfully installed empty tables into atpB.db
+successfully installed indices into atpB.db
+
+search number 33103
+connected to /Users/hannahmarx/Desktop/pln042016.db
+found 1 ncbi taxon ids matching Tracheophyta:
+58023
+will only be using the first one: 58023
+
+found 27971 matching sequences in the source db
+
+taxa (including all children) to be included: Abies lasiocarpa, Achillea millefolium, Agoseris aurantiaca, Androsace septentrionalis, Anemone drummondii, Antennaria alpina, Antennaria corymbosa, Antennaria lanata, Antennaria microphylla, Antennaria rosea, Antennaria umbrinella, Aquilegia flavescens, Boechera lemmonii, Boechera microphylla, Arnica chamissonis, Arnica latifolia, Arnica mollis, Arnica parryi, Artemisia dracunculus, Aster alpinus, Symphyotrichum foliaceum, Astragalus alpinus, Astragalus eucosmus, Astragalus kentrophyta, Bupleurum americanum, Cassiope mertensiana, Castilleja applegatei, Castilleja cusickii, Castilleja miniata, Castilleja rhexiifolia, Cerastium arvense, ...
+sequences will be filtered against 180 taxon names
+after filtering taxa not in the include file: 108
+
+running similarity tests (coverage/identity) against keepfile
+retained 15 seqs
+removed 7 taxonomic duplicates, leaving 8 seqs to be aligned
+
+starting saturation tests: identifying original clades to align before profiling
+adding 8 sequences to db atpB.db
+
+taxon Tracheophyta (ncbi id = 58023): 8 db seqs, 0 user seqs; unassigned seqs remaining: 8
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.025209
+mad: 0.0144464
+
+taxon Euphyllophyta (ncbi id = 78536): 8 db seqs, 0 user seqs; unassigned seqs remaining: 8
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.025209
+mad: 0.0144464
+
+taxon Moniliformopses (ncbi id = 241806): 2 db seqs, 0 user seqs; unassigned seqs remaining: 8
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.0108605
+mad: 0
+adding alignment to database: 1
+
+taxon Spermatophyta (ncbi id = 58024): 6 db seqs, 0 user seqs; unassigned seqs remaining: 6
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.0159631
+mad: 0.00488813
+adding alignment to database: 2
+
+0 unassigned seqs
+finished assembly
+gathering all original alignments
+adding initial profile alignments: 1, 2
+starting run
+using ncbi taxonomy as guide tree
+58023
+clade=58023
+distances complete: Moniliformopses (alignment 1)
+distances complete: Spermatophyta (alignment 2)
+
+profiling
+
+next original alignment to profile: 1
+removing 1 from original alignments to profile
+closest original alignment to 1 is 2
+profiling 1 and 2
+removing 2 from original alignments to profile
+
+now cross-aligning the profile alignments: 3
+writing final alignment
+profile run completed

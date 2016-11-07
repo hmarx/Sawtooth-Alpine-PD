@@ -1,0 +1,14 @@
+Task\ label=matK.v3.aln
+Task\ ID=929533
+Tool=RAXMLHPC8_XSEDE
+created\ on=2016-06-13 20:26:32.0
+JobHandle=NGBW-JOB-RAXMLHPC8_XSEDE-7B33A41D701A468286ACD6D42C685AF9
+resource=comet
+User\ ID=90014
+User\ Name=hmarx
+email=h.marx.h@gmail.com
+
+Output=(all_outputfiles,*,UNKNOWN,UNKNOWN,UNKNOWN)
+ChargeFactor=1.000000
+cores=48
+JOBID=3095860

@@ -1,0 +1,18 @@
+starting log: 04/05/16 06:54
+concat
+in filename: ITS.aln.fasta_clean_05.aln
+in filename: matK.aln.fasta_clean_05.aln
+in filename: rbcL.aln.fasta_clean_05.aln
+in filename: atpB.aln.fasta_clean_05.aln
+in filename: ndhF.aln.fasta_clean_05.aln
+in filename: trnTLF.aln.fasta_clean_05.aln
+outfile: sawtooth.160504.concat.nex
+starting log: 04/05/16 07:01
+concat
+in filename: ITS.aln.nex
+in filename: matK.aln.nex
+in filename: rbcL.aln.nex
+in filename: atpB.aln.nex
+in filename: ndhF.aln.nex
+in filename: trnTLF.aln.nex
+outfile: sawtooth.160504.concat.nex

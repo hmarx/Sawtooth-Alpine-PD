@@ -1,0 +1,354 @@
+assembly
+number of threads: 20
+search clade: Tracheophyta
+search: trnL
+search: trnT
+search: trnF
+search: tRNA-Phe
+search: tRNA-Leu
+search: tRNA-Thr
+gene name: trnTLF
+gene database: trnTLF.db
+mad cutoff: 0.01
+coverage: 0.2
+identity: 0.2
+using names in list file: ../SawtoothSpList
+excluding gi's in list file: badseqs
+connected to trnTLF.db
+successfully installed empty tables into trnTLF.db
+successfully installed indices into trnTLF.db
+
+search number 211598
+connected to /Users/hannahmarx/Desktop/pln042016.db
+found 1 ncbi taxon ids matching Tracheophyta:
+58023
+will only be using the first one: 58023
+
+found 196267 matching sequences in the source db
+
+17 gis in the file
+after excluding gis in the gis to exclude file: 196266
+
+taxa (including all children) to be included: Abies lasiocarpa, Achillea millefolium, Agoseris aurantiaca, Androsace septentrionalis, Anemone drummondii, Antennaria alpina, Antennaria corymbosa, Antennaria lanata, Antennaria microphylla, Antennaria rosea, Antennaria umbrinella, Aquilegia flavescens, Boechera lemmonii, Boechera microphylla, Arnica chamissonis, Arnica latifolia, Arnica mollis, Arnica parryi, Artemisia dracunculus, Aster alpinus, Symphyotrichum foliaceum, Astragalus alpinus, Astragalus eucosmus, Astragalus kentrophyta, Bupleurum americanum, Cassiope mertensiana, Castilleja applegatei, Castilleja cusickii, Castilleja miniata, Castilleja rhexiifolia, Cerastium arvense, ...
+sequences will be filtered against 180 taxon names
+after filtering taxa not in the include file: 1235
+
+running similarity tests (coverage/identity) against keepfile
+retained 607 seqs
+removed 505 taxonomic duplicates, leaving 102 seqs to be aligned
+
+starting saturation tests: identifying original clades to align before profiling
+adding 102 sequences to db trnTLF.db
+
+taxon Tracheophyta (ncbi id = 58023): 102 db seqs, 0 user seqs; unassigned seqs remaining: 102
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.0345446
+mad: 0.0274588
+
+taxon Euphyllophyta (ncbi id = 78536): 102 db seqs, 0 user seqs; unassigned seqs remaining: 102
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.0345446
+mad: 0.0274588
+
+taxon Moniliformopses (ncbi id = 241806): 1 db seqs, 0 user seqs; unassigned seqs remaining: 102
+adding alignment to database: 1
+
+taxon Spermatophyta (ncbi id = 58024): 101 db seqs, 0 user seqs; unassigned seqs remaining: 101
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.0337072
+mad: 0.026819
+
+taxon Acrogymnospermae (ncbi id = 1437180): 8 db seqs, 0 user seqs; unassigned seqs remaining: 101
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.0626906
+mad: 0.0858142
+
+taxon Pinidae (ncbi id = 3313): 8 db seqs, 0 user seqs; unassigned seqs remaining: 101
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.0626906
+mad: 0.0858142
+
+taxon Pinales (ncbi id = 1446380): 3 db seqs, 0 user seqs; unassigned seqs remaining: 101
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.00480971
+mad: 0.000683951
+adding alignment to database: 2
+
+taxon Cupressales (ncbi id = 1446379): 5 db seqs, 0 user seqs; unassigned seqs remaining: 98
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 2.21185e-06
+mad: 3.27928e-06
+adding alignment to database: 3
+
+taxon Magnoliophyta (ncbi id = 3398): 93 db seqs, 0 user seqs; unassigned seqs remaining: 93
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.0298545
+mad: 0.0215924
+
+taxon Mesangiospermae (ncbi id = 1437183): 93 db seqs, 0 user seqs; unassigned seqs remaining: 93
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.0298545
+mad: 0.0215924
+
+taxon eudicotyledons (ncbi id = 71240): 92 db seqs, 0 user seqs; unassigned seqs remaining: 93
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.0287979
+mad: 0.0207996
+
+taxon Gunneridae (ncbi id = 91827): 92 db seqs, 0 user seqs; unassigned seqs remaining: 93
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.0287979
+mad: 0.0207996
+
+taxon Pentapetalae (ncbi id = 1437201): 92 db seqs, 0 user seqs; unassigned seqs remaining: 93
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.0287979
+mad: 0.0207996
+
+taxon rosids (ncbi id = 71275): 24 db seqs, 0 user seqs; unassigned seqs remaining: 93
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.0199265
+mad: 0.0249725
+
+taxon malvids (ncbi id = 91836): 11 db seqs, 0 user seqs; unassigned seqs remaining: 93
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.00142706
+mad: 0.00112927
+adding alignment to database: 4
+
+taxon fabids (ncbi id = 91835): 13 db seqs, 0 user seqs; unassigned seqs remaining: 82
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.0167103
+mad: 0.0187373
+
+taxon Fabales (ncbi id = 72025): 4 db seqs, 0 user seqs; unassigned seqs remaining: 82
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.00526183
+mad: 0.00739681
+adding alignment to database: 5
+
+taxon Rosales (ncbi id = 3744): 7 db seqs, 0 user seqs; unassigned seqs remaining: 78
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.00095138
+mad: 0.00138209
+adding alignment to database: 6
+
+taxon Malpighiales (ncbi id = 3646): 2 db seqs, 0 user seqs; unassigned seqs remaining: 71
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.0145034
+mad: 0
+adding alignment to database: 7
+
+taxon asterids (ncbi id = 71274): 44 db seqs, 0 user seqs; unassigned seqs remaining: 69
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.0126826
+mad: 0.0179384
+
+taxon lamiids (ncbi id = 91888): 10 db seqs, 0 user seqs; unassigned seqs remaining: 69
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.00604031
+mad: 0.00831131
+adding alignment to database: 8
+
+taxon campanulids (ncbi id = 91882): 26 db seqs, 0 user seqs; unassigned seqs remaining: 59
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.000510315
+mad: 0.000756594
+adding alignment to database: 9
+
+taxon Ericales (ncbi id = 41945): 8 db seqs, 0 user seqs; unassigned seqs remaining: 33
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.0210063
+mad: 0.021836
+
+taxon Polemoniaceae (ncbi id = 24584): 5 db seqs, 0 user seqs; unassigned seqs remaining: 33
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 7.21734e-07
+mad: 1.07004e-06
+adding alignment to database: 10
+
+taxon Ericaceae (ncbi id = 4345): 1 db seqs, 0 user seqs; unassigned seqs remaining: 28
+adding alignment to database: 11
+
+taxon Primulaceae (ncbi id = 4335): 2 db seqs, 0 user seqs; unassigned seqs remaining: 27
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 2.81559e-05
+mad: 0
+adding alignment to database: 12
+
+taxon Saxifragales (ncbi id = 41946): 9 db seqs, 0 user seqs; unassigned seqs remaining: 25
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.0071503
+mad: 0.00949705
+adding alignment to database: 13
+
+taxon Caryophyllales (ncbi id = 3524): 15 db seqs, 0 user seqs; unassigned seqs remaining: 16
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.0205954
+mad: 0.0305347
+
+taxon Polygonaceae (ncbi id = 3615): 5 db seqs, 0 user seqs; unassigned seqs remaining: 16
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.0167792
+mad: 0.00303644
+adding alignment to database: 14
+
+taxon Caryophyllaceae (ncbi id = 3568): 10 db seqs, 0 user seqs; unassigned seqs remaining: 11
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.01372
+mad: 0.00379054
+adding alignment to database: 15
+
+taxon Liliopsida (ncbi id = 4447): 1 db seqs, 0 user seqs; unassigned seqs remaining: 1
+adding alignment to database: 16
+
+0 unassigned seqs
+finished assembly
+gathering all original alignments
+adding initial profile alignments: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
+starting run
+using ncbi taxonomy as guide tree
+58023
+clade=58023
+distances complete: Moniliformopses (alignment 1)
+distances complete: Pinales (alignment 2)
+distances complete: Cupressales (alignment 3)
+distances complete: malvids (alignment 4)
+distances complete: Fabales (alignment 5)
+distances complete: Rosales (alignment 6)
+distances complete: Malpighiales (alignment 7)
+distances complete: lamiids (alignment 8)
+distances complete: campanulids (alignment 9)
+distances complete: Polemoniaceae (alignment 10)
+distances complete: Ericaceae (alignment 11)
+distances complete: Primulaceae (alignment 12)
+distances complete: Saxifragales (alignment 13)
+distances complete: Polygonaceae (alignment 14)
+distances complete: Caryophyllaceae (alignment 15)
+distances complete: Liliopsida (alignment 16)
+
+profiling
+
+next original alignment to profile: 2
+removing 2 from original alignments to profile
+closest original alignment to 2 is 3
+profiling 2 and 3
+removing 3 from original alignments to profile
+
+next original alignment to profile: 5
+removing 5 from original alignments to profile
+there are multiple equally close original alignments to 5
+none of the closest matches have been profiled, using muscle to find the best one
+scoring 5 against 6
+scoring 5 against 7
+best-scoring closest original alignment was 6
+profiling 5 and 6
+removing 6 from original alignments to profile
+
+next original alignment to profile: 7
+removing 7 from original alignments to profile
+there are multiple equally close original alignments to 7
+found a profile (18) containing one of the closest matches (5)
+profiling 7 and 18
+removing 18 from intermediate profiles
+
+next original alignment to profile: 8
+removing 8 from original alignments to profile
+closest original alignment to 8 is 9
+profiling 8 and 9
+removing 9 from original alignments to profile
+
+next original alignment to profile: 10
+removing 10 from original alignments to profile
+there are multiple equally close original alignments to 10
+none of the closest matches have been profiled, using muscle to find the best one
+scoring 10 against 11
+scoring 10 against 12
+best-scoring closest original alignment was 12
+profiling 10 and 12
+removing 12 from original alignments to profile
+
+next original alignment to profile: 11
+removing 11 from original alignments to profile
+there are multiple equally close original alignments to 11
+found a profile (21) containing one of the closest matches (10)
+profiling 11 and 21
+removing 21 from intermediate profiles
+
+next original alignment to profile: 14
+removing 14 from original alignments to profile
+closest original alignment to 14 is 15
+profiling 14 and 15
+removing 15 from original alignments to profile
+
+next original alignment to profile: 4
+removing 4 from original alignments to profile
+there are multiple equally close original alignments to 4
+found a profile (19) containing one of the closest matches (5)
+profiling 4 and 19
+removing 19 from intermediate profiles
+
+next original alignment to profile: 13
+removing 13 from original alignments to profile
+there are multiple equally close original alignments to 13
+found a profile (24) containing one of the closest matches (4)
+profiling 13 and 24
+removing 24 from intermediate profiles
+
+next original alignment to profile: 1
+removing 1 from original alignments to profile
+there are multiple equally close original alignments to 1
+found a profile (17) containing one of the closest matches (2)
+profiling 1 and 17
+removing 17 from intermediate profiles
+
+next original alignment to profile: 16
+removing 16 from original alignments to profile
+there are multiple equally close original alignments to 16
+found a profile (26) containing one of the closest matches (1)
+profiling 16 and 26
+removing 26 from intermediate profiles
+
+now cross-aligning the profile alignments: 20, 22, 23, 25, 27
+
+profiling 20 and 22
+added profile 28 to profile alignments
+
+profiling 23 and 25
+added profile 29 to profile alignments
+
+profiling 27 and 28
+added profile 30 to profile alignments
+
+profiling 29 and 30
+added profile 31 to profile alignments
+writing final alignment
+profile run completed

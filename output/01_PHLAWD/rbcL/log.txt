@@ -1,0 +1,50 @@
+assembly
+number of threads: 4
+search clade: Tracheophyta
+search: rbcL
+search: ribulose-1
+search: 5-bisphosphate carboxylase large subunit
+gene name: rbcL
+gene database: rbcL.db
+mad cutoff: 0.01
+coverage: 0.2
+identity: 0.2
+using names in list file: ../SawtoothSpList
+connected to rbcL.db
+successfully installed empty tables into rbcL.db
+successfully installed indices into rbcL.db
+
+search number 155896
+connected to /Users/hannahmarx/Desktop/pln042016.db
+found 1 ncbi taxon ids matching Tracheophyta:
+58023
+will only be using the first one: 58023
+
+found 123002 matching sequences in the source db
+
+taxa (including all children) to be included: Abies lasiocarpa, Achillea millefolium, Agoseris aurantiaca, Androsace septentrionalis, Anemone drummondii, Antennaria alpina, Antennaria corymbosa, Antennaria lanata, Antennaria microphylla, Antennaria rosea, Antennaria umbrinella, Aquilegia flavescens, Boechera lemmonii, Boechera microphylla, Arnica chamissonis, Arnica latifolia, Arnica mollis, Arnica parryi, Artemisia dracunculus, Aster alpinus, Symphyotrichum foliaceum, Astragalus alpinus, Astragalus eucosmus, Astragalus kentrophyta, Bupleurum americanum, Cassiope mertensiana, Castilleja applegatei, Castilleja cusickii, Castilleja miniata, Castilleja rhexiifolia, Cerastium arvense, ...
+sequences will be filtered against 180 taxon names
+after filtering taxa not in the include file: 502
+
+running similarity tests (coverage/identity) against keepfile
+retained 389 seqs
+removed 334 taxonomic duplicates, leaving 55 seqs to be aligned
+
+starting saturation tests: identifying original clades to align before profiling
+adding 55 sequences to db rbcL.db
+
+taxon Tracheophyta (ncbi id = 58023): 55 db seqs, 0 user seqs; unassigned seqs remaining: 55
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.00672586
+mad: 0.00445257
+adding alignment to database: 1
+
+0 unassigned seqs
+finished assembly
+gathering all original alignments
+adding initial profile alignments: 1
+starting run
+cleaning database seqs for profile 1
+writing final alignment
+profile run completed

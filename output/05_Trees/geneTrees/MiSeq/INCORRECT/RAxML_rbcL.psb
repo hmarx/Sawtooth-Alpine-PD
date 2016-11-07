@@ -1,0 +1,11 @@
+#!/bin/sh
+#PBS -l nodes=4:ppn=7
+#PBS -q long
+#PBS -N hannahSkyRAxMLrbcL
+
+. /usr/modules/init/bash
+module load openmpi openmpi-apps/1.6.4/raxml/8.0.5
+
+cd $PBS_O_WORKDIR
+
+mpirun raxmlHPC-MPI -f a -s rbcL.aln.nex_clean_05.aln.dna.phy -x 12345 -# 100 -m GTRCAT -n rbcL.Sawtooth.MiSeq.100

@@ -1,0 +1,1629 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww12800\viewh15700\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\b\fs24 \cf0 \
+\
+\
+141219
+\b0  (Spring2014):\
+\
+\ul Screen\
+\
+
+\b \ulnone ITS
+\b0 \
+291361 reads; of these:\
+  291361 (100.00%) were paired; of these:\
+    177891 (61.06%) aligned concordantly 0 times\
+    15244 (5.23%) aligned concordantly exactly 1 time\
+    98226 (33.71%) aligned concordantly >1 times\
+    ----\
+    177891 pairs aligned concordantly 0 times; of these:\
+      85 (0.05%) aligned discordantly 1 time\
+    ----\
+    177806 pairs aligned 0 times concordantly or discordantly; of these:\
+      355612 mates make up the pairs; of these:\
+        336244 (94.55%) aligned 0 times\
+        2414 (0.68%) aligned exactly 1 time\
+        16954 (4.77%) aligned >1 times\
+42.30% overall alignment rate\
+Records processed: 582722, PE in ref: 130453, SE in ref: 0\
+\
+
+\b trnL
+\b0 \
+dbcAmplicons screen -1 trnL_cf_R1.fastq.gz -2 trnL_cf_R2.fastq.gz -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt -O screen/trnL_cf.screen \
+\
+172623 reads; of these:\
+  172623 (100.00%) were paired; of these:\
+    142076 (82.30%) aligned concordantly 0 times\
+    1117 (0.65%) aligned concordantly exactly 1 time\
+    29430 (17.05%) aligned concordantly >1 times\
+    ----\
+    142076 pairs aligned concordantly 0 times; of these:\
+      4 (0.00%) aligned discordantly 1 time\
+    ----\
+    142072 pairs aligned 0 times concordantly or discordantly; of these:\
+      284144 mates make up the pairs; of these:\
+        280022 (98.55%) aligned 0 times\
+        259 (0.09%) aligned exactly 1 time\
+        3863 (1.36%) aligned >1 times\
+18.89% overall alignment rate\
+Records processed: 345246, PE in ref: 34327, SE in ref: 0\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \ul \ulc0 Reduce\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 \ulnone ITS
+\b0 \
+Reads total:                    130453\
+Reads discarded:                4684    (3.59%)\
+Reads combined:                 47872   (38.06%)\
+        combined extended:      30737   (64.21%)\
+        combined short:         17135   (35.79%)\
+\
+
+\b ******* ALL OF THESE ARE FUNGAL ******* 
+\b0 \
+\
+
+\b trnL
+\b0 \
+reduce_amplicons.R -o trnL_cf.reduced -p consensus trnL_cf.screen.mapped\
+\
+Reads total:                    34327\
+Reads discarded:                1286    (3.75%)\
+Reads combined:                 4699    (14.22%)\
+        combined extended:      1845    (39.26%)\
+        combined short:         2854    (60.74%)\
+\
+###############################################################################################\
+\
+
+\b 150807 
+\b0 (June 2015):\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 \ul \ulc0 #########  \ulc0 SCREEN\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \ulnone ITS\ul \
+
+\b0 \ulnone dbcAmplicons screen -1 Mel_2015-3_R1.fastq.gz -2 Mel_2015-3_R2.fastq.gz -O screenMel_2015-3/Mel_2015-3.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt
+\b \ul \
+
+\b0 \ulnone 18262 reads; of these:\
+  18262 (100.00%) were paired; of these:\
+    17550 (96.10%) aligned concordantly 0 times\
+    305 (1.67%) aligned concordantly exactly 1 time\
+    407 (2.23%) aligned concordantly >1 times\
+    ----\
+    17550 pairs aligned concordantly 0 times; of these:\
+      7 (0.04%) aligned discordantly 1 time\
+    ----\
+    17543 pairs aligned 0 times concordantly or discordantly; of these:\
+      35086 mates make up the pairs; of these:\
+        34053 (97.06%) aligned 0 times\
+        114 (0.32%) aligned exactly 1 time\
+        919 (2.62%) aligned >1 times\
+6.77% overall alignment rate\
+\
+dbcAmplicons screen -1 Mel_2015-4_R1.fastq.gz -2 Mel_2015-4_R2.fastq.gz -O screenMel_2015-4/Mel_2015-4.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+\
+11660 reads; of these:\
+  11660 (100.00%) were paired; of these:\
+    9556 (81.96%) aligned concordantly 0 times\
+    1081 (9.27%) aligned concordantly exactly 1 time\
+    1023 (8.77%) aligned concordantly >1 times\
+    ----\
+    9556 pairs aligned concordantly 0 times; of these:\
+      53 (0.55%) aligned discordantly 1 time\
+    ----\
+    9503 pairs aligned 0 times concordantly or discordantly; of these:\
+      19006 mates make up the pairs; of these:\
+        16055 (84.47%) aligned 0 times\
+        307 (1.62%) aligned exactly 1 time\
+        2644 (13.91%) aligned >1 times\
+31.15% overall alignment rate\
+\
+dbcAmplicons screen -1 Mel_2015-5_R1.fastq.gz -2 Mel_2015-5_R2.fastq.gz -O screenMel_2015-5/Mel_2015-5.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+\
+18942 reads; of these:\
+  18942 (100.00%) were paired; of these:\
+    15330 (80.93%) aligned concordantly 0 times\
+    1714 (9.05%) aligned concordantly exactly 1 time\
+    1898 (10.02%) aligned concordantly >1 times\
+    ----\
+    15330 pairs aligned concordantly 0 times; of these:\
+      68 (0.44%) aligned discordantly 1 time\
+    ----\
+    15262 pairs aligned 0 times concordantly or discordantly; of these:\
+      30524 mates make up the pairs; of these:\
+        25042 (82.04%) aligned 0 times\
+        299 (0.98%) aligned exactly 1 time\
+        5183 (16.98%) aligned >1 times\
+33.90% overall alignment rate\
+\
+
+\b rbcL\
+
+\b0 dbcAmplicons screen -1 Mel_2015-16_R1.fastq.gz -2 Mel_2015-16_R2.fastq.gz -O screenMel_2015-16/Mel_2015-16.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt
+\b \
+
+\b0 20963 reads; of these:\
+  20963 (100.00%) were paired; of these:\
+    20259 (96.64%) aligned concordantly 0 times\
+    39 (0.19%) aligned concordantly exactly 1 time\
+    665 (3.17%) aligned concordantly >1 times\
+    ----\
+    20259 pairs aligned concordantly 0 times; of these:\
+      35 (0.17%) aligned discordantly 1 time\
+    ----\
+    20224 pairs aligned 0 times concordantly or discordantly; of these:\
+      40448 mates make up the pairs; of these:\
+        38879 (96.12%) aligned 0 times\
+        238 (0.59%) aligned exactly 1 time\
+        1331 (3.29%) aligned >1 times
+\b \
+
+\b0 7.27% overall alignment rate\
+Records processed: 41926, PE in ref: 1605, SE in ref: 0\
+\
+dbcAmplicons screen -1 Mel_2015-17b_R1.fastq.gz -2 Mel_2015-17b_R2.fastq.gz -O screenMel_2015-17b/Mel_2015-17b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+13202 reads; of these:\
+  13202 (100.00%) were paired; of these:\
+    12786 (96.85%) aligned concordantly 0 times\
+    25 (0.19%) aligned concordantly exactly 1 time\
+    391 (2.96%) aligned concordantly >1 times\
+    ----\
+    12786 pairs aligned concordantly 0 times; of these:\
+      24 (0.19%) aligned discordantly 1 time\
+    ----\
+    12762 pairs aligned 0 times concordantly or discordantly; of these:\
+      25524 mates make up the pairs; of these:\
+        24542 (96.15%) aligned 0 times\
+        124 (0.49%) aligned exactly 1 time\
+        858 (3.36%) aligned >1 times\
+7.05% overall alignment rate\
+Records processed: 26404, PE in ref: 968, SE in ref: 0\
+\
+dbcAmplicons screen -1 Mel_2015-18b_R1.fastq.gz -2 Mel_2015-18b_R2.fastq.gz -O screenMel_2015-18b/Mel_2015-18b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+18022 reads; of these:\
+  18022 (100.00%) were paired; of these:\
+    17201 (95.44%) aligned concordantly 0 times\
+    34 (0.19%) aligned concordantly exactly 1 time\
+    787 (4.37%) aligned concordantly >1 times\
+    ----\
+    17201 pairs aligned concordantly 0 times; of these:\
+      47 (0.27%) aligned discordantly 1 time\
+    ----\
+    17154 pairs aligned 0 times concordantly or discordantly; of these:\
+      34308 mates make up the pairs; of these:\
+        32039 (93.39%) aligned 0 times\
+        225 (0.66%) aligned exactly 1 time\
+        2044 (5.96%) aligned >1 times\
+11.11% overall alignment rate\
+Records processed: 36044, PE in ref: 2087, SE in ref: 0\
+\
+dbcAmplicons screen -1 Mel_2015-19b_R1.fastq.gz -2 Mel_2015-19b_R2.fastq.gz -O screenMel_2015-19b/Mel_2015-19b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+\
+30500 reads; of these:\
+  30500 (100.00%) were paired; of these:\
+    28783 (94.37%) aligned concordantly 0 times\
+    123 (0.40%) aligned concordantly exactly 1 time\
+    1594 (5.23%) aligned concordantly >1 times\
+    ----\
+    28783 pairs aligned concordantly 0 times; of these:\
+      102 (0.35%) aligned discordantly 1 time\
+    ----\
+    28681 pairs aligned 0 times concordantly or discordantly; of these:\
+      57362 mates make up the pairs; of these:\
+        53626 (93.49%) aligned 0 times\
+        416 (0.73%) aligned exactly 1 time\
+        3320 (5.79%) aligned >1 times\
+12.09% overall alignment rate\
+Records processed: 61000, PE in ref: 3871, SE in ref: 0\
+\
+\
+dbcAmplicons screen -1 Mel_2015-20b_R1.fastq.gz -2 Mel_2015-20b_R2.fastq.gz -O screenMel_2015-20b/Mel_2015-20b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+6366 reads; of these:\
+  6366 (100.00%) were paired; of these:\
+    5864 (92.11%) aligned concordantly 0 times\
+    18 (0.28%) aligned concordantly exactly 1 time\
+    484 (7.60%) aligned concordantly >1 times\
+    ----\
+    5864 pairs aligned concordantly 0 times; of these:\
+      29 (0.49%) aligned discordantly 1 time\
+    ----\
+    5835 pairs aligned 0 times concordantly or discordantly; of these:\
+      11670 mates make up the pairs; of these:\
+        10651 (91.27%) aligned 0 times\
+        83 (0.71%) aligned exactly 1 time\
+        936 (8.02%) aligned >1 times\
+16.34% overall alignment rate\
+Records processed: 12732, PE in ref: 1072, SE in ref: 0\
+\
+
+\b trn_ab \
+
+\b0 dbcAmplicons screen -1 Mel_2015-11b_R1.fastq.gz -2 Mel_2015-11b_R2.fastq.gz -O screenMel_2015-11b/Mel_2015-11b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+34012 reads; of these:\
+  34012 (100.00%) were paired; of these:\
+    32980 (96.97%) aligned concordantly 0 times\
+    110 (0.32%) aligned concordantly exactly 1 time\
+    922 (2.71%) aligned concordantly >1 times\
+    ----\
+    32980 pairs aligned concordantly 0 times; of these:\
+      2 (0.01%) aligned discordantly 1 time\
+    ----\
+    32978 pairs aligned 0 times concordantly or discordantly; of these:\
+      65956 mates make up the pairs; of these:\
+        65838 (99.82%) aligned 0 times\
+        110 (0.17%) aligned exactly 1 time\
+        8 (0.01%) aligned >1 times\
+3.21% overall alignment rate\
+Records processed: 68024, PE in ref: 1150, SE in ref: 0\
+\
+dbcAmplicons screen -1 Mel_2015-12b_R1.fastq.gz -2 Mel_2015-12b_R2.fastq.gz -O screenMel_2015-12b/Mel_2015-12b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+20420 reads; of these:\
+  20420 (100.00%) were paired; of these:\
+    20150 (98.68%) aligned concordantly 0 times\
+    121 (0.59%) aligned concordantly exactly 1 time\
+    149 (0.73%) aligned concordantly >1 times\
+    ----\
+    20150 pairs aligned concordantly 0 times; of these:\
+      4 (0.02%) aligned discordantly 1 time\
+    ----\
+    20146 pairs aligned 0 times concordantly or discordantly; of these:\
+      40292 mates make up the pairs; of these:\
+        40199 (99.77%) aligned 0 times\
+        91 (0.23%) aligned exactly 1 time\
+        2 (0.00%) aligned >1 times\
+1.57% overall alignment rate\
+Records processed: 40840, PE in ref: 366, SE in ref: 0\
+\
+dbcAmplicons screen -1 Mel_2015-13b_R1.fastq.gz -2 Mel_2015-13b_R2.fastq.gz -O screenMel_2015-13b/Mel_2015-13b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+16349 reads; of these:\
+  16349 (100.00%) were paired; of these:\
+    16236 (99.31%) aligned concordantly 0 times\
+    20 (0.12%) aligned concordantly exactly 1 time\
+    93 (0.57%) aligned concordantly >1 times\
+    ----\
+    16236 pairs aligned concordantly 0 times; of these:\
+      0 (0.00%) aligned discordantly 1 time\
+    ----\
+    16236 pairs aligned 0 times concordantly or discordantly; of these:\
+      32472 mates make up the pairs; of these:\
+        32434 (99.88%) aligned 0 times\
+        38 (0.12%) aligned exactly 1 time\
+        0 (0.00%) aligned >1 times\
+0.81% overall alignment rate\
+Records processed: 32698, PE in ref: 151, SE in ref: 0\
+\
+dbcAmplicons screen -1 Mel_2015-14b_R1.fastq.gz -2 Mel_2015-14b_R2.fastq.gz -O screenMel_2015-14b/Mel_2015-14b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+40582 reads; of these:\
+  40582 (100.00%) were paired; of these:\
+    40578 (99.99%) aligned concordantly 0 times\
+    1 (0.00%) aligned concordantly exactly 1 time\
+    3 (0.01%) aligned concordantly >1 times\
+    ----\
+    40578 pairs aligned concordantly 0 times; of these:\
+      0 (0.00%) aligned discordantly 1 time\
+    ----\
+    40578 pairs aligned 0 times concordantly or discordantly; of these:\
+      81156 mates make up the pairs; of these:\
+        80954 (99.75%) aligned 0 times\
+        194 (0.24%) aligned exactly 1 time\
+        8 (0.01%) aligned >1 times\
+0.26% overall alignment rate\
+Records processed: 81164, PE in ref: 202, SE in ref: 0\
+\
+dbcAmplicons screen -1 Mel_2015-15b_R1.fastq.gz -2 Mel_2015-15b_R2.fastq.gz -O screenMel_2015-15b/Mel_2015-15b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+11905 reads; of these:\
+  11905 (100.00%) were paired; of these:\
+    11900 (99.96%) aligned concordantly 0 times\
+    0 (0.00%) aligned concordantly exactly 1 time\
+    5 (0.04%) aligned concordantly >1 times\
+    ----\
+    11900 pairs aligned concordantly 0 times; of these:\
+      0 (0.00%) aligned discordantly 1 time\
+    ----\
+    11900 pairs aligned 0 times concordantly or discordantly; of these:\
+      23800 mates make up the pairs; of these:\
+        23712 (99.63%) aligned 0 times\
+        86 (0.36%) aligned exactly 1 time\
+        2 (0.01%) aligned >1 times\
+0.41% overall alignment rate\
+Records processed: 23810, PE in ref: 92, SE in ref: 0\
+\
+
+\b trn_cf \
+
+\b0 dbcAmplicons screen -1 Mel_2015-10b_R1.fastq.gz -2 Mel_2015-10b_R2.fastq.gz -O screenMel_2015-10b/Mel_2015-10b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+26071 reads; of these:\
+  26071 (100.00%) were paired; of these:\
+    25753 (98.78%) aligned concordantly 0 times\
+    43 (0.16%) aligned concordantly exactly 1 time\
+    275 (1.05%) aligned concordantly >1 times\
+    ----\
+    25753 pairs aligned concordantly 0 times; of these:\
+      1 (0.00%) aligned discordantly 1 time\
+    ----\
+    25752 pairs aligned 0 times concordantly or discordantly; of these:\
+      51504 mates make up the pairs; of these:\
+        51237 (99.48%) aligned 0 times\
+        54 (0.10%) aligned exactly 1 time\
+        213 (0.41%) aligned >1 times\
+1.74% overall alignment rate\
+Records processed: 52142, PE in ref: 548, SE in ref: 0\
+\
+dbcAmplicons screen -1 Mel_2015-7_R1.fastq.gz -2 Mel_2015-7_R2.fastq.gz -O screenMel_2015-7/Mel_2015-7.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+25298 reads; of these:\
+  25298 (100.00%) were paired; of these:\
+    24569 (97.12%) aligned concordantly 0 times\
+    80 (0.32%) aligned concordantly exactly 1 time\
+    649 (2.57%) aligned concordantly >1 times\
+    ----\
+    24569 pairs aligned concordantly 0 times; of these:\
+      2 (0.01%) aligned discordantly 1 time\
+    ----\
+    24567 pairs aligned 0 times concordantly or discordantly; of these:\
+      49134 mates make up the pairs; of these:\
+        48829 (99.38%) aligned 0 times\
+        44 (0.09%) aligned exactly 1 time\
+        261 (0.53%) aligned >1 times\
+3.49% overall alignment rate\
+Records processed: 50596, PE in ref: 941, SE in ref: 0\
+\
+dbcAmplicons screen -1 Mel_2015-8_R1.fastq.gz -2 Mel_2015-8_R2.fastq.gz -O screenMel_2015-8/Mel_2015-8.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+19003 reads; of these:\
+  19003 (100.00%) were paired; of these:\
+    18455 (97.12%) aligned concordantly 0 times\
+    73 (0.38%) aligned concordantly exactly 1 time\
+    475 (2.50%) aligned concordantly >1 times\
+    ----\
+    18455 pairs aligned concordantly 0 times; of these:\
+      0 (0.00%) aligned discordantly 1 time\
+    ----\
+    18455 pairs aligned 0 times concordantly or discordantly; of these:\
+      36910 mates make up the pairs; of these:\
+        36679 (99.37%) aligned 0 times\
+        29 (0.08%) aligned exactly 1 time\
+        202 (0.55%) aligned >1 times\
+3.49% overall alignment rate\
+Records processed: 38006, PE in ref: 710, SE in ref: 0\
+\
+dbcAmplicons screen -1 Mel_2015-9_R1.fastq.gz -2 Mel_2015-9_R2.fastq.gz -O screenMel_2015-9/Mel_2015-9.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+36624 reads; of these:\
+  36624 (100.00%) were paired; of these:\
+    35996 (98.29%) aligned concordantly 0 times\
+    84 (0.23%) aligned concordantly exactly 1 time\
+    544 (1.49%) aligned concordantly >1 times\
+    ----\
+    35996 pairs aligned concordantly 0 times; of these:\
+      2 (0.01%) aligned discordantly 1 time\
+    ----\
+    35994 pairs aligned 0 times concordantly or discordantly; of these:\
+      71988 mates make up the pairs; of these:\
+        71621 (99.49%) aligned 0 times\
+        58 (0.08%) aligned exactly 1 time\
+        309 (0.43%) aligned >1 times\
+2.22% overall alignment rate\
+Records processed: 73248, PE in ref: 916, SE in ref: 0\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 \ul \ulc0 #########   REDUCE
+\b0 \
+
+\b \
+\ulnone ITS\ul \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0 \cf0 \ulnone reduce_amplicons.R -o reducedMel_2015-3 -p consensus Mel_2015-3.screen.mapped\
+\
+Reads total:                    1360\
+Reads discarded:                373     (27.43%)\
+Reads combined:                 688     (69.71%)\
+        combined extended:      92      (13.37%)\
+        combined short:         596     (86.63%)\
+\
+reduce_amplicons.R -o reducedMel_2015-4 -p consensus Mel_2015-4.screen.mapped\
+\
+Reads total:                    3918\
+Reads discarded:                770     (19.65%)\
+Reads combined:                 2385    (75.76%)\
+        combined extended:      259     (10.86%)\
+        combined short:         2126    (89.14%)\
+\
+reduce_amplicons.R -o reducedMel_2015-5 -p consensus Mel_2015-5.screen.mapped\
+\
+Reads total:                    6921\
+Reads discarded:                1325    (19.14%)\
+Reads combined:                 4475    (79.97%)\
+        combined extended:      644     (14.39%)\
+        combined short:         3831    (85.61%)\
+\
+\
+
+\b rbcL\
+
+\b0 \
+reduce_amplicons.R -o reducedMel_2015-16b -p consensus Mel_2015-16b.screen.mapped\
+Reads total:                    1605\
+Reads discarded:                212     (13.21%)\
+Reads combined:                 1040    (74.66%)\
+        combined extended:      25      (2.4%)\
+        combined short:         1015    (97.6%)\
+\
+reduce_amplicons.R -o reducedMel_2015-17b -p consensus Mel_2015-17b.screen.mapped\
+Reads total:                    968\
+Reads discarded:                154     (15.91%)\
+Reads combined:                 655     (80.47%)\
+        combined extended:      12      (1.83%)\
+        combined short:         643     (98.17%)\
+\
+reduce_amplicons.R -o reducedMel_2015-18b -p consensus Mel_2015-18b.screen.mapped\
+Reads total:                    2087\
+Reads discarded:                305     (14.61%)\
+Reads combined:                 1498    (84.06%)\
+        combined extended:      9       (0.6%)\
+        combined short:         1489    (99.4%)\
+\
+reduce_amplicons.R -o reducedMel_2015-19b -p consensus Mel_2015-19b.screen.mapped\
+Reads total:                    3871\
+Reads discarded:                570     (14.72%)\
+Reads combined:                 2709    (82.07%)\
+        combined extended:      12      (0.44%)\
+        combined short:         2697    (99.56%)\
+\
+reduce_amplicons.R -o reducedMel_2015-20b -p consensus Mel_2015-20b.screen.mapped\
+Reads total:                    1072\
+Reads discarded:                99      (9.24%)\
+Reads combined:                 673     (69.17%)\
+        combined extended:      1       (0.15%)\
+        combined short:         672     (99.85%)\
+\
+
+\b trn_ab\ul \
+\
+
+\b0 \ulnone reduce_amplicons.R -o reducedMel_2015-11b -p consensus Mel_2015-11b.screen.mapped\
+Reads total:                    1150\
+Reads discarded:                50      (4.35%)\
+Reads combined:                 976     (88.73%)\
+        combined extended:      900     (92.21%)\
+        combined short:         76      (7.79%)\
+\
+reduce_amplicons.R -o reducedMel_2015-12b -p consensus Mel_2015-12b.screen.mapped\
+Reads total:                    366\
+Reads discarded:                27      (7.38%)\
+Reads combined:                 281     (82.89%)\
+        combined extended:      224     (79.72%)\
+        combined short:         57      (20.28%)\
+\
+reduce_amplicons.R -o reducedMel_2015-13b -p consensus Mel_2015-13b.screen.mapped\
+Reads total:                    151\
+Reads discarded:                11      (7.28%)\
+Reads combined:                 118     (84.29%)\
+        combined extended:      91      (77.12%)\
+        combined short:         27      (22.88%)\
+\
+reduce_amplicons.R -o reducedMel_2015-14b -p consensus Mel_2015-14b.screen.mapped\
+Reads total:                    202\
+Reads discarded:                50      (24.75%)\
+Reads combined:                 151     (99.34%)\
+        combined extended:      3       (1.99%)\
+        combined short:         148     (98.01%)\
+Reading merged read files:\
+ reducedMel_2015-14b/flash.extendedFrags.fastq.gz \
+ reducedMel_2015-14b/flash.notCombined_1.fastq.gz \
+ reducedMel_2015-14b/flash.notCombined_2.fastq.gz\
+Running program: consensus\
+Finished analyzing amplicons\
+Error in sapply(strsplit(onms, split = "|", fixed = TRUE), "[[", 1L) : \
+  error in evaluating the argument 'X' in selecting a method for function 'sapply': Error in strsplit(onms, split = "|", fixed = TRUE) : \
+  non-character argument\
+Calls: sapply -> sapply -> lapply -> FUN -> sapply\
+Execution halted\
+\
+\
+reduce_amplicons.R -o reducedMel_2015-15b -p consensus Mel_2015-15b.screen.mapped\
+Reads total:                    92\
+Reads discarded:                9       (9.78%)\
+Reads combined:                 80      (96.39%)\
+        combined extended:      4       (5%)\
+        combined short:         76      (95%)\
+\
+\
+
+\b trn_ab\ul \
+\
+
+\b0 \ulnone reduce_amplicons.R -o reducedMel_2015-10b -p consensus Mel_2015-10b.screen.mapped\
+Reads total:                    548\
+Reads discarded:                310     (56.57%)\
+Reads combined:                 152     (63.87%)\
+        combined extended:      2       (1.32%)\
+        combined short:         150     (98.68%)\
+
+\b \ul \
+
+\b0 \ulnone reduce_amplicons.R -o reducedMel_2015-7 -p consensus Mel_2015-7.screen.mapped\
+Reads total:                    941\
+Reads discarded:                261     (27.74%)\
+Reads combined:                 539     (79.26%)\
+        combined extended:      12      (2.23%)\
+        combined short:         527     (97.77%)\
+\
+reduce_amplicons.R -o reducedMel_2015-8 -p consensus Mel_2015-8.screen.mapped\
+Reads total:                    710\
+Reads discarded:                185     (26.06%)\
+Reads combined:                 381     (72.57%)\
+        combined extended:      14      (3.67%)\
+        combined short:         367     (96.33%)\
+\
+reduce_amplicons.R -o reducedMel_2015-9 -p consensus Mel_2015-9.screen.mapped\
+Reads total:                    916\
+Reads discarded:                372     (40.61%)\
+Reads combined:                 377     (69.3%)\
+        combined extended:      5       (1.33%)\
+        combined short:         372     (98.67%)\
+\
+\
+###############################################################################################\
+
+\b \
+160222 
+\b0 (Dec 2015):\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 \ul \ulc0 #########  SCREEN\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0 \cf0 \ulnone \
+
+\b atpB_S1494R_S611\
+
+\b0 dbcAmplicons screen -1 36b_R1.fastq.gz -2 36b_R2.fastq.gz  -O screen36b/36b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+5619 reads; of these:\
+  5619 (100.00%) were paired; of these:\
+    5145 (91.56%) aligned concordantly 0 times\
+    15 (0.27%) aligned concordantly exactly 1 time\
+    459 (8.17%) aligned concordantly >1 times\
+    ----\
+    5145 pairs aligned concordantly 0 times; of these:\
+      0 (0.00%) aligned discordantly 1 time\
+    ----\
+    5145 pairs aligned 0 times concordantly or discordantly; of these:\
+      10290 mates make up the pairs; of these:\
+        10170 (98.83%) aligned 0 times\
+        6 (0.06%) aligned exactly 1 time\
+        114 (1.11%) aligned >1 times\
+9.50% overall alignment rate\
+Records processed: 11238, PE in ref: 542, SE in ref: 0\
+\
+dbcAmplicons screen -1 37b_R1.fastq.gz -2 37b_R2.fastq.gz  -O screen37b/37b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+2447 reads; of these:\
+  2447 (100.00%) were paired; of these:\
+    2163 (88.39%) aligned concordantly 0 times\
+    7 (0.29%) aligned concordantly exactly 1 time\
+    277 (11.32%) aligned concordantly >1 times\
+    ----\
+    2163 pairs aligned concordantly 0 times; of these:\
+      0 (0.00%) aligned discordantly 1 time\
+    ----\
+    2163 pairs aligned 0 times concordantly or discordantly; of these:\
+      4326 mates make up the pairs; of these:\
+        4282 (98.98%) aligned 0 times\
+        0 (0.00%) aligned exactly 1 time\
+        44 (1.02%) aligned >1 times\
+12.51% overall alignment rate\
+Records processed: 4894, PE in ref: 310, SE in ref: 0\
+\
+dbcAmplicons screen -1 38b_R1.fastq.gz -2 38b_R2.fastq.gz  -O screen38b/38b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+4165 reads; of these:\
+  4165 (100.00%) were paired; of these:\
+    3766 (90.42%) aligned concordantly 0 times\
+    3 (0.07%) aligned concordantly exactly 1 time\
+    396 (9.51%) aligned concordantly >1 times\
+    ----\
+    3766 pairs aligned concordantly 0 times; of these:\
+      0 (0.00%) aligned discordantly 1 time\
+    ----\
+    3766 pairs aligned 0 times concordantly or discordantly; of these:\
+      7532 mates make up the pairs; of these:\
+        7495 (99.51%) aligned 0 times\
+        3 (0.04%) aligned exactly 1 time\
+        34 (0.45%) aligned >1 times\
+10.02% overall alignment rate\
+Records processed: 8330, PE in ref: 424, SE in ref: 0\
+
+\b \
+
+\b0 dbcAmplicons screen -1 39b_R1.fastq.gz -2 39b_R2.fastq.gz  -O screen39b/39b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+4425 reads; of these:\
+  4425 (100.00%) were paired; of these:\
+    4007 (90.55%) aligned concordantly 0 times\
+    3 (0.07%) aligned concordantly exactly 1 time\
+    415 (9.38%) aligned concordantly >1 times\
+    ----\
+    4007 pairs aligned concordantly 0 times; of these:\
+      0 (0.00%) aligned discordantly 1 time\
+    ----\
+    4007 pairs aligned 0 times concordantly or discordantly; of these:\
+      8014 mates make up the pairs; of these:\
+        7990 (99.70%) aligned 0 times\
+        2 (0.02%) aligned exactly 1 time\
+        22 (0.27%) aligned >1 times\
+9.72% overall alignment rate\
+Records processed: 8850, PE in ref: 433, SE in ref: 0\
+\
+dbcAmplicons screen -1 40b_R1.fastq.gz -2 40b_R2.fastq.gz  -O screen40b/40b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+2524 reads; of these:\
+  2524 (100.00%) were paired; of these:\
+    2343 (92.83%) aligned concordantly 0 times\
+    2 (0.08%) aligned concordantly exactly 1 time\
+    179 (7.09%) aligned concordantly >1 times\
+    ----\
+    2343 pairs aligned concordantly 0 times; of these:\
+      0 (0.00%) aligned discordantly 1 time\
+    ----\
+    2343 pairs aligned 0 times concordantly or discordantly; of these:\
+      4686 mates make up the pairs; of these:\
+        4666 (99.57%) aligned 0 times\
+        3 (0.06%) aligned exactly 1 time\
+        17 (0.36%) aligned >1 times\
+7.57% overall alignment rate\
+Records processed: 5048, PE in ref: 193, SE in ref: 0\
+\
+
+\b atpB_S766R_S3
+\b0  \
+dbcAmplicons screen -1 41b_R1.fastq.gz -2 41b_R2.fastq.gz  -O screen41b/41b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+6924 reads; of these:\
+  6924 (100.00%) were paired; of these:\
+    6397 (92.39%) aligned concordantly 0 times\
+    7 (0.10%) aligned concordantly exactly 1 time\
+    520 (7.51%) aligned concordantly >1 times\
+    ----\
+    6397 pairs aligned concordantly 0 times; of these:\
+      0 (0.00%) aligned discordantly 1 time\
+    ----\
+    6397 pairs aligned 0 times concordantly or discordantly; of these:\
+      12794 mates make up the pairs; of these:\
+        12744 (99.61%) aligned 0 times\
+        7 (0.05%) aligned exactly 1 time\
+        43 (0.34%) aligned >1 times\
+7.97% overall alignment rate\
+Records processed: 13848, PE in ref: 560, SE in ref: 0\
+\
+dbcAmplicons screen -1 42b_R1.fastq.gz -2 42b_R2.fastq.gz  -O screen42b/42b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt
+\b \
+
+\b0 13825 reads; of these:\
+  13825 (100.00%) were paired; of these:\
+    12826 (92.77%) aligned concordantly 0 times\
+    32 (0.23%) aligned concordantly exactly 1 time\
+    967 (6.99%) aligned concordantly >1 times\
+    ----\
+    12826 pairs aligned concordantly 0 times; of these:\
+      15 (0.12%) aligned discordantly 1 time\
+    ----\
+    12811 pairs aligned 0 times concordantly or discordantly; of these:\
+      25622 mates make up the pairs; of these:\
+        24968 (97.45%) aligned 0 times\
+        74 (0.29%) aligned exactly 1 time\
+        580 (2.26%) aligned >1 times\
+9.70% overall alignment rate\
+Records processed: 27650, PE in ref: 1401, SE in ref: 0
+\b \
+\
+\
+
+\b0 dbcAmplicons screen -1 43b_R1.fastq.gz -2 43b_R2.fastq.gz  -O screen43b/43b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt
+\b \
+
+\b0 12679 reads; of these:\
+  12679 (100.00%) were paired; of these:\
+    11866 (93.59%) aligned concordantly 0 times\
+    26 (0.21%) aligned concordantly exactly 1 time\
+    787 (6.21%) aligned concordantly >1 times\
+    ----\
+    11866 pairs aligned concordantly 0 times; of these:\
+      10 (0.08%) aligned discordantly 1 time\
+    ----\
+    11856 pairs aligned 0 times concordantly or discordantly; of these:\
+      23712 mates make up the pairs; of these:\
+        23131 (97.55%) aligned 0 times\
+        64 (0.27%) aligned exactly 1 time\
+        517 (2.18%) aligned >1 times\
+8.78% overall alignment rate\
+Records processed: 25358, PE in ref: 1165, SE in ref: 0
+\b \
+
+\b0 \
+\
+dbcAmplicons screen -1 44b_R1.fastq.gz -2 44b_R2.fastq.gz  -O screen44b/44b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+15081 reads; of these:\
+  15081 (100.00%) were paired; of these:\
+    14387 (95.40%) aligned concordantly 0 times\
+    16 (0.11%) aligned concordantly exactly 1 time\
+    678 (4.50%) aligned concordantly >1 times\
+    ----\
+    14387 pairs aligned concordantly 0 times; of these:\
+      10 (0.07%) aligned discordantly 1 time\
+    ----\
+    14377 pairs aligned 0 times concordantly or discordantly; of these:\
+      28754 mates make up the pairs; of these:\
+        28446 (98.93%) aligned 0 times\
+        68 (0.24%) aligned exactly 1 time\
+        240 (0.83%) aligned >1 times\
+5.69% overall alignment rate\
+Records processed: 30162, PE in ref: 908, SE in ref: 0\
+\
+dbcAmplicons screen -1 45b_R1.fastq.gz -2 45b_R2.fastq.gz  -O screen45b/45b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+2973 reads; of these:\
+  2973 (100.00%) were paired; of these:\
+    2665 (89.64%) aligned concordantly 0 times\
+    13 (0.44%) aligned concordantly exactly 1 time\
+    295 (9.92%) aligned concordantly >1 times\
+    ----\
+    2665 pairs aligned concordantly 0 times; of these:\
+      3 (0.11%) aligned discordantly 1 time\
+    ----\
+    2662 pairs aligned 0 times concordantly or discordantly; of these:\
+      5324 mates make up the pairs; of these:\
+        5180 (97.30%) aligned 0 times\
+        20 (0.38%) aligned exactly 1 time\
+        124 (2.33%) aligned >1 times\
+12.88% overall alignment rate\
+Records processed: 5946, PE in ref: 392, SE in ref: 0\
+\
+
+\b ITS
+\b0 \
+dbcAmplicons screen -1 6a_R1.fastq.gz -2 6a_R2.fastq.gz  -O screen6a/6a.screen -R ~/scratch/MiSeqRuns/refSeqs/genBankRefsOlmstead_ITS.txt -S\
+12170 reads; of these:\
+  12170 (100.00%) were paired; of these:\
+    10190 (83.73%) aligned concordantly 0 times\
+    1454 (11.95%) aligned concordantly exactly 1 time\
+    526 (4.32%) aligned concordantly >1 times\
+    ----\
+    10190 pairs aligned concordantly 0 times; of these:\
+      147 (1.44%) aligned discordantly 1 time\
+    ----\
+    10043 pairs aligned 0 times concordantly or discordantly; of these:\
+      20086 mates make up the pairs; of these:\
+        16351 (81.40%) aligned 0 times\
+        885 (4.41%) aligned exactly 1 time\
+        2850 (14.19%) aligned >1 times\
+32.82% overall alignment rate\
+Records processed: 24340, PE in ref: 3576, SE in ref: 0\
+\
+\
+
+\b matK_1F_4R 
+\b0 \
+dbcAmplicons screen -1 46b_R1.fastq.gz -2 46b_R2.fastq.gz  -O screen46b/46b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+6412 reads; of these:\
+  6412 (100.00%) were paired; of these:\
+    3506 (54.68%) aligned concordantly 0 times\
+    61 (0.95%) aligned concordantly exactly 1 time\
+    2845 (44.37%) aligned concordantly >1 times\
+    ----\
+    3506 pairs aligned concordantly 0 times; of these:\
+      11 (0.31%) aligned discordantly 1 time\
+    ----\
+    3495 pairs aligned 0 times concordantly or discordantly; of these:\
+      6990 mates make up the pairs; of these:\
+        6957 (99.53%) aligned 0 times\
+        5 (0.07%) aligned exactly 1 time\
+        28 (0.40%) aligned >1 times\
+45.75% overall alignment rate\
+Records processed: 12824, PE in ref: 2936, SE in ref: 0\
+\
+dbcAmplicons screen -1 47b_R1.fastq.gz -2 47b_R2.fastq.gz  -O screen47b/47b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+16798 reads; of these:\
+  16798 (100.00%) were paired; of these:\
+    6671 (39.71%) aligned concordantly 0 times\
+    168 (1.00%) aligned concordantly exactly 1 time\
+    9959 (59.29%) aligned concordantly >1 times\
+    ----\
+    6671 pairs aligned concordantly 0 times; of these:\
+      46 (0.69%) aligned discordantly 1 time\
+    ----\
+    6625 pairs aligned 0 times concordantly or discordantly; of these:\
+      13250 mates make up the pairs; of these:\
+        13120 (99.02%) aligned 0 times\
+        3 (0.02%) aligned exactly 1 time\
+        127 (0.96%) aligned >1 times\
+60.95% overall alignment rate\
+Records processed: 33596, PE in ref: 10242, SE in ref: 0\
+\
+dbcAmplicons screen -1 48b_R1.fastq.gz -2 48b_R2.fastq.gz  -O screen48b/48b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+36331 reads; of these:\
+  36331 (100.00%) were paired; of these:\
+    15516 (42.71%) aligned concordantly 0 times\
+    888 (2.44%) aligned concordantly exactly 1 time\
+    19927 (54.85%) aligned concordantly >1 times\
+    ----\
+    15516 pairs aligned concordantly 0 times; of these:\
+      78 (0.50%) aligned discordantly 1 time\
+    ----\
+    15438 pairs aligned 0 times concordantly or discordantly; of these:\
+      30876 mates make up the pairs; of these:\
+        30115 (97.54%) aligned 0 times\
+        57 (0.18%) aligned exactly 1 time\
+        704 (2.28%) aligned >1 times\
+58.55% overall alignment rate\
+Records processed: 72662, PE in ref: 21323, SE in ref: 0\
+\
+dbcAmplicons screen -1 49b_R1.fastq.gz -2 49b_R2.fastq.gz  -O screen49b/49b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+25239 reads; of these:\
+  25239 (100.00%) were paired; of these:\
+    15051 (59.63%) aligned concordantly 0 times\
+    236 (0.94%) aligned concordantly exactly 1 time\
+    9952 (39.43%) aligned concordantly >1 times\
+    ----\
+    15051 pairs aligned concordantly 0 times; of these:\
+      65 (0.43%) aligned discordantly 1 time\
+    ----\
+    14986 pairs aligned 0 times concordantly or discordantly; of these:\
+      29972 mates make up the pairs; of these:\
+        29487 (98.38%) aligned 0 times\
+        17 (0.06%) aligned exactly 1 time\
+        468 (1.56%) aligned >1 times\
+41.58% overall alignment rate\
+Records processed: 50478, PE in ref: 10512, SE in ref: 0\
+\
+dbcAmplicons screen -1 50b_R1.fastq.gz -2 50b_R2.fastq.gz  -O screen50b/50b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+21942 reads; of these:\
+  21942 (100.00%) were paired; of these:\
+    13359 (60.88%) aligned concordantly 0 times\
+    189 (0.86%) aligned concordantly exactly 1 time\
+    8394 (38.26%) aligned concordantly >1 times\
+    ----\
+    13359 pairs aligned concordantly 0 times; of these:\
+      54 (0.40%) aligned discordantly 1 time\
+    ----\
+    13305 pairs aligned 0 times concordantly or discordantly; of these:\
+      26610 mates make up the pairs; of these:\
+        26219 (98.53%) aligned 0 times\
+        26 (0.10%) aligned exactly 1 time\
+        365 (1.37%) aligned >1 times\
+40.25% overall alignment rate\
+Records processed: 43884, PE in ref: 8850, SE in ref: 0\
+\
+\
+
+\b matK_3F_3R
+\b0   \
+dbcAmplicons screen -1 51b_R1.fastq.gz -2 51b_R2.fastq.gz  -O screen51b/51b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+22802 reads; of these:\
+  22802 (100.00%) were paired; of these:\
+    20286 (88.97%) aligned concordantly 0 times\
+    194 (0.85%) aligned concordantly exactly 1 time\
+    2322 (10.18%) aligned concordantly >1 times\
+    ----\
+    20286 pairs aligned concordantly 0 times; of these:\
+      12 (0.06%) aligned discordantly 1 time\
+    ----\
+    20274 pairs aligned 0 times concordantly or discordantly; of these:\
+      40548 mates make up the pairs; of these:\
+        38188 (94.18%) aligned 0 times\
+        49 (0.12%) aligned exactly 1 time\
+        2311 (5.70%) aligned >1 times\
+16.26% overall alignment rate\
+Records processed: 45604, PE in ref: 3762, SE in ref: 0\
+\
+dbcAmplicons screen -1 52b_R1.fastq.gz -2 52b_R2.fastq.gz  -O screen52b/52b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+22170 reads; of these:\
+  22170 (100.00%) were paired; of these:\
+    19809 (89.35%) aligned concordantly 0 times\
+    104 (0.47%) aligned concordantly exactly 1 time\
+    2257 (10.18%) aligned concordantly >1 times\
+    ----\
+    19809 pairs aligned concordantly 0 times; of these:\
+      9 (0.05%) aligned discordantly 1 time\
+    ----\
+    19800 pairs aligned 0 times concordantly or discordantly; of these:\
+      39600 mates make up the pairs; of these:\
+        37856 (95.60%) aligned 0 times\
+        47 (0.12%) aligned exactly 1 time\
+        1697 (4.29%) aligned >1 times\
+14.62% overall alignment rate\
+Records processed: 44340, PE in ref: 3270, SE in ref: 0\
+\
+dbcAmplicons screen -1 53b_R1.fastq.gz -2 53b_R2.fastq.gz  -O screen53b/53b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+18759 reads; of these:\
+  18759 (100.00%) were paired; of these:\
+    16308 (86.93%) aligned concordantly 0 times\
+    50 (0.27%) aligned concordantly exactly 1 time\
+    2401 (12.80%) aligned concordantly >1 times\
+    ----\
+    16308 pairs aligned concordantly 0 times; of these:\
+      13 (0.08%) aligned discordantly 1 time\
+    ----\
+    16295 pairs aligned 0 times concordantly or discordantly; of these:\
+      32590 mates make up the pairs; of these:\
+        31390 (96.32%) aligned 0 times\
+        58 (0.18%) aligned exactly 1 time\
+        1142 (3.50%) aligned >1 times\
+16.33% overall alignment rate\
+Records processed: 37518, PE in ref: 3100, SE in ref: 0\
+\
+dbcAmplicons screen -1 54b_R1.fastq.gz -2 54b_R2.fastq.gz  -O screen54b/54b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+40241 reads; of these:\
+  40241 (100.00%) were paired; of these:\
+    36311 (90.23%) aligned concordantly 0 times\
+    91 (0.23%) aligned concordantly exactly 1 time\
+    3839 (9.54%) aligned concordantly >1 times\
+    ----\
+    36311 pairs aligned concordantly 0 times; of these:\
+      70 (0.19%) aligned discordantly 1 time\
+    ----\
+    36241 pairs aligned 0 times concordantly or discordantly; of these:\
+      72482 mates make up the pairs; of these:\
+        69799 (96.30%) aligned 0 times\
+        109 (0.15%) aligned exactly 1 time\
+        2574 (3.55%) aligned >1 times\
+13.27% overall alignment rate\
+Records processed: 80482, PE in ref: 5420, SE in ref: 0\
+\
+dbcAmplicons screen -1 55b_R1.fastq.gz -2 55b_R2.fastq.gz  -O screen55b/55b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+13484 reads; of these:\
+  13484 (100.00%) were paired; of these:\
+    12333 (91.46%) aligned concordantly 0 times\
+    20 (0.15%) aligned concordantly exactly 1 time\
+    1131 (8.39%) aligned concordantly >1 times\
+    ----\
+    12333 pairs aligned concordantly 0 times; of these:\
+      11 (0.09%) aligned discordantly 1 time\
+    ----\
+    12322 pairs aligned 0 times concordantly or discordantly; of these:\
+      24644 mates make up the pairs; of these:\
+        24017 (97.46%) aligned 0 times\
+        39 (0.16%) aligned exactly 1 time\
+        588 (2.39%) aligned >1 times\
+10.94% overall alignment rate\
+Records processed: 26968, PE in ref: 1502, SE in ref: 0\
+\
+\
+
+\b ndhF_1318_3
+\b0   \
+dbcAmplicons screen -1 31b_R1.fastq.gz -2 31b_R2.fastq.gz  -O screen31b/31b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+22522 reads; of these:\
+  22522 (100.00%) were paired; of these:\
+    22045 (97.88%) aligned concordantly 0 times\
+    224 (0.99%) aligned concordantly exactly 1 time\
+    253 (1.12%) aligned concordantly >1 times\
+    ----\
+    22045 pairs aligned concordantly 0 times; of these:\
+      2 (0.01%) aligned discordantly 1 time\
+    ----\
+    22043 pairs aligned 0 times concordantly or discordantly; of these:\
+      44086 mates make up the pairs; of these:\
+        43925 (99.63%) aligned 0 times\
+        11 (0.02%) aligned exactly 1 time\
+        150 (0.34%) aligned >1 times\
+2.48% overall alignment rate\
+Records processed: 45044, PE in ref: 623, SE in ref: 0\
+\
+dbcAmplicons screen -1 32b_R1.fastq.gz -2 32b_R2.fastq.gz  -O screen32b/32b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+28584 reads; of these:\
+  28584 (100.00%) were paired; of these:\
+    27842 (97.40%) aligned concordantly 0 times\
+    316 (1.11%) aligned concordantly exactly 1 time\
+    426 (1.49%) aligned concordantly >1 times\
+    ----\
+    27842 pairs aligned concordantly 0 times; of these:\
+      2 (0.01%) aligned discordantly 1 time\
+    ----\
+    27840 pairs aligned 0 times concordantly or discordantly; of these:\
+      55680 mates make up the pairs; of these:\
+        55160 (99.07%) aligned 0 times\
+        23 (0.04%) aligned exactly 1 time\
+        497 (0.89%) aligned >1 times\
+3.51% overall alignment rate\
+Records processed: 57168, PE in ref: 1148, SE in ref: 0\
+\
+dbcAmplicons screen -1 33b_R1.fastq.gz -2 33b_R2.fastq.gz  -O screen33b/33b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+17852 reads; of these:\
+  17852 (100.00%) were paired; of these:\
+    17466 (97.84%) aligned concordantly 0 times\
+    188 (1.05%) aligned concordantly exactly 1 time\
+    198 (1.11%) aligned concordantly >1 times\
+    ----\
+    17466 pairs aligned concordantly 0 times; of these:\
+      6 (0.03%) aligned discordantly 1 time\
+    ----\
+    17460 pairs aligned 0 times concordantly or discordantly; of these:\
+      34920 mates make up the pairs; of these:\
+        34649 (99.22%) aligned 0 times\
+        7 (0.02%) aligned exactly 1 time\
+        264 (0.76%) aligned >1 times\
+2.95% overall alignment rate\
+Records processed: 35704, PE in ref: 604, SE in ref: 0\
+\
+dbcAmplicons screen -1 34b_R1.fastq.gz -2 34b_R2.fastq.gz  -O screen34b/34b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+35596 reads; of these:\
+  35596 (100.00%) were paired; of these:\
+    35141 (98.72%) aligned concordantly 0 times\
+    178 (0.50%) aligned concordantly exactly 1 time\
+    277 (0.78%) aligned concordantly >1 times\
+    ----\
+    35141 pairs aligned concordantly 0 times; of these:\
+      17 (0.05%) aligned discordantly 1 time\
+    ----\
+    35124 pairs aligned 0 times concordantly or discordantly; of these:\
+      70248 mates make up the pairs; of these:\
+        69741 (99.28%) aligned 0 times\
+        23 (0.03%) aligned exactly 1 time\
+        484 (0.69%) aligned >1 times\
+2.04% overall alignment rate\
+Records processed: 71192, PE in ref: 847, SE in ref: 0\
+\
+dbcAmplicons screen -1 35b_R1.fastq.gz -2 35b_R2.fastq.gz  -O screen35b/35b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+6262 reads; of these:\
+  6262 (100.00%) were paired; of these:\
+    6083 (97.14%) aligned concordantly 0 times\
+    133 (2.12%) aligned concordantly exactly 1 time\
+    46 (0.73%) aligned concordantly >1 times\
+    ----\
+    6083 pairs aligned concordantly 0 times; of these:\
+      7 (0.12%) aligned discordantly 1 time\
+    ----\
+    6076 pairs aligned 0 times concordantly or discordantly; of these:\
+      12152 mates make up the pairs; of these:\
+        12112 (99.67%) aligned 0 times\
+        8 (0.07%) aligned exactly 1 time\
+        32 (0.26%) aligned >1 times\
+3.29% overall alignment rate\
+Records processed: 12524, PE in ref: 211, SE in ref: 0\
+\
+
+\b ndhF_5_803
+\b0   \
+dbcAmplicons screen -1 21b_R1.fastq.gz -2 21b_R2.fastq.gz  -O screen21b/21b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+15925 reads; of these:\
+  15925 (100.00%) were paired; of these:\
+    14932 (93.76%) aligned concordantly 0 times\
+    79 (0.50%) aligned concordantly exactly 1 time\
+    914 (5.74%) aligned concordantly >1 times\
+    ----\
+    14932 pairs aligned concordantly 0 times; of these:\
+      27 (0.18%) aligned discordantly 1 time\
+    ----\
+    14905 pairs aligned 0 times concordantly or discordantly; of these:\
+      29810 mates make up the pairs; of these:\
+        29657 (99.49%) aligned 0 times\
+        75 (0.25%) aligned exactly 1 time\
+        78 (0.26%) aligned >1 times\
+6.89% overall alignment rate\
+Records processed: 31850, PE in ref: 1134, SE in ref: 0\
+\
+dbcAmplicons screen -1 22b_R1.fastq.gz -2 22b_R2.fastq.gz  -O screen22b/22b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+37674 reads; of these:\
+  37674 (100.00%) were paired; of these:\
+    35569 (94.41%) aligned concordantly 0 times\
+    132 (0.35%) aligned concordantly exactly 1 time\
+    1973 (5.24%) aligned concordantly >1 times\
+    ----\
+    35569 pairs aligned concordantly 0 times; of these:\
+      112 (0.31%) aligned discordantly 1 time\
+    ----\
+    35457 pairs aligned 0 times concordantly or discordantly; of these:\
+      70914 mates make up the pairs; of these:\
+        70316 (99.16%) aligned 0 times\
+        307 (0.43%) aligned exactly 1 time\
+        291 (0.41%) aligned >1 times\
+6.68% overall alignment rate\
+Records processed: 75348, PE in ref: 2670, SE in ref: 0\
+\
+dbcAmplicons screen -1 23b_R1.fastq.gz -2 23b_R2.fastq.gz  -O screen23b/23b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+19009 reads; of these:\
+  19009 (100.00%) were paired; of these:\
+    18072 (95.07%) aligned concordantly 0 times\
+    73 (0.38%) aligned concordantly exactly 1 time\
+    864 (4.55%) aligned concordantly >1 times\
+    ----\
+    18072 pairs aligned concordantly 0 times; of these:\
+      23 (0.13%) aligned discordantly 1 time\
+    ----\
+    18049 pairs aligned 0 times concordantly or discordantly; of these:\
+      36098 mates make up the pairs; of these:\
+        35968 (99.64%) aligned 0 times\
+        52 (0.14%) aligned exactly 1 time\
+        78 (0.22%) aligned >1 times\
+5.39% overall alignment rate\
+Records processed: 38018, PE in ref: 1050, SE in ref: 0\
+\
+dbcAmplicons screen -1 24b_R1.fastq.gz -2 24b_R2.fastq.gz  -O screen24b/24b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+15639 reads; of these:\
+  15639 (100.00%) were paired; of these:\
+    15135 (96.78%) aligned concordantly 0 times\
+    34 (0.22%) aligned concordantly exactly 1 time\
+    470 (3.01%) aligned concordantly >1 times\
+    ----\
+    15135 pairs aligned concordantly 0 times; of these:\
+      25 (0.17%) aligned discordantly 1 time\
+    ----\
+    15110 pairs aligned 0 times concordantly or discordantly; of these:\
+      30220 mates make up the pairs; of these:\
+        30112 (99.64%) aligned 0 times\
+        65 (0.22%) aligned exactly 1 time\
+        43 (0.14%) aligned >1 times\
+3.73% overall alignment rate\
+Records processed: 31278, PE in ref: 616, SE in ref: 0\
+\
+dbcAmplicons screen -1 25b_R1.fastq.gz -2 25b_R2.fastq.gz  -O screen25b/25b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+5432 reads; of these:\
+  5432 (100.00%) were paired; of these:\
+    5187 (95.49%) aligned concordantly 0 times\
+    25 (0.46%) aligned concordantly exactly 1 time\
+    220 (4.05%) aligned concordantly >1 times\
+    ----\
+    5187 pairs aligned concordantly 0 times; of these:\
+      8 (0.15%) aligned discordantly 1 time\
+    ----\
+    5179 pairs aligned 0 times concordantly or discordantly; of these:\
+      10358 mates make up the pairs; of these:\
+        10305 (99.49%) aligned 0 times\
+        33 (0.32%) aligned exactly 1 time\
+        20 (0.19%) aligned >1 times\
+5.15% overall alignment rate\
+Records processed: 10864, PE in ref: 296, SE in ref: 0\
+\
+
+\b ndhF_803_1318\
+
+\b0 dbcAmplicons screen -1 26b_R1.fastq.gz -2 26b_R2.fastq.gz  -O screen26b/26b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+20858 reads; of these:\
+  20858 (100.00%) were paired; of these:\
+    12923 (61.96%) aligned concordantly 0 times\
+    680 (3.26%) aligned concordantly exactly 1 time\
+    7255 (34.78%) aligned concordantly >1 times\
+    ----\
+    12923 pairs aligned concordantly 0 times; of these:\
+      54 (0.42%) aligned discordantly 1 time\
+    ----\
+    12869 pairs aligned 0 times concordantly or discordantly; of these:\
+      25738 mates make up the pairs; of these:\
+        25403 (98.70%) aligned 0 times\
+        167 (0.65%) aligned exactly 1 time\
+        168 (0.65%) aligned >1 times\
+39.10% overall alignment rate\
+Records processed: 41716, PE in ref: 8235, SE in ref: 0\
+\
+dbcAmplicons screen -1 27b_R1.fastq.gz -2 27b_R2.fastq.gz  -O screen27b/27b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+18230 reads; of these:\
+  18230 (100.00%) were paired; of these:\
+    10651 (58.43%) aligned concordantly 0 times\
+    395 (2.17%) aligned concordantly exactly 1 time\
+    7184 (39.41%) aligned concordantly >1 times\
+    ----\
+    10651 pairs aligned concordantly 0 times; of these:\
+      78 (0.73%) aligned discordantly 1 time\
+    ----\
+    10573 pairs aligned 0 times concordantly or discordantly; of these:\
+      21146 mates make up the pairs; of these:\
+        20741 (98.08%) aligned 0 times\
+        155 (0.73%) aligned exactly 1 time\
+        250 (1.18%) aligned >1 times\
+43.11% overall alignment rate\
+Records processed: 36460, PE in ref: 7934, SE in ref: 0\
+\
+dbcAmplicons screen -1 28b_R1.fastq.gz -2 28b_R2.fastq.gz  -O screen28b/28b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+34282 reads; of these:\
+  34282 (100.00%) were paired; of these:\
+    21860 (63.77%) aligned concordantly 0 times\
+    784 (2.29%) aligned concordantly exactly 1 time\
+    11638 (33.95%) aligned concordantly >1 times\
+    ----\
+    21860 pairs aligned concordantly 0 times; of these:\
+      305 (1.40%) aligned discordantly 1 time\
+    ----\
+    21555 pairs aligned 0 times concordantly or discordantly; of these:\
+      43110 mates make up the pairs; of these:\
+        42114 (97.69%) aligned 0 times\
+        391 (0.91%) aligned exactly 1 time\
+        605 (1.40%) aligned >1 times\
+38.58% overall alignment rate\
+Records processed: 68564, PE in ref: 13402, SE in ref: 0\
+\
+dbcAmplicons screen -1 29b_R1.fastq.gz -2 29b_R2.fastq.gz  -O screen29b/29b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+18082 reads; of these:\
+  18082 (100.00%) were paired; of these:\
+    12685 (70.15%) aligned concordantly 0 times\
+    609 (3.37%) aligned concordantly exactly 1 time\
+    4788 (26.48%) aligned concordantly >1 times\
+    ----\
+    12685 pairs aligned concordantly 0 times; of these:\
+      80 (0.63%) aligned discordantly 1 time\
+    ----\
+    12605 pairs aligned 0 times concordantly or discordantly; of these:\
+      25210 mates make up the pairs; of these:\
+        24816 (98.44%) aligned 0 times\
+        237 (0.94%) aligned exactly 1 time\
+        157 (0.62%) aligned >1 times\
+31.38% overall alignment rate\
+Records processed: 36164, PE in ref: 5786, SE in ref: 0\
+\
+dbcAmplicons screen -1 30b_R1.fastq.gz -2 30b_R2.fastq.gz  -O screen30b/30b.screen -R ~/scratch/MiSeqRuns/refSeqs/refGeneSeqPHLAWD.txt\
+22580 reads; of these:\
+  22580 (100.00%) were paired; of these:\
+    16415 (72.70%) aligned concordantly 0 times\
+    1210 (5.36%) aligned concordantly exactly 1 time\
+    4955 (21.94%) aligned concordantly >1 times\
+    ----\
+    16415 pairs aligned concordantly 0 times; of these:\
+      89 (0.54%) aligned discordantly 1 time\
+    ----\
+    16326 pairs aligned 0 times concordantly or discordantly; of these:\
+      32652 mates make up the pairs; of these:\
+        32321 (98.99%) aligned 0 times\
+        224 (0.69%) aligned exactly 1 time\
+        107 (0.33%) aligned >1 times\
+28.43% overall alignment rate\
+Records processed: 45160, PE in ref: 6528, SE in ref: 0\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 \ul \ulc0 #########   REDUCE\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \ulnone atpB_S1494R_S611\
+
+\b0 reduce_amplicons.R -o reduced36b -p consensus 36b.screen.mapped\ul \ulc0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \ulnone Reads total:                    542\
+Reads discarded:                63      (11.62%)\
+Reads combined:                 2       (0.42%)\
+        combined extended:      0       (0%)\
+        combined short:         2       (100%)
+\b \ul \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0 \cf0 \ulnone reduce_amplicons.R -o reduced37b -p consensus 37b.screen.mapped\
+Reads total:                    310\
+Reads discarded:                21      (6.77%)\
+Reads combined:                 3       (1.04%)\
+        combined extended:      0       (0%)\
+        combined short:         3       (100%)\ul \ulc0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0 \cf0 \ulnone reduce_amplicons.R -o reduced38b -p consensus 38b.screen.mapped\
+Reads total:                    424\
+Reads discarded:                19      (4.48%)\
+Reads combined:                 12      (2.96%)\
+        combined extended:      2       (16.67%)\
+        combined short:         10      (83.33%)\ul \ulc0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0 \cf0 \ulnone reduce_amplicons.R -o reduced39b -p consensus 39b.screen.mapped\
+Reads total:                    433\
+Reads discarded:                15      (3.46%)\
+Reads combined:                 3       (0.72%)\
+        combined extended:      0       (0%)\
+        combined short:         3       (100%)\ul \ulc0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0 \cf0 \ulnone reduce_amplicons.R -o reduced40b -p consensus 40b.screen.mapped\ul \ulc0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \ulnone Reads total:                    193\
+Reads discarded:                9       (4.66%)\
+Reads combined:                 2       (1.09%)\
+        combined extended:      0       (0%)\
+        combined short:         2       (100%)
+\b \ul \
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \ulnone atpB_S766R_S3\ul \ulc0 \
+
+\b0 \ulnone reduce_amplicons.R -o reduced41b -p consensus 41b.screen.mapped\
+Reads discarded:                21      (3.75%)\
+Reads combined:                 33      (6.12%)\
+        combined extended:      3       (9.09%)\
+        combined short:         30      (90.91%)\
+\
+\
+reduce_amplicons.R -o reduced42b -p consensus 42b.screen.mapped\ul \ulc0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \ulnone Reads total:                    1401\
+Reads discarded:                125     (8.92%)\
+Reads combined:                 355     (27.82%)\
+        combined extended:      18      (5.07%)\
+        combined short:         337     (94.93%)\ul \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \ulnone reduce_amplicons.R -o reduced43b -p consensus 43b.screen.mapped\
+Reads total:                    1165\
+Reads discarded:                137     (11.76%)\
+Reads combined:                 281     (27.33%)\
+        combined extended:      12      (4.27%)\
+        combined short:         269     (95.73%)\ul \ulc0 \
+\
+\ulnone reduce_amplicons.R -o reduced44b -p consensus 44b.screen.mapped\
+\
+Reads total:                    908\
+Reads discarded:                121     (13.33%)\
+Reads combined:                 132     (16.77%)\
+        combined extended:      6       (4.55%)\
+        combined short:         126     (95.45%)\ul \ulc0 \
+\
+\ulnone reduce_amplicons.R -o reduced45b -p consensus 45b.screen.mapped\ul \ulc0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \ulnone Reads total:                    392\
+Reads discarded:                29      (7.4%)\
+Reads combined:                 81      (22.31%)\
+        combined extended:      9       (11.11%)\
+        combined short:         72      (88.89%)\ul \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 \
+\ulnone ITS\ul \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0 \cf0 \ulnone reduce_amplicons.R -o reduced6a -p consensus 6a.screen.mapped\
+Reads total:                    3576\
+Reads discarded:                360     (10.07%)\
+Reads combined:                 2157    (67.07%)\
+        combined extended:      624     (28.93%)\
+        combined short:         1533    (71.07%)\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 ****Still a lot of fungal\'85even when using strict screen??\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 matK_1F_4R\
+
+\b0 reduce_amplicons.R -o reduced46b -p consensus 46b.screen.mapped\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 Reads total:                    2936\
+Reads discarded:                7       (0.24%)\
+Reads combined:                 2316    (79.07%)\
+        combined extended:      2278    (98.36%)\
+        combined short:         38      (1.64%)\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0 \cf0 reduce_amplicons.R -o reduced47b -p consensus 47b.screen.mapped\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 Reads total:                    10242\
+Reads discarded:                35      (0.34%)\
+Reads combined:                 8681    (85.05%)\
+        combined extended:      8544    (98.42%)\
+        combined short:         137     (1.58%)
+\b \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0 \cf0 reduce_amplicons.R -o reduced48b -p consensus 48b.screen.mapped\
+Reads total:                    21323\
+Reads discarded:                91      (0.43%)\
+Reads combined:                 18919   (89.11%)\
+        combined extended:      18141   (95.89%)\
+        combined short:         778     (4.11%)\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0 \cf0 reduce_amplicons.R -o reduced49b -p consensus 49b.screen.mapped\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 Reads total:                    10512\
+Reads discarded:                20      (0.19%)\
+Reads combined:                 8827    (84.13%)\
+        combined extended:      8413    (95.31%)\
+        combined short:         414     (4.69%)
+\b \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0 \cf0 reduce_amplicons.R -o reduced50b -p consensus 50b.screen.mapped\
+Reads total:                    8850\
+Reads discarded:                31      (0.35%)\
+Reads combined:                 7683    (87.12%)\
+        combined extended:      7420    (96.58%)\
+        combined short:         263     (3.42%)\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 matK_3F_3R
+\b0   \
+reduce_amplicons.R -o reduced51b -p consensus 51b.screen.mapped\
+Reads total:                    3762\
+Reads discarded:                160     (4.25%)\
+Reads combined:                 1500    (41.64%)\
+        combined extended:      219     (14.6%)\
+        combined short:         1281    (85.4%)\
+\
+reduce_amplicons.R -o reduced52b -p consensus 52b.screen.mapped\
+Reads total:                    3270\
+Reads discarded:                144     (4.4%)\
+Reads combined:                 1052    (33.65%)\
+        combined extended:      164     (15.59%)\
+        combined short:         888     (84.41%)\
+\
+reduce_amplicons.R -o reduced53b -p consensus 53b.screen.mapped\
+Reads total:                    3100\
+Reads discarded:                115     (3.71%)\
+Reads combined:                 848     (28.41%)\
+        combined extended:      242     (28.54%)\
+        combined short:         606     (71.46%)\
+\
+reduce_amplicons.R -o reduced54b -p consensus 54b.screen.mapped\
+Reads total:                    5420\
+Reads discarded:                279     (5.15%)\
+Reads combined:                 1771    (34.45%)\
+        combined extended:      444     (25.07%)\
+        combined short:         1327    (74.93%)\
+\
+reduce_amplicons.R -o reduced55b -p consensus 55b.screen.mapped\
+Reads total:                    1502\
+Reads discarded:                82      (5.46%)\
+Reads combined:                 501     (35.28%)\
+        combined extended:      196     (39.12%)\
+        combined short:         305     (60.88%)\
+\
+
+\b ndhF_1318_3
+\b0   \
+reduce_amplicons.R -o reduced31b -p consensus 31b.screen.mapped\
+Reads total:                    623\
+Reads discarded:                15      (2.41%)\
+Reads combined:                 87      (14.31%)\
+        combined extended:      11      (12.64%)\
+        combined short:         76      (87.36%)\
+\
+reduce_amplicons.R -o reduced32b -p consensus 32b.screen.mapped\
+Reads total:                    1148\
+Reads discarded:                39      (3.4%)\
+Reads combined:                 334     (30.12%)\
+        combined extended:      8       (2.4%)\
+        combined short:         326     (97.6%)\
+\
+reduce_amplicons.R -o reduced33b -p consensus 33b.screen.mapped\
+Reads total:                    604\
+Reads discarded:                12      (1.99%)\
+Reads combined:                 291     (49.16%)\
+        combined extended:      3       (1.03%)\
+        combined short:         288     (98.97%)\
+\
+reduce_amplicons.R -o reduced34b -p consensus 34b.screen.mapped\
+Reads total:                    847\
+Reads discarded:                48      (5.67%)\
+Reads combined:                 366     (45.81%)\
+        combined extended:      16      (4.37%)\
+        combined short:         350     (95.63%)\
+\
+reduce_amplicons.R -o reduced35b -p consensus 35b.screen.mapped\
+Reads total:                    211\
+Reads discarded:                7       (3.32%)\
+Reads combined:                 48      (23.53%)\
+        combined extended:      4       (8.33%)\
+        combined short:         44      (91.67%)\
+\
+
+\b ndhF_5_803
+\b0   \
+reduce_amplicons.R -o reduced21b -p consensus 21b.screen.mapped\
+Reads total:                    1134\
+Reads discarded:                58      (5.11%)\
+Reads combined:                 130     (12.08%)\
+        combined extended:      25      (19.23%)\
+        combined short:         105     (80.77%)\
+\
+reduce_amplicons.R -o reduced22b -p consensus 22b.screen.mapped\
+Reads total:                    2670\
+Reads discarded:                239     (8.95%)\
+Reads combined:                 439     (18.06%)\
+        combined extended:      22      (5.01%)\
+        combined short:         417     (94.99%)\
+\
+reduce_amplicons.R -o reduced23b -p consensus 23b.screen.mapped\
+Reads total:                    1050\
+Reads discarded:                35      (3.33%)\
+Reads combined:                 137     (13.5%)\
+        combined extended:      13      (9.49%)\
+        combined short:         124     (90.51%)\
+\
+reduce_amplicons.R -o reduced24b -p consensus 24b.screen.mapped\
+Reads total:                    616\
+Reads discarded:                58      (9.42%)\
+Reads combined:                 67      (12.01%)\
+        combined extended:      1       (1.49%)\
+        combined short:         66      (98.51%)\
+\
+reduce_amplicons.R -o reduced25b -p consensus 25b.screen.mapped\
+Reads total:                    296\
+Reads discarded:                27      (9.12%)\
+Reads combined:                 34      (12.64%)\
+        combined extended:      0       (0%)\
+        combined short:         34      (100%)\
+\
+\
+
+\b ndhF_803_1318\
+
+\b0 reduce_amplicons.R -o reduced26b -p consensus 26b.screen.mapped\
+Reads total:                    8235\
+Reads discarded:                121     (1.47%)\
+Reads combined:                 8034    (99.01%)\
+        combined extended:      7779    (96.83%)\
+        combined short:         255     (3.17%)\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0 \cf0 reduce_amplicons.R -o reduced27b -p consensus 27b.screen.mapped\
+Reads total:                    7934\
+Reads discarded:                79      (1%)\
+Reads combined:                 7765    (98.85%)\
+        combined extended:      7448    (95.92%)\
+        combined short:         317     (4.08%)\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0 \cf0 reduce_amplicons.R -o reduced28b -p consensus 28b.screen.mapped\
+Reads total:                    13402\
+Reads discarded:                182     (1.36%)\
+Reads combined:                 13097   (99.07%)\
+        combined extended:      11973   (91.42%)\
+        combined short:         1124    (8.58%)\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0 \cf0 reduce_amplicons.R -o reduced29b -p consensus 29b.screen.mapped\
+Reads total:                    5786\
+Reads discarded:                122     (2.11%)\
+Reads combined:                 5600    (98.87%)\
+        combined extended:      5178    (92.46%)\
+        combined short:         422     (7.54%)\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0 \cf0 reduce_amplicons.R -o reduced30b -p consensus 30b.screen.mapped\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 Reads total:                    6528\
+Reads discarded:                128     (1.96%)\
+Reads combined:                 6330    (98.91%)\
+        combined extended:      5969    (94.3%)\
+        combined short:         361     (5.7%)
+\b \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+}

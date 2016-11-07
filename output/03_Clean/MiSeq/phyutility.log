@@ -1,0 +1,86 @@
+starting log: 06/05/16 08:01
+clean
+cleannum: 0.5
+in filename: atpB1.160426.R1_R2.aln.fasta
+outfile: atpB1.160426.R1_R2.aln.fasta_clean_05.aln
+starting log: 06/05/16 08:01
+clean
+cleannum: 0.5
+in filename: atpB2.160426.R1_R2_short.v2.aln.fasta
+outfile: atpB2.160426.R1_R2_short.v2.aln.fasta_clean_05.aln
+starting log: 06/05/16 08:01
+clean
+cleannum: 0.5
+in filename: matK1.160426.cat.v3.aln.fasta
+outfile: matK1.160426.cat.v3.aln.fasta_clean_05.aln
+starting log: 06/05/16 08:01
+clean
+cleannum: 0.5
+in filename: matK2.160426.R1_R2.v3.aln.fasta
+outfile: matK2.160426.R1_R2.v3.aln.fasta_clean_05.aln
+starting log: 06/05/16 08:01
+clean
+cleannum: 0.5
+in filename: ndhF1.160426.R1_R2.v2.aln.fasta
+outfile: ndhF1.160426.R1_R2.v2.aln.fasta_clean_05.aln
+starting log: 06/05/16 08:01
+clean
+cleannum: 0.5
+in filename: ndhF2.160426.merged.v3.aln.fasta
+outfile: ndhF2.160426.merged.v3.aln.fasta_clean_05.aln
+starting log: 06/05/16 08:01
+clean
+cleannum: 0.5
+in filename: ndhF3.160426.R1_R2.v2.aln.fasta
+outfile: ndhF3.160426.R1_R2.v2.aln.fasta_clean_05.aln
+starting log: 06/05/16 08:01
+clean
+cleannum: 0.5
+in filename: trn_ab.160426.cat.v3.aln.fasta
+outfile: trn_ab.160426.cat.v3.aln.fasta_clean_05.aln
+starting log: 06/05/16 08:01
+clean
+cleannum: 0.5
+in filename: trn_cf.160426.R1_R2.v2.aln.fasta
+outfile: trn_cf.160426.R1_R2.v2.aln.fasta_clean_05.aln
+starting log: 06/05/16 08:02
+concat
+in filename: atpB1.160426.R1_R2.aln.fasta_clean_05.aln
+in filename: atpB2.160426.R1_R2_short.v2.aln.fasta_clean_05.aln
+outfile: atpB.v2.aln.clean.nex
+starting log: 06/05/16 08:04
+concat
+in filename: matK1.160426.cat.v3.aln.fasta_clean_05.aln
+in filename: matK2.160426.R1_R2.v3.aln.fasta_clean_05.aln
+outfile: matK.v2.aln.clean.nex
+starting log: 06/05/16 08:05
+concat
+in filename: ndhF1.160426.R1_R2.v2.aln.fasta_clean_05.aln
+in filename: ndhF2.160426.merged.v3.aln.fasta_clean_05.aln
+in filename: ndhF3.160426.R1_R2.v2.aln.fasta_clean_05.aln
+outfile: ndhF.v2.aln.clean.nex
+starting log: 06/05/16 08:07
+concat
+in filename: trn_ab.160426.cat.v3.aln.fasta_clean_05.aln
+in filename: trn_cf.160426.R1_R2.v2.aln.fasta_clean_05.aln
+outfile: trnTLF.v2.aln.clean.nex
+starting log: 10/05/16 03:15
+clean
+cleannum: 0.5
+in filename: ITS.160510.aln.nex
+outfile: ITS.160510.aln.nex_clean_05.aln
+starting log: 10/05/16 03:15
+clean
+cleannum: 0.5
+in filename: trn_cf.160510.R1_R2.v2.aln.fasta
+outfile: trn_cf.160510.R1_R2.v2.aln.fasta_clean_05.aln
+starting log: 10/05/16 03:17
+concat
+in filename: trn_ab.160426.cat.v3.aln.fasta_clean_05.aln
+in filename: trn_cf.160510.R1_R2.v2.aln.fasta_clean_05.aln
+outfile: trnTLF.160510.aln.clean.nex
+starting log: 10/05/16 03:28
+clean
+cleannum: 0.5
+in filename: ITS.160510.aln.nex
+outfile: ITS.160510.aln.nex_clean_05.aln
