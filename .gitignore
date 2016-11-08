@@ -3,3 +3,4 @@
 .RData
 tmp/
 output/09_Maps/
+*.tmp
