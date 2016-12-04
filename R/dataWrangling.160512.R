@@ -128,6 +128,16 @@ head(saw.com.beta.alp)
 colnames(saw.com.beta.alp) <- gsub(colnames(saw.com.beta.alp), pattern = " ", replacement = "_")
 #write.csv(saw.com.beta.alp[-2], "data/speciespersummit_beta_talus.csv")
 
+## Meadow
+splist.beta.alp <- unique(splist.raw.mi.tmp[!is.na(splist.raw.mi.tmp$Annotated.Name), c("Annotated.Name", "Summit", "Meadow", "Occurrence")]) 
+head(splist.beta.alp)
+saw.com.beta.meadow <- spread(data = splist.beta.alp %>% filter(Meadow==1), key = Summit, value = Occurrence, fill = 0)
+dim(saw.com.beta.meadow) #74 unique talus collected 
+head(saw.com.beta.meadow)
+colnames(saw.com.beta.meadow) <- gsub(colnames(saw.com.beta.meadow), pattern = " ", replacement = "_")
+#write.csv(saw.com.beta.meadow[-2], "data/speciespersummit_beta_meadow.csv")
+
+
 
 ############ Community Matrix PHLAWD ############ 
 splist.phlawd.info <- splist.raw.mi.tmp[!splist.raw.mi.tmp$PHLAWD == "", c(5, 10, 11)] #313

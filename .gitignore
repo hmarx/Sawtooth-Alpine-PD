@@ -5,3 +5,4 @@ tmp/
 output/09_Maps/
 *.tmp
 .tmp*
+.DS_Store
