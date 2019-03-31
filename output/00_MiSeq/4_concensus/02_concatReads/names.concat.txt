@@ -1,0 +1,10 @@
+phyutility -concat -in ITS.read1.fasta ITS.read2.fasta -out ITS.R1_R2.nex
+phyutility -concat -in atpB1.read1.fasta atpB1.read2.fasta -out atpB1.R1_R2.nex
+phyutility -concat -in atpB2.read1.fasta atpB2.read2.fasta -out atpB2.R1_R2.nex
+phyutility -concat -in matK1.read1.fasta matK1.read2.fasta -out matK1.R1_R2.nex
+phyutility -concat -in matK2.read1.fasta matK2.read2.fasta -out matK2.R1_R2.nex
+phyutility -concat -in ndhF1.read1.fasta ndhF1.read2.fasta -out ndhF1.R1_R2.nex
+phyutility -concat -in ndhF3.read1.fasta ndhF3.read2.fasta -out ndhF3.R1_R2.nex
+phyutility -concat -in rbcL.read1.fasta rbcL.read2.fasta -out rbcL.R1_R2.nex
+phyutility -concat -in trn_ab.read1.fasta trn_ab.read2.fasta -out trn_ab.R1_R2.nex
+phyutility -concat -in trn_cf.read1.fasta trn_cf.read2.fasta -out trn_cf.R1_R2.nex

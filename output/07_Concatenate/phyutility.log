@@ -1,0 +1,9 @@
+starting log: 26/01/19 01:04
+concat
+in filename: ITS.total.unique.fasta
+in filename: matK.total.unique.fasta
+in filename: rbcL.total.unique.fasta
+in filename: atpB.total.unique.fasta
+in filename: ndhF.total.unique.fasta
+in filename: trnTLF.total.unique.fasta
+outfile: sawtooth.totalData.clean.concat.nex

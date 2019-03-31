@@ -1,0 +1,12 @@
+clade = Tracheophyta 
+search = ndhF, NADH dehydrogenase subunit F (ndhF) gene
+gene = ndhF
+mad =  0.01
+coverage = 0.2
+identity = 0.2
+db = /Volumes/Helianthus/pln06102016.db
+knownfile = ndhF.fasta
+numthreads = 8
+listfile = ../SawtoothSpList
+containswild
+#excludelistfile = exclude

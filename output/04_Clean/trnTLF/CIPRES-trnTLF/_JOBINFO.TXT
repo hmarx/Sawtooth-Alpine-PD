@@ -1,0 +1,14 @@
+Task\ label=trnTLF
+Task\ ID=1730626
+Tool=RAXMLHPC8_XSEDE
+created\ on=2019-01-25 14:48:45.0
+JobHandle=NGBW-JOB-RAXMLHPC8_XSEDE-4B9E44EFEE984EF8B42FA0C321E842C2
+resource=comet
+User\ ID=90014
+User\ Name=hmarx
+email=h.marx.h@gmail.com
+
+Output=(all_outputfiles,*,UNKNOWN,UNKNOWN,UNKNOWN)
+ChargeFactor=1.000000
+cores=48
+JOBID=21199674

@@ -1,80 +1,77 @@
-"","DNA.Log.Species.Name","D.O._Lee_Peak","Horstmann_Peak","Hyndman_Peak","Salzburger_Spitzl","Snowyside_Peak","Thompson_Peak"
-"1","Abies lasiocarpa",0,0,0,0,0,1
-"2","Achillea millefolium var. alpicola",1,0,0,0,0,0
-"3","Agoseris aurantiaca",0,0,1,0,0,0
-"4","Antennaria alpina",1,0,1,0,1,1
-"5","Antennaria corymbosa",0,0,0,1,0,0
-"6","Antennaria lanata",0,0,0,0,0,1
-"7","Arabis c.f lemonii ",1,0,0,0,0,0
-"8","Arabis microphylla",0,0,0,0,0,1
-"9","Arnica chamissonis",0,0,1,1,0,0
-"10","Arnica latifolia",0,0,0,0,1,0
-"11","Aster foliaceus var. apricus",1,0,1,0,0,0
-"12","Aster occidentalis var. occidentalis",0,0,0,1,0,0
-"13","Bistorta bistortoides",0,0,1,1,0,0
-"14","Bupleurum americanum",0,0,0,0,1,1
-"15","Carex",0,0,0,0,0,1
-"16","Carex sp. ",1,0,0,0,0,0
-"17","Cassiope mertensiana var. gracilis",1,0,0,0,0,1
-"18","Castelleja applegatei var. viscida",0,0,0,0,0,1
-"19","Castilleja applegatei",1,0,0,0,0,0
-"20","Castilleja cusickii",0,0,0,1,0,0
-"21","Castilleja cusickii ",0,0,0,0,1,0
-"22","Castilleja miniata",0,0,1,1,1,0
-"23","Castilleja rhexiifolia",0,0,0,1,0,0
-"24","Cerastium arvense",0,0,1,0,0,0
-"25","Chionophila tweedyi",0,0,0,0,0,1
-"26","Claytonia megarhiza var. bellidifolia ",0,0,0,0,0,1
-"27","Cystopteris fragilis",0,0,1,0,0,0
-"28","Dasiphora fruticosa",0,0,0,1,0,0
-"29","Draba c.f. oreibata",0,0,0,0,1,0
-"30","Epilobium alpinum",0,0,0,1,0,0
-"31","Eremogone aculeata",1,0,0,0,0,0
-"32","Eremogone congesta",1,0,1,0,0,0
-"33","Erigeron evermannii",0,0,0,0,1,0
-"34","Erigeron grandiflorus",0,0,0,0,0,1
-"35","Eriogonum flavum var. piperi",1,0,0,0,0,0
-"36","Eriogonum ovalifolium",0,0,0,0,1,0
-"37","Eriogonum ovalifolium var. depressum",1,0,0,0,0,0
-"38","Erysimum asperum",0,1,0,0,0,0
-"39","Erythranthe tilingii",0,0,1,1,0,0
-"40","Gentiana calycosa",1,0,1,1,0,0
-"41","Gentiana calycosa var. obtusiloba",0,0,0,0,0,1
-"42","Haplopappus suffruticosus",1,0,0,0,0,0
-"43","Hieracium triste",0,0,0,0,0,1
-"44","Hulsea algida",0,0,0,0,1,0
-"45","Ivesia gordonii",1,0,0,0,0,1
-"46","Juncus sp.",1,0,1,0,0,0
-"47","Juniperus communis ",0,0,0,0,0,1
-"48","Lewisia pygmaea var. pygmara",0,0,1,0,0,1
-"49","Lomatium sp.",0,1,0,0,0,0
-"50","Lupinus argenteus var. depressus ",1,0,0,1,0,0
-"51","Luzula",0,0,0,0,0,1
-"52","Packera subnuda",0,0,1,0,0,0
-"53","Parnassia fimbriata",0,0,0,1,0,0
-"54","Pedicularis groenlandica",0,0,1,1,0,0
-"55","Phlox pulvinata",1,0,0,0,0,1
-"56","Phyllodoce empetriformis",0,0,1,1,1,1
-"57","Phyllodoce glanduliflora",0,0,1,0,0,1
-"58","Pinus albicaulis",0,0,0,0,0,1
-"59","Polygonum viviparum ",0,0,1,0,0,0
-"60","Potentilla brevifolia",0,0,0,0,0,1
-"61","Potentilla glandulosa ",0,0,0,0,1,0
-"62","Potentilla glaucophylla var. glaucophylla",1,0,1,0,0,1
-"63","Ranunculus eschscholtzii var. eschscholtzii",0,0,0,0,0,1
-"64","Salix arctica",0,0,1,1,0,0
-"65","Salix nivalis",1,0,0,0,0,0
-"66","Saxifraga mertensiana",0,0,1,1,0,0
-"67","Sedum debile",1,0,0,0,0,0
-"68","Sedum lanceolatum var. lanceolatum",1,0,0,0,0,0
-"69","Senecio fremontii",0,0,0,0,0,1
-"70","Senecio werneriifolius",1,0,0,0,0,0
-"71","Sibbaldia procumbens",1,0,1,1,0,1
-"72","Silene acaulis",0,0,0,0,0,1
-"73","Solidago multiradiata",1,0,1,1,0,0
-"74","Stenotus acaulis",1,0,0,0,0,0
-"75","Synthyris pinnatifida var. cenescens",0,0,0,0,0,1
-"76","Tonestus lyallii",0,0,0,0,1,0
-"77","Unknown",1,0,1,1,1,0
-"78","Veronica wormskjoldii",0,0,1,0,0,0
-"79","Viola c.f. adunca",0,0,1,0,0,0
+"","Annotated_Name","Meadow","D.O. Lee Peak","Hyndman Peak","Salzburger Spitzl","Thompson Peak"
+"1","Abies_lasiocarpa",1,0,0,0,1
+"2","Achillea_millefolium_var_alpicola",1,1,0,0,0
+"3","Agoseris_aurantiaca",1,0,1,0,0
+"4","Agrostis_variabilis",1,0,0,1,0
+"5","Antennaria_alpina",1,1,1,0,1
+"6","Antennaria_corymbosa",1,0,0,1,0
+"7","Antennaria_lanata",1,0,0,0,1
+"8","Arabis_lemmonii",1,1,0,0,0
+"9","Arabis_microphylla",1,0,0,0,1
+"10","Arnica_chamissonis",1,0,1,1,0
+"11","Aster_foliaceus_var_apricus",1,1,1,0,0
+"12","Aster_occidentalis_var_occidentalis",1,0,0,1,0
+"13","Bistorta_bistortoides",1,0,1,1,0
+"14","Bupleurum_americanum",1,0,0,0,1
+"15","Carex_nardina",1,0,0,0,1
+"16","Carex_scopulorum",1,0,0,0,1
+"17","Carex_straminiformis",1,1,0,0,1
+"18","Cassiope_mertensiana_var_gracilis",1,1,0,0,1
+"19","Castilleja_cusickii",1,0,0,1,0
+"20","Castilleja_miniata",1,0,1,1,0
+"21","Castilleja_rhexiifolia",1,0,0,1,0
+"22","Cerastium_arvense",1,0,1,0,0
+"23","Chionophila_tweedyi",1,0,0,0,1
+"24","Claytonia_megarhiza_var_bellidifolia",1,0,0,0,1
+"25","Cystopteris_fragilis",1,0,1,0,0
+"26","Dasiphora_fruticosa",1,0,0,1,0
+"27","Deschampsia_cespitosa_subsp_cespitosa",1,1,1,1,0
+"28","Epilobium_alpinum",1,0,0,1,0
+"29","Eremogone_aculeata",1,1,0,0,0
+"30","Eremogone_congesta",1,1,1,1,0
+"31","Erigeron_grandiflorus",1,0,0,0,1
+"32","Erigeron_sp",1,1,0,0,0
+"33","Eriogonum_flavum_var_piperi",1,1,0,0,0
+"34","Eriogonum_ovalifolium_var_depressum",1,1,0,0,0
+"35","Erythranthe_tilingii",1,0,1,1,0
+"36","Gentiana_calycosa",1,1,1,1,1
+"37","Gentiana_calycosa_var_obtusiloba",1,0,0,0,1
+"38","Haplopappus_suffruticosus",1,1,0,0,0
+"39","Hieracium_triste",1,0,0,0,1
+"40","Ivesia_gordonii",1,1,0,0,1
+"41","Juncus_drummondii",1,0,1,0,1
+"42","Juncus_paryii",1,1,0,0,0
+"43","Juniperus_communis",1,0,0,0,1
+"44","Lewisia_pygmaea_var_pygmara",1,0,1,0,1
+"45","Lupinus_argenteus_var_depressus",1,1,0,1,0
+"46","Minuartia_obtusiloba",1,0,0,0,1
+"47","Packera_subnuda",1,0,1,0,0
+"48","Parnassia_fimbriata",1,0,0,1,0
+"49","Pedicularis_groenlandica",1,0,1,1,0
+"50","Phleum_alpinum",1,0,1,1,0
+"51","Phlox_pulvinata",1,1,0,0,1
+"52","Phyllodoce_empetriformis",1,0,1,1,1
+"53","Phyllodoce_glanduliflora",1,0,1,0,1
+"54","Pinus_albicaulis",1,0,0,0,1
+"55","Poa_secunda",1,0,0,0,1
+"56","Polygonum_viviparum",1,0,1,0,0
+"57","Potentilla_brevifolia",1,0,0,0,1
+"58","Potentilla_glaucophylla_var_glaucophylla",1,1,1,0,1
+"59","Ranunculus_eschscholtzii_var_eschscholtzii",1,0,0,0,1
+"60","Salix_arctica",1,0,1,1,0
+"61","Salix_nivalis",1,1,0,0,0
+"62","Saxifraga_mertensiana",1,0,1,1,0
+"63","Sedum_debile",1,1,0,0,0
+"64","Sedum_lanceolatum_var_lanceolatum",1,1,0,0,0
+"65","Senecio_fremontii",1,0,0,0,1
+"66","Senecio_residifolius",1,0,1,0,0
+"67","Senecio_werneriifolius",1,1,0,0,0
+"68","Sibbaldia_procumbens",1,1,1,1,1
+"69","Silene_acaulis",1,0,0,0,1
+"70","Solidago_multiradiata",1,1,1,1,0
+"71","Stenotus_acaulis",1,1,0,0,0
+"72","Synthyris_pinnatifida_var_cenescens",1,0,0,0,1
+"73","Trisetum_spicatum",1,1,0,1,0
+"74","Unknown",1,1,0,0,0
+"75","Veronica_wormskjoldii",1,0,1,0,0
+"76","Viola_adunca",1,0,1,0,0

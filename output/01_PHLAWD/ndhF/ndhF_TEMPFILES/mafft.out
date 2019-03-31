@@ -1,66 +1,0 @@
-
-nseq =  19
-distance =  ktuples
-iterate =  0
-cycle =  2
-nthread = 0
-generating 200PAM scoring matrix for nucleotides ... done
-done
-done
-scoremtx = -1
-Gap Penalty = -1.53, +0.00, +0.00
-
-tuplesize = 6, dorp = d
-
-
-Making a distance matrix ..
-
-WARNING : 172 unknown characters
-    1 / 19   11 / 19
-done.
-
-Constructing a UPGMA tree ... 
-    0 / 19   10 / 19
-done.
-
-Progressive alignment ... 
-STEP     1 / 18 fSTEP     2 / 18 fSTEP     3 / 18 fSTEP     4 / 18 f
-Reallocating..done. *alloclen = 5467
-STEP     5 / 18 fSTEP     6 / 18 fSTEP     7 / 18 fSTEP     8 / 18 fSTEP     9 / 18 fSTEP    10 / 18 fSTEP    11 / 18 fSTEP    12 / 18 fSTEP    13 / 18 dSTEP    14 / 18 dSTEP    15 / 18 dSTEP    16 / 18 dSTEP    17 / 18 dSTEP    18 / 18 d
-done.
-
-disttbfast (nuc) Version 7.157b alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
-0 thread(s)
-nthread = 0
-blosum 62 / kimura 200
-generating 200PAM scoring matrix for nucleotides ... done
-done
-done
-scoremtx = -1
-Gap Penalty = -1.53, +0.00, +0.00
-Making a distance matrix .. 
-    0 / 18   10 / 18
-done.
-
-Constructing a UPGMA tree ... 
-    0 / 19   10 / 19
-done.
-
-Progressive alignment ... 
-STEP     1 /18 fSTEP     2 /18 fSTEP     3 /18 fSTEP     4 /18 fSTEP     5 /18 fSTEP     6 /18 fSTEP     7 /18 fSTEP     8 /18 fSTEP     9 /18 fSTEP    10 /18 fSTEP    11 /18 fSTEP    12 /18 fSTEP    13 /18 fSTEP    14 /18 fSTEP    15 /18 fSTEP    16 /18 fSTEP    17 /18 fSTEP    18 /18 f
-done.
-tbfast (nuc) Version 7.157b alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
-0 thread(s)
-
-
-Strategy:
- FFT-NS-2 (Fast but rough)
- Progressive method (guide trees were built 2 times.)
-
-If unsure which option to use, try 'mafft --auto input > output'.
-For more information, see 'mafft --help', 'mafft --man' and the mafft page.
-
-The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
-It tends to insert more gaps into gap-rich regions than previous versions.
-To disable this change, add the --legacygappenalty option.
-

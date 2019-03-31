@@ -1,0 +1,10 @@
+starting log: 24/01/19 10:15
+concat
+in filename: matK1.R1_R2.aln.fasta
+in filename: matK2.R1_R2.aln.fasta
+outfile: matK.aln.nex
+starting log: 25/01/19 04:46
+concat
+in filename: matK1.R1_R2.aln.fasta
+in filename: matK2.R1_R2.aln.fasta
+outfile: matK.aln.nex

@@ -1,9 +1,0 @@
-ncbi_tax_id	gi_number	edited_name
-13329	908606036	Achillea_millefolium
-34340	56236571	Abies_lasiocarpa
-58039	56236589	Juniperus_communis
-306132	149798674	Cryptogramma_crispa
-146102	310109897	Claytonia_megarhiza
-29770	14718209	Saxifraga_mertensiana
-262426	335060114	Pedicularis_groenlandica
-32112	373222274	Cystopteris_fragilis

@@ -3,6 +3,8 @@
 .RData
 tmp/
 output/09_Maps/
+output/tmp/
+R/tmp/
 *.tmp
 .tmp*
 .DS_Store

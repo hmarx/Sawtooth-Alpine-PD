@@ -1,0 +1,111 @@
+assembly
+number of threads: 8
+search clade: Tracheophyta
+search: ndhF
+search: NADH dehydrogenase subunit F (ndhF) gene
+gene name: ndhF
+gene database: ndhF.db
+mad cutoff: 0.01
+coverage: 0.2
+identity: 0.2
+using names in list file: ../SawtoothSpList
+connected to ndhF.db
+successfully installed empty tables into ndhF.db
+successfully installed indices into ndhF.db
+
+search number 33995
+connected to /Volumes/Helianthus/pln06102016.db
+found 1 ncbi taxon ids matching Tracheophyta:
+58023
+will only be using the first one: 58023
+
+found 33903 matching sequences in the source db
+
+taxa (including all children) to be included: Abies lasiocarpa, Achillea millefolium, Agoseris aurantiaca, Androsace septentrionalis, Anemone drummondii, Antennaria alpina, Antennaria corymbosa, Antennaria lanata, Antennaria microphylla, Antennaria rosea, Antennaria umbrinella, Aquilegia flavescens, Boechera lemmonii, Boechera microphylla, Arnica chamissonis, Arnica latifolia, Arnica mollis, Arnica parryi, Artemisia dracunculus, Aster alpinus, Symphyotrichum foliaceum, Astragalus alpinus, Astragalus eucosmus, Astragalus kentrophyta, Bupleurum americanum, Carex luzulina, Carex microptera, Carex nardina, Carex proposita, Carex scopulorum, Carex straminiformis, ...
+sequences will be filtered against 225 taxon names
+after filtering taxa not in the include file: 49
+
+running similarity tests (coverage/identity) against keepfile
+retained 36 seqs
+removed 12 taxonomic duplicates, leaving 24 seqs to be aligned
+
+starting saturation tests: identifying original clades to align before profiling
+adding 24 sequences to db ndhF.db
+
+taxon Tracheophyta (ncbi id = 58023): 24 db seqs, 0 user seqs; unassigned seqs remaining: 24
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.0309204
+mad: 0.0185948
+
+taxon Euphyllophyta (ncbi id = 78536): 24 db seqs, 0 user seqs; unassigned seqs remaining: 24
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.0309204
+mad: 0.0185948
+
+taxon Spermatophyta (ncbi id = 58024): 24 db seqs, 0 user seqs; unassigned seqs remaining: 24
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.0309204
+mad: 0.0185948
+
+taxon Acrogymnospermae (ncbi id = 1437180): 1 db seqs, 0 user seqs; unassigned seqs remaining: 24
+adding alignment to database: 1
+
+taxon Magnoliophyta (ncbi id = 3398): 23 db seqs, 0 user seqs; unassigned seqs remaining: 23
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.0290962
+mad: 0.0178331
+
+taxon Mesangiospermae (ncbi id = 1437183): 23 db seqs, 0 user seqs; unassigned seqs remaining: 23
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.0290962
+mad: 0.0178331
+
+taxon eudicotyledons (ncbi id = 71240): 18 db seqs, 0 user seqs; unassigned seqs remaining: 23
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.0228146
+mad: 0.00678569
+adding alignment to database: 2
+
+taxon Liliopsida (ncbi id = 4447): 5 db seqs, 0 user seqs; unassigned seqs remaining: 5
+using mafft for preliminary alignment
+calculating alignment pairwise distances
+median deviation: 0.00119013
+mad: 0.00157757
+adding alignment to database: 3
+
+0 unassigned seqs
+finished assembly
+gathering all original alignments
+adding initial profile alignments: 1, 2, 3
+starting run
+using ncbi taxonomy as guide tree
+58023
+clade=58023
+distances complete: Acrogymnospermae (alignment 1)
+distances complete: eudicotyledons (alignment 2)
+distances complete: Liliopsida (alignment 3)
+
+profiling
+
+next original alignment to profile: 2
+removing 2 from original alignments to profile
+closest original alignment to 2 is 3
+profiling 2 and 3
+removing 3 from original alignments to profile
+
+next original alignment to profile: 1
+removing 1 from original alignments to profile
+there are multiple equally close original alignments to 1
+found a profile (4) containing one of the closest matches (2)
+profiling 1 and 4
+removing 4 from intermediate profiles
+
+now cross-aligning the profile alignments: 5
+writing final alignment
+profile run completed

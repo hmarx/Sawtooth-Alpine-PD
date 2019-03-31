@@ -1,0 +1,14 @@
+Task\ label=ITS
+Task\ ID=1730543
+Tool=RAXMLHPC8_XSEDE
+created\ on=2019-01-25 13:13:19.0
+JobHandle=NGBW-JOB-RAXMLHPC8_XSEDE-4655179F12FC426C83F28F569A588422
+resource=comet
+User\ ID=90014
+User\ Name=hmarx
+email=h.marx.h@gmail.com
+
+Output=(all_outputfiles,*,UNKNOWN,UNKNOWN,UNKNOWN)
+ChargeFactor=1.000000
+cores=48
+JOBID=21198844

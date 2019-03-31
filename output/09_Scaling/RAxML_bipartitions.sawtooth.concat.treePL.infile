@@ -1,0 +1,63 @@
+treefile = /Users/hannahmarx/Dropbox/Work/TankLab/Projects/AlpinePD_Sawtooths/Sawtooth-Alpine-PD/output/09_Scaling/RAxML_bipartitions.sawtooth.concat.treePL.intree
+
+numsites = 3155
+
+mrca = 60576931146a937094045d466b469028 1_Haplopappus 151_Picea
+mrca = bfb283aa6710fe1f69d8ebca044f6dcb 1_Haplopappus 133_Deschampsia
+mrca = 589c38c4f7ff3a9fc33d76b48f5c6e8d 1_Haplopappus 128_Anemone
+mrca = ba70e352fe3b68e0839e3b33fef0e95c 1_Haplopappus 91_Unknown
+mrca = 60084f0a50a711023c55de6e3f51cace 1_Haplopappus 69_Minuartia
+mrca = fa854f88f49f244b16827c94676d163b 1_Haplopappus 61_Phlox
+mrca = 5ffa250af53379af7e682a3504a76a96 1_Haplopappus 58_Lomatium
+mrca = 69ed41926d275867132940a8c07db989 43_Castilleja 48_Erythranthe
+mrca = 467f3a6fa79236b86989094090882d1b 61_Phlox 68_Androsace
+mrca = 30a56aa00b05f59683b71da688f06b95 69_Minuartia 81_Eriogonum
+mrca = 5442a521a9cd08a0e1ca52434231b7f0 69_Minuartia 77_Cistanthe
+mrca = f2f1f270773bc8b8e2f777edef5cd48e 91_Unknown 123_Saxifraga
+mrca = e76de6383e419ff8ed1d9afa7f93188a 105_Oxytropis 111_Potentilla
+mrca = 43a5b010e38526ce4c97719e883905f9 117_Salix 120_Parnassia
+mrca = a71621cf113f02b92af7e36c007bf3e8 117_Salix 119_Viola
+mrca = 61ec705fdb4ec58fbef22d860565bbad 123_Saxifraga 127_Ribes
+mrca = 6993c68505e74ffea399bcad1f37f25c 151_Picea 154_Juniperus
+
+min = 60576931146a937094045d466b469028 352.234677
+max = 60576931146a937094045d466b469028 352.234677
+min = bfb283aa6710fe1f69d8ebca044f6dcb 191.421677
+max = bfb283aa6710fe1f69d8ebca044f6dcb 191.421677
+min = 589c38c4f7ff3a9fc33d76b48f5c6e8d 136.900467
+max = 589c38c4f7ff3a9fc33d76b48f5c6e8d 136.900467
+min = ba70e352fe3b68e0839e3b33fef0e95c 118.601311
+max = ba70e352fe3b68e0839e3b33fef0e95c 118.601311
+min = 60084f0a50a711023c55de6e3f51cace 116.057578
+max = 60084f0a50a711023c55de6e3f51cace 116.057578
+min = fa854f88f49f244b16827c94676d163b 106.374978
+max = fa854f88f49f244b16827c94676d163b 106.374978
+min = 5ffa250af53379af7e682a3504a76a96 102.871488
+max = 5ffa250af53379af7e682a3504a76a96 102.871488
+min = 69ed41926d275867132940a8c07db989 32.0613627
+max = 69ed41926d275867132940a8c07db989 32.0613627
+min = 467f3a6fa79236b86989094090882d1b 85.209902
+max = 467f3a6fa79236b86989094090882d1b 85.209902
+min = 30a56aa00b05f59683b71da688f06b95 89.460938
+max = 30a56aa00b05f59683b71da688f06b95 89.460938
+min = 5442a521a9cd08a0e1ca52434231b7f0 61.000238
+max = 5442a521a9cd08a0e1ca52434231b7f0 61.000238
+min = f2f1f270773bc8b8e2f777edef5cd48e 117.673651
+max = f2f1f270773bc8b8e2f777edef5cd48e 117.673651
+min = e76de6383e419ff8ed1d9afa7f93188a 106.995394
+max = e76de6383e419ff8ed1d9afa7f93188a 106.995394
+min = 43a5b010e38526ce4c97719e883905f9 111.490884
+max = 43a5b010e38526ce4c97719e883905f9 111.490884
+min = a71621cf113f02b92af7e36c007bf3e8 99.3970026
+max = a71621cf113f02b92af7e36c007bf3e8 99.3970026
+min = 61ec705fdb4ec58fbef22d860565bbad 76.154511
+max = 61ec705fdb4ec58fbef22d860565bbad 76.154511
+min = 6993c68505e74ffea399bcad1f37f25c 273.521377
+max = 6993c68505e74ffea399bcad1f37f25c 273.521377
+
+outfile = /Users/hannahmarx/Dropbox/Work/TankLab/Projects/AlpinePD_Sawtooths/Sawtooth-Alpine-PD/output/09_Scaling/RAxML_bipartitions.sawtooth.concat.treePL.dated.tre
+
+#prime=TRUE
+opt = 1
+optad = 5
+optcvad = 1

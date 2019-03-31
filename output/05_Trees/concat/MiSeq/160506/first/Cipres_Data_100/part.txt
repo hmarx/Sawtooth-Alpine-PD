@@ -1,6 +1,0 @@
-DNA, ITS = 1-1043
-DNA, matK = 1044-2496 
-DNA, rbcL = 2497-3030
-DNA, atpB = 3031-4032 
-DNA, ndhF = 4033-6013
-DNA, trnTLF = 6014-8187

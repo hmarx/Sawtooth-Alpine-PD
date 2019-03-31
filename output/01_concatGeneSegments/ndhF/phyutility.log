@@ -1,0 +1,6 @@
+starting log: 24/01/19 10:32
+concat
+in filename: ndhF1.merged_R1_R2.aln.fasta
+in filename: ndhF2.merged.aln.fasta
+in filename: ndhF3.merged_R1_R2.aln.fasta
+outfile: ndhF.aln.nex

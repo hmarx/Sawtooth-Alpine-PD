@@ -1,0 +1,14 @@
+Task\ label=sawtooth.totalData.clean.concat
+Task\ ID=1731073
+Tool=RAXMLHPC8_XSEDE
+created\ on=2019-01-26 10:32:16.0
+JobHandle=NGBW-JOB-RAXMLHPC8_XSEDE-4BE5D342689043089CBD1FAEB54F6BEB
+resource=comet
+User\ ID=90014
+User\ Name=hmarx
+email=h.marx.h@gmail.com
+
+Output=(all_outputfiles,*,UNKNOWN,UNKNOWN,UNKNOWN)
+ChargeFactor=1.000000
+cores=48
+JOBID=21207540

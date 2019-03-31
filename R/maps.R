@@ -1,5 +1,10 @@
+#####################################################################################################################
+############# Plot phylogenetic diversity within alpine summits (alpha) on map ###################################### 
+############# Static Null Model ##################################################################################### 
+############# Hannah E. Marx, 21 Jan 2017 ########################################################################### 
+#####################################################################################################################
 
-source("R/addScaleBarMap.R")
+source("R/functions/addScaleBarMap.R")
 
 ## Map resources:
 #https://lib.stanford.edu/gis-branner-library/gis-data-north-america
@@ -69,7 +74,7 @@ dev.off()
 
 
 
-##################   Map of Ecrins NP zoomed in
+##################   Map of Sawtooth NF zoomed in
 ########### Import custom raster basemap (made in qgis)
 
 ########### Import custom raster basemap (made in qgis)
@@ -96,7 +101,7 @@ plot(sawtooth.base.crop$SawtoothBase.1, col= grey(1:99/100))
 rast.table <- data.frame(xyFromCell(sawtooth.base.crop, 1:ncell(sawtooth.base.crop)), getValues(sawtooth.base.crop/255))
 head(rast.table)
   
-ses.all <- read.csv("output/08_PhyloDiversity/MiSeq//alpha//static//alpine.phylogeny.pool.SES.csv")
+ses.all <- read.csv("output/08_PhyloDiversity/alpha/static/sawtooth.alpha.RD.SES.csv")
 head(ses.all)
 ses.all.meta <- merge(ses.all, sawMeta, by.x=10, by.y=0)
 head(ses.all.meta)
@@ -131,19 +136,17 @@ ggplot(data = rast.table, aes(x = x, y = y)) +
   coord_equal() 
 ggsave("figs/maps/summits.elev.pdf", width=8, height = 8)
 
-
-
 ses.all.meta$metric <- factor(ses.all.meta$metric, labels = c("mntd"="MNTD", "mpd"="MPD"))
-
+ses.all.meta$Elevation <- as.numeric(ses.all.meta$Elevation)
 ## plot summits by SES all alpine
 ggplot(data = rast.table, aes(x = x, y = y)) +
   geom_raster(aes(fill=SawtoothBase.1)) +
   scale_fill_gradientn(colours=c("grey61","grey100"), guide = "none") +
   geom_polygon(data=sawtoothDF, aes(x=long, y=lat, group=group), colour="white", fill="grey10", alpha=0.4) + 
-  geom_point(data =filter(ses.all.meta, clade=="Spermatophyta"), aes(x=WGS.W, y=WGS.N, 
-                colour = obs.z), pch=17, size=6) + # & metric=="mntd"
+  geom_point(data =filter(ses.all.meta, clade=="Spermatophyta" & data == "MiSeq"), aes(x=WGS.W, y=WGS.N, 
+                colour = obs.z), pch=17, size=4) + #  size = Elevation  
   scale_color_gradient2(low="cyan2", high="red", mid="beige", na.value="white", limits=c(-5, 5), guides(title = "SES")) +
-  geom_point(data =filter(ses.all.meta, clade=="Spermatophyta"), aes(x=WGS.W, y=WGS.N, 
+  geom_point(data =filter(ses.all.meta, clade=="Spermatophyta" & data == "MiSeq"), aes(x=WGS.W, y=WGS.N, 
                        size=as.factor(sig))) +  # & metric=="mntd"
   scale_size_manual(values=c("1"=1, "0"=NA), guide="none") +
   facet_grid(metric ~ .) +
@@ -156,7 +159,6 @@ ggplot(data = rast.table, aes(x = x, y = y)) +
   #theme(legend.position = "none") +
   #scaleBar(lon = -114, lat = 44.2, distanceLon = 10, distanceLat = 3, distanceLegend =6, dist.unit = "km", 
   #         arrow.length = 12, arrow.distance = 10, arrow.North.size = 6) +
-  #scale_size_continuous(range = c(3, 8), guide = "none") +
   coord_equal() 
 ggsave("figs/maps/summits.SESalpine.pdf", width=8, height = 10)
  
