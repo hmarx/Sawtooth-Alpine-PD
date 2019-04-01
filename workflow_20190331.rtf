@@ -66,7 +66,27 @@ GenBank: \
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\b0 \cf0 \
+\b0 \cf0 Copy the MiSeq alignment files (/output/03_totalData/atpB/atpB.aln.fasta) to GenBank data folder.\
+Removed \'93-\'93\
+\
+Get the headers of the sequence: \
+> grep -o -E "^>\\w+"  rbcL.R1_R2.aln.fasta | tr -d ">" > headers.rbcL.txt\
+\
+Rename headers with seq_num:\
+>perl 1_rename.pl atpB.aln.rev.fasta \
+\
+Save .fasta in Geneious:\
+\
+Create organism file:\
+Remove numbers from headers to keep only species name:\
+_\\d+$\
+\
+Errors with Taxonomy!!! \
+Check Taxonomy Issues at these sources:\
+https://www.itis.gov\
+http://www.ipni.org/ipni/plantnamesearchpage.do\
+\
+\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
 \b \cf0 ** These are extra notes on the workflow for Marx et al. AJB 2019. Most are specific commands used, but there are also notes about decisions to remove taxa from gene trees and updates to taxonomy. **\
