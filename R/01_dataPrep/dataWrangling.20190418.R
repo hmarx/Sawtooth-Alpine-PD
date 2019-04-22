@@ -18,6 +18,29 @@ parsePHLAWD("output/01_MiSeq/4_concensus/02_concateReads/trnTLF/trnTLF.miseq.aln
 #  cat *unique.fasta > genesMiseq.fasta
 parsePHLAWD("output/01_MiSeq/4_concensus/02_concatGeneSegments/genesMiseq.fasta") #580...151
 
+### Annotates .fasta alignment to updated nomenclature
+source("R/functions/annotate.fasta.R") 
+vouchertax <- read.csv("data/RAW/Sawtooth_CollectionVoucher20190420.csv") 
+taxonomy.df <- cbind(as.character(vouchertax$Accepted.Name.GenBank), as.character(vouchertax$MiSeq.Label.190117))
+
+rbcL.miseq <- annotate.fasta(fastaFile= "output/01_MiSeq/4_concensus/02_concatGeneSegments/rbcL.R1_R2.fasta", taxonomy = taxonomy.df) #62
+atpB.miseq  <- annotate.fasta(fastaFile= "output/01_MiSeq/4_concensus/02_concatGeneSegments/atpB.miseq.aln.fasta", taxonomy = taxonomy.df) #107
+matK.miseq  <- annotate.fasta(fastaFile= "output/01_MiSeq/4_concensus/02_concatGeneSegments/matK.miseq.aln.mod.fasta", taxonomy = taxonomy.df) #88
+ndhF.miseq  <- annotate.fasta(fastaFile= "output/01_MiSeq/4_concensus/02_concatGeneSegments/ndhF.miseq.aln.fasta.rename.rem.fasta", taxonomy = taxonomy.df) #142
+trnTLF.miseq  <- annotate.fasta(fastaFile= "output/01_MiSeq/4_concensus/02_concatGeneSegments/trnTLF.miseq.aln.fasta.rename.fasta", taxonomy = taxonomy.df) #81
+ITS.miseq  <- annotate.fasta(fastaFile= "output/01_MiSeq/4_concensus/02_concatGeneSegments/ITS.R1_R2.aln.fasta.rename.fasta", taxonomy = taxonomy.df) #100
+
+
+parsePHLAWD("output/01_MiSeq/4_concensus/02_concatGeneSegments/atpB.miseq.aln.fasta.rename.fasta") #246...107
+parsePHLAWD("output/01_MiSeq/4_concensus/02_concatGeneSegments/matK.miseq.aln.mod.fasta.rename.fasta") #220...88
+parsePHLAWD("output/01_MiSeq/4_concensus/02_concatGeneSegments/ITS.R1_R2.aln.fasta.rename.fasta.rename.fasta") #187...101
+parsePHLAWD("output/01_MiSeq/4_concensus/02_concatGeneSegments/ndhF.miseq.aln.fasta.rename.rem.fasta.rename.fasta") #366...130
+parsePHLAWD("output/01_MiSeq/4_concensus/02_concatGeneSegments/rbcL.R1_R2.fasta.rename.fasta") #85...62
+parsePHLAWD("output/01_MiSeq/4_concensus/02_concatGeneSegments/trnTLF.miseq.aln.fasta.rename.fasta.rename.fasta") #136...82
+
+# number of unique species in concatenated MiSeq Data
+#  cat *unique.fasta > genesMiseq.renamed.fasta
+parsePHLAWD("output/01_MiSeq/4_concensus/02_concatGeneSegments/genesMiseq.renamed.fasta") #575...152 
 
 
 ############# output/02_GenBank/
@@ -50,7 +73,6 @@ matK <- annotate.fasta.total(fastaFile= "output/06_geneTreesRemoved/matK/matK.to
 ndhF <- annotate.fasta.total(fastaFile= "output/06_geneTreesRemoved/ndhF/ndhF.total.rem.fasta", taxonomy = vouchertax) #387
 trnTLF <- annotate.fasta.total(fastaFile= "output/06_geneTreesRemoved/trnTLF/trnTLF.total.rem.fasta", taxonomy = vouchertax) #198
 ITS <- annotate.fasta.total(fastaFile= "output/06_geneTreesRemoved/ITS/ITS.total.rem.fasta", taxonomy = vouchertax) #277
-
 
 ############# output/07_Concatenate/
 # After cleaning, remove everythying in ID except Genus_species, and keep longest sequence:
