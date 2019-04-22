@@ -11,12 +11,12 @@ str(master.ses.alpha)
 master.ses.alpha$sig
 master.ses.alpha$metric <- factor(master.ses.alpha$metric, labels = c("mntd"="MNTD", "mpd"="MPD"))
 master.ses.alpha$data <- factor(master.ses.alpha$data, labels = c("total"="Total Data"))
-master.ses.alpha$clade <- factor(master.ses.alpha$clade, levels = c("Ericales", "Brassicales", "Lamiales", "Caryophyllales", "Poales", "Asterales", "Tracheophyta"))
+master.ses.alpha$clade <- factor(master.ses.alpha$clade, levels = c("Ericales", "Brassicales", "Lamiales", "Caryophyllales", "Poales",  "Asterales", "Tracheophyta"))
 master.ses.alpha$pool <- factor(master.ses.alpha$pool, levels = c("All Alpine", "Talus", "Meadow"))
 master.ses.alpha$summits <- factor(master.ses.alpha$summits, levels = c( "Horstmann Peak", "Braxon Peak","Thompson Peak", "Snowyside Peak", "Mount Cramer",  "D.O. Lee Peak","Salzburger Spitzl",  "Castle Peak",  "Hyndman Peak"))
 master.ses.alpha$data <- factor(master.ses.alpha$data, levels = c("Total Data"))
 
-sort(master.ses.alpha$obs.z) #-3.194197455, 2.231214848
+sort(master.ses.alpha$obs.z) #-3.245302797, 2.095521888
 
 ### MNTD
 plot.pools <- ggplot(filter(master.ses.alpha, metric == "MNTD"), aes(y=clade, x=summits, fill=as.numeric(as.character(obs.z))))
@@ -64,6 +64,7 @@ plot.pools <- plot.pools + theme(
   panel.border = element_blank(),
   panel.background = element_blank(),
   axis.ticks = element_blank(),
+  axis.text.y = element_text(size = 10 * 0.8, face="bold"),
   axis.text.x = element_text(size = 10 * 0.8, angle = -45, hjust = 0, colour = "black"),
   strip.text.y = element_text(size = 8, face="bold"))+
   guides(fill = guide_colorbar(barwidth = 1, barheight = 7,title.position = "top", title.hjust = 0.5, title = "SES"))
@@ -94,6 +95,7 @@ plot.pools <- plot.pools + theme(
   panel.border = element_blank(),
   panel.background = element_blank(),
   axis.ticks = element_blank(),
+  axis.text.y = element_text(size = 10 * 0.8, face="bold"),
   axis.text.x = element_text(size = 10 * 0.8, angle = -45, hjust = 0, colour = "black"),
   strip.text.y = element_text(size = 8, face="bold"))+
   guides(fill = guide_colorbar(barwidth = 1, barheight = 7,title.position = "top", title.hjust = 0.5, title = "SES"))

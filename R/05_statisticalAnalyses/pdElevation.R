@@ -153,7 +153,7 @@ lmm.mntd.trac <- lmer(obs.z ~ Elevation + (1 | Range), data = filter(master.ses.
              select(summits, obs.z, Elevation, Range))
 r.squaredGLMM(lmm.mntd.trac) 
 #R2m        R2c
-#[1,] 0.08621246 0.09169822
+#[1,] 0.08376047 0.08376047
 summary(lmm.mntd.trac)
 plot(lmm.mntd.trac)
 
@@ -169,17 +169,17 @@ plot(lmm.mntd.trac2) # much more heteroskedasticity
 lmm.mntd.ast <- lmer(obs.z ~ Elevation + (Elevation | Range), data = filter(master.ses.alpha, metric == "MNTD" & pool == "All Alpine" & data == "Total Data" & clade == "Asterales") %>%
                         select(summits, obs.z, Elevation, Range))
 r.squaredGLMM(lmm.mntd.ast) 
-# 0.2724279 0.9610195
+#0.01432778 0.02112079
 
 lmm.mntd.car <- lmer(obs.z ~ Elevation + (Elevation | Range), data = filter(master.ses.alpha, metric == "MNTD" & pool == "All Alpine" & data == "Total Data" & clade == "Caryophyllales") %>%
                        select(summits, obs.z, Elevation, Range))
 r.squaredGLMM(lmm.mntd.car) 
-#0.0204471 0.02956673
+#0.130531 0.1348874
 
 lmm.mntd.poa <- lmer(obs.z ~ Elevation + (Elevation | Range), data = filter(master.ses.alpha, metric == "MNTD" & pool == "All Alpine" & data == "Total Data" & clade == "Poales") %>%
                        select(summits, obs.z, Elevation, Range))
 r.squaredGLMM(lmm.mntd.poa) 
-# 0.1186595 0.1210735
+#  0.001336877 0.00604363
 
 lmm.mntd.lam <- lmer(obs.z ~ Elevation + (Elevation | Range), data = filter(master.ses.alpha, metric == "MNTD" & pool == "All Alpine" & data == "Total Data" & clade == "Lamiales") %>%
                        select(summits, obs.z, Elevation, Range))
@@ -189,7 +189,7 @@ r.squaredGLMM(lmm.mntd.lam)
 lmm.mntd.bra <- lmer(obs.z ~ Elevation + (Elevation | Range), data = filter(master.ses.alpha, metric == "MNTD" & pool == "All Alpine" & data == "Total Data" & clade == "Brassicales") %>%
                        select(summits, obs.z, Elevation, Range))
 r.squaredGLMM(lmm.mntd.bra)
-# 0.2165297 0.3968834
+# 0.04065861 0.424099
 
 
 ## MPD
@@ -197,22 +197,22 @@ lmm.mpd.trac <- lmer(obs.z ~ Elevation + (Elevation | Range), data = filter(mast
                         select(summits, obs.z, Elevation, Range))
 r.squaredGLMM(lmm.mpd.trac) 
 #R2m        R2c
-# 0.4108234 0.4146924
+# 0.4038934 0.4080467
 
 lmm.mpd.ast <- lmer(obs.z ~ Elevation + (Elevation | Range), data = filter(master.ses.alpha, metric == "MPD" & pool == "All Alpine" & data == "Total Data" & clade == "Asterales") %>%
                        select(summits, obs.z, Elevation, Range))
 r.squaredGLMM(lmm.mpd.ast) 
-#  0.05661117 0.2535739
+#  0.00257367 0.6977087
 
 lmm.mpd.car <- lmer(obs.z ~ Elevation + (Elevation | Range), data = filter(master.ses.alpha, metric == "MPD" & pool == "All Alpine" & data == "Total Data" & clade == "Caryophyllales") %>%
                        select(summits, obs.z, Elevation, Range))
 r.squaredGLMM(lmm.mpd.car) 
-#0.28223 0.2864323
+#0.2213131 0.2245894
 
 lmm.mpd.poa <- lmer(obs.z ~ Elevation + (Elevation | Range), data = filter(master.ses.alpha, metric == "MPD" & pool == "All Alpine" & data == "Total Data" & clade == "Poales") %>%
                        select(summits, obs.z, Elevation, Range))
 r.squaredGLMM(lmm.mpd.poa) 
-#  0.4828919 0.4862317
+#  0.2889841 0.2929342
 
 lmm.mpd.lam <- lmer(obs.z ~ Elevation + (Elevation | Range), data = filter(master.ses.alpha, metric == "MPD" & pool == "All Alpine" & data == "Total Data" & clade == "Lamiales") %>%
                        select(summits, obs.z, Elevation, Range))
@@ -222,7 +222,7 @@ r.squaredGLMM(lmm.mpd.lam)
 lmm.mpd.bra <- lmer(obs.z ~ Elevation + (Elevation | Range), data = filter(master.ses.alpha, metric == "MPD" & pool == "All Alpine" & data == "Total Data" & clade == "Brassicales") %>%
                        select(summits, obs.z, Elevation, Range))
 r.squaredGLMM(lmm.mpd.bra)
-#  0.0002060819 0.004171875
+#  2.932264e-10 0.003697514
 
 
 
@@ -245,7 +245,33 @@ assoEnviroMaxElev
 
 ## True turnover
 MRM_spatialdist_turn <- MRM(decompo_beta$betadiv$SES_UniFrac_turn ~ spatialDist, nperm = 10000)
+#$coef
+#decompo_beta$betadiv$SES_UniFrac_turn   pval
+#Int                                     1.3830650 0.2284
+#spatialDist                            -0.5273684 0.4190
+
+#$r.squared
+#R2       pval 
+#0.02275857 0.41900000 
+
+#$F.test
+#F    F.pval 
+#0.7918118 0.4190000
+
+
 MRM_envirodistMaxElev_turn <- MRM(decompo_beta$betadiv$SES_UniFrac_turn ~ enviroDistMaxElev, nperm = 10000)
+#$coef
+#decompo_beta$betadiv$SES_UniFrac_turn   pval
+#Int                                        1.3484389729 0.2394
+#enviroDistMaxElev                         -0.0008728403 0.4497
+
+#$r.squared
+#R2       pval 
+#0.01470455 0.44970000 
+
+#$F.test
+#F    F.pval 
+#0.5074159 0.4497000 
 
 ## PD component
 MRM_spatialdist_pd <- MRM(decompo_beta$betadiv$SES_UniFrac_PD ~ spatialDist, nperm = 10000)

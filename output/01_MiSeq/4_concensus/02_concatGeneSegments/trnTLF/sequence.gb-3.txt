@@ -1,0 +1,78 @@
+LOCUS       EF571570                1627 bp    DNA     linear   PLN 24-NOV-2008
+DEFINITION  Aloysia virgata voucher R. G. Olmstead 2004-133 (WTU) trnT-trnL
+            intergenic spacer, partial sequence; tRNA-Leu (trnL) gene and
+            trnL-trnF intergenic spacer, complete sequence; and tRNA-Phe (trnF)
+            gene, partial sequence; chloroplast.
+ACCESSION   EF571570
+VERSION     EF571570.1
+KEYWORDS    .
+SOURCE      chloroplast Aloysia virgata
+  ORGANISM  Aloysia virgata
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliophyta; eudicotyledons; Gunneridae;
+            Pentapetalae; asterids; lamiids; Lamiales; Verbenaceae; Lantaneae;
+            Aloysia.
+REFERENCE   1  (bases 1 to 1627)
+  AUTHORS   Yuan,Y.W. and Olmstead,R.G.
+  TITLE     A species-level phylogenetic study of the Verbena complex
+            (Verbenaceae) indicates two independent intergeneric chloroplast
+            transfers
+  JOURNAL   Mol. Phylogenet. Evol. 48 (1), 23-33 (2008)
+   PUBMED   18495498
+REFERENCE   2  (bases 1 to 1627)
+  AUTHORS   Yuan,Y. and Olmstead,R.G.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-APR-2007) Department of Biology, University of
+            Washington, Box 351800, Seattle, WA 98195, USA
+FEATURES             Location/Qualifiers
+     source          1..1627
+                     /organism="Aloysia virgata"
+                     /organelle="plastid:chloroplast"
+                     /mol_type="genomic DNA"
+                     /specimen_voucher="R. G. Olmstead 2004-133 (WTU)"
+                     /db_xref="taxon:443359"
+     misc_feature    <1..680
+                     /note="trnT-trnL intergenic spacer"
+     gene            681..1255
+                     /gene="trnL"
+     tRNA            join(681..717,1208..1255)
+                     /gene="trnL"
+                     /product="tRNA-Leu"
+     misc_feature    1256..1587
+                     /note="trnL-trnF intergenic spacer"
+     gene            1588..>1627
+                     /gene="trnF"
+     tRNA            1588..>1627
+                     /gene="trnF"
+                     /product="tRNA-Phe"
+ORIGIN      
+        1 ccacataata gaaattttct atgcatagga attcaatgac actatagtag agtgtctcta
+       61 gaaatataga aaagaataga atcgataatt tccaataaat atggaatagg ttagaacata
+      121 atgatttata tagcgatcta ggatttcgat ttctttatca caattcgaaa ttcgaatatt
+      181 attcgatttg atagtcaatc ttaactattt taagatcgtc aaatcttctt gtttcttttt
+      241 gattttgaat tcacatggca tttgaaattc tttttgttac acttctatat tttatatccc
+      301 atagattcta tttctcattc tatatttcta tttctttcga attatttaaa tttaattagt
+      361 tcgaactaat cagacactcc ttttctttca ttcgtaaaag gggaagttaa gaaaaaaaga
+      421 ctcgaccgtt caagtatccc aaattgcatg ggaaattggc agtaagagaa acatacacat
+      481 gggttctata tcaatctata ttgaattgcc gatacagaaa tgataaaatc caatttgatt
+      541 gaatcaaata tgggtttcct ataggtaaga aagaaaatac ttttttcgag atagtaatcg
+      601 ctatctaagg ttccagtata aatgaaagaa aaaagaaatg atatcatcat aagatcctaa
+      661 gctcaaaaca aaaggaaggg ggggatatgg cgaaatcggt agacgctacg gacttaattg
+      721 gattgagcct tggtatggaa acctactaag tgataacttt caaattcaga gaaaccccgg
+      781 aattaataaa aatgggcaat cctgagccaa atcctgtttt ctcaaaacaa aggttcagaa
+      841 aacgccaaag ggggataggt gcagagactc aatggaagct gttctaacaa atggagttga
+      901 ctgcgtgggg tagaggaatc tttccatcga aacttcagaa aggatgaagg ataaacgtat
+      961 ctattgaata ctctatcaaa tgattaatga tggccccgaa tctgtatctg tattttttta
+     1021 tatgaaaaat ggaagaattg gtgtgaattg attccacatt gaagaaagaa tcaactagtc
+     1081 cttcatcaaa tcattcactc catagtccga taaatctttt aaagaacgga ttaatcggac
+     1141 gagaataaag atagagtccc attctacatg tcaataccgg caacaatgaa atttatagta
+     1201 agaggaaaat ccgtcgactt taaaaatcgt gagggttcaa gtccctctat ccccaaaaaa
+     1261 gcctatttgc ctcccaaact atttatctta cccccttttt ggttagcgat tccaaattcc
+     1321 tttatgtttc tgattgtttg acaaacgtat tggggcgtaa aagattttct cttatcacat
+     1381 gtgatataga atacacaccc aaattcaaca ccctacttga acgattccca atcaatagca
+     1441 tttctcatac tgaaacttag aaagtcgtct ttttgaagat ccaagaaatt acaggacttg
+     1501 cagaaacttt gtaatcccct tgtcccttta attgacatag accccagtgc tctaataaaa
+     1561 ttagcatggg atgctccatt gggaatggtc gggatagctc agctggtaga gcagaggact
+     1621 gaaaatc
+//
+

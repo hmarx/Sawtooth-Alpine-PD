@@ -1,8 +1,8 @@
-Task\ label=matK_1
-Task\ ID=1730585
+Task\ label=matK
+Task\ ID=1807298
 Tool=RAXMLHPC8_XSEDE
-created\ on=2019-01-25 13:56:59.0
-JobHandle=NGBW-JOB-RAXMLHPC8_XSEDE-8E34434D51E9476893B1A75CC1CAB4FE
+created\ on=2019-04-12 10:59:32.0
+JobHandle=NGBW-JOB-RAXMLHPC8_XSEDE-0FA561F1CEA842D5A082781E5B264CF7
 resource=comet
 User\ ID=90014
 User\ Name=hmarx
@@ -10,5 +10,5 @@ email=h.marx.h@gmail.com
 
 Output=(all_outputfiles,*,UNKNOWN,UNKNOWN,UNKNOWN)
 ChargeFactor=1.000000
-cores=48
-JOBID=21199349
+cores=24
+JOBID=22563185

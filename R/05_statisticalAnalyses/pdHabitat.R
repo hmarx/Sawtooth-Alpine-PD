@@ -28,11 +28,11 @@ qqline(filter(master.ses.alpha.meadows, metric == "mpd" & pool != "Meadow" & dat
 # Sample Variance: p-value > 0.05 = variences are homogeneous
 var.test(filter(master.ses.alpha.meadows, metric == "mntd" & pool != "Meadow" & data == "total" & pool == "Talus")$obs.z, 
          filter(master.ses.alpha.meadows, metric == "mntd" & pool != "Meadow" & data == "total" & pool == "All Alpine")$obs.z)
-#p-value = 0.7106
+#p-value = 0.4578
 
 var.test(filter(master.ses.alpha.meadows, metric == "mpd" & pool != "Meadow" & data == "total" & pool == "Talus")$obs.z, 
          filter(master.ses.alpha.meadows, metric == "mpd" & pool != "Meadow" & data == "total" & pool == "All Alpine")$obs.z)
-#p-value = 0.4213
+#p-value = 0.8398
 
 
 
@@ -60,46 +60,46 @@ dev.off()
 #### MNTD
 t.test(x = filter(master.ses.alpha.meadows, metric == "mntd" & pool == "All Alpine" & data == "total" & clade == "Tracheophyta") %>% select(obs.z), 
        filter(master.ses.alpha.meadows, metric == "mntd" & pool == "Talus" & data == "total" & clade == "Tracheophyta") %>% select(obs.z))
-
+#p-value = 0.8027
 t.test(x = filter(master.ses.alpha.meadows, metric == "mntd" & pool == "All Alpine" & data == "total" & clade == "Asterales") %>% select(obs.z), 
        filter(master.ses.alpha.meadows, metric == "mntd" & pool == "Talus" & data == "total" & clade == "Asterales") %>% select(obs.z))
-
+#p-value = 0.1419
 t.test(x = filter(master.ses.alpha.meadows, metric == "mntd" & pool == "All Alpine" & data == "total" & clade == "Poales") %>% select(obs.z), 
        filter(master.ses.alpha.meadows, metric == "mntd" & pool == "Talus" & data == "total" & clade == "Poales") %>% select(obs.z))
-
+#p-value = 0.747
 t.test(x = filter(master.ses.alpha.meadows, metric == "mntd" & pool == "All Alpine" & data == "total" & clade == "Caryophyllales") %>% select(obs.z), 
        filter(master.ses.alpha.meadows, metric == "mntd" & pool == "Talus" & data == "total" & clade == "Caryophyllales") %>% select(obs.z))
-
+#p-value = 0.4333
 t.test(x = filter(master.ses.alpha.meadows, metric == "mntd" & pool == "All Alpine" & data == "total" & clade == "Lamiales") %>% select(obs.z), 
        filter(master.ses.alpha.meadows, metric == "mntd" & pool == "Talus" & data == "total" & clade == "Lamiales") %>% select(obs.z))
-
+#NA
 t.test(x = filter(master.ses.alpha.meadows, metric == "mntd" & pool == "All Alpine" & data == "total" & clade == "Brassicales") %>% select(obs.z), 
        filter(master.ses.alpha.meadows, metric == "mntd" & pool == "Talus" & data == "total" & clade == "Brassicales") %>% select(obs.z))
-
+#p-value = 0.6129
 t.test(x = filter(master.ses.alpha.meadows, metric == "mntd" & pool == "All Alpine" & data == "total" & clade == "Ericales") %>% select(obs.z), 
        filter(master.ses.alpha.meadows, metric == "mntd" & pool == "Talus" & data == "total" & clade == "Ericales") %>% select(obs.z))
-
+#p-value = 0.5472
 
 #### mpd
 t.test(x = filter(master.ses.alpha.meadows, metric == "mpd" & pool == "All Alpine" & data == "total" & clade == "Tracheophyta") %>% select(obs.z), 
        filter(master.ses.alpha.meadows, metric == "mpd" & pool == "Talus" & data == "total" & clade == "Tracheophyta") %>% select(obs.z))
-
+#p-value = 0.9551
 t.test(x = filter(master.ses.alpha.meadows, metric == "mpd" & pool == "All Alpine" & data == "total" & clade == "Asterales") %>% select(obs.z), 
        filter(master.ses.alpha.meadows, metric == "mpd" & pool == "Talus" & data == "total" & clade == "Asterales") %>% select(obs.z))
-
+#p-value = 0.2891
 t.test(x = filter(master.ses.alpha.meadows, metric == "mpd" & pool == "All Alpine" & data == "total" & clade == "Poales") %>% select(obs.z), 
        filter(master.ses.alpha.meadows, metric == "mpd" & pool == "Talus" & data == "total" & clade == "Poales") %>% select(obs.z))
-
+#p-value = 0.6432
 t.test(x = filter(master.ses.alpha.meadows, metric == "mpd" & pool == "All Alpine" & data == "total" & clade == "Caryophyllales") %>% select(obs.z), 
        filter(master.ses.alpha.meadows, metric == "mpd" & pool == "Talus" & data == "total" & clade == "Caryophyllales") %>% select(obs.z))
-
+#p-value = 0.5816
 t.test(x = filter(master.ses.alpha.meadows, metric == "mpd" & pool == "All Alpine" & data == "total" & clade == "Lamiales") %>% select(obs.z), 
        filter(master.ses.alpha.meadows, metric == "mpd" & pool == "Talus" & data == "total" & clade == "Lamiales") %>% select(obs.z))
-
+#NA
 t.test(x = filter(master.ses.alpha.meadows, metric == "mpd" & pool == "All Alpine" & data == "total" & clade == "Brassicales") %>% select(obs.z), 
        filter(master.ses.alpha.meadows, metric == "mpd" & pool == "Talus" & data == "total" & clade == "Brassicales") %>% select(obs.z))
-
+#p-value = 0.5709
 t.test(x = filter(master.ses.alpha.meadows, metric == "mpd" & pool == "All Alpine" & data == "total" & clade == "Ericales") %>% select(obs.z), 
        filter(master.ses.alpha.meadows, metric == "mpd" & pool == "Talus" & data == "total" & clade == "Ericales") %>% select(obs.z))
-
+#p-value = 0.3509
 

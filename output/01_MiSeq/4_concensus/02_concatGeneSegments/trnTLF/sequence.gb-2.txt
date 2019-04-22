@@ -1,0 +1,83 @@
+LOCUS       KF600700                1683 bp    DNA     linear   PLN 18-DEC-2013
+DEFINITION  Elymus spicatus isolate Psespi6 tRNA-Thr (trnT) gene, partial
+            sequence; trnT-trnL intergenic spacer, tRNA-Leu (trnL) gene, and
+            trnL-trnF intergenic spacer, complete sequence; and tRNA-Phe (trnF)
+            gene, partial sequence; chloroplast.
+ACCESSION   KF600700
+VERSION     KF600700.1
+KEYWORDS    .
+SOURCE      chloroplast Pseudoroegneria spicata
+  ORGANISM  Pseudoroegneria spicata
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliophyta; Liliopsida; Poales; Poaceae; BOP
+            clade; Pooideae; Triticodae; Triticeae; Hordeinae; Pseudoroegneria.
+REFERENCE   1  (bases 1 to 1683)
+  AUTHORS   Mason-Gamer,R.J.
+  TITLE     Phylogeny of a genomically diverse group of elymus (poaceae)
+            allopolyploids reveals multiple levels of reticulation
+  JOURNAL   PLoS ONE 8 (11), E78449 (2013)
+   PUBMED   24302986
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (bases 1 to 1683)
+  AUTHORS   Mason-Gamer,R.J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (29-AUG-2013) Biological Sciences, University of Illinois
+            at Chicago, 845 W. Taylor, Chicago, IL 60607, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1683
+                     /organism="Pseudoroegneria spicata"
+                     /organelle="plastid:chloroplast"
+                     /mol_type="genomic DNA"
+                     /isolate="Psespi6"
+                     /specimen_voucher="RJMG 112"
+                     /db_xref="taxon:4604"
+     gene            <1..20
+                     /gene="trnT"
+                     /note="tRNA-Thr"
+     misc_feature    21..635
+                     /note="trnT-trnL intergenic spacer"
+     gene            636..1293
+                     /gene="trnL"
+     tRNA            join(636..669,1253..1293)
+                     /gene="trnL"
+                     /product="tRNA-Leu"
+     misc_feature    1294..1633
+                     /note="trnL-trnF intergenic spacer"
+     gene            1634..>1683
+                     /gene="trnF"
+                     /note="tRNA-Phe"
+ORIGIN      
+        1 aacctctgag ctaagtgggc ttacataacg gaaatagtgt aacaaataga aataggtata
+       61 gtataggaaa tccgtaaaat ctcagatatt agttattaat cttagctatt aactagttct
+      121 aaatttgaag ttctacttat aaaaataaaa aaatactaaa acttcttaaa gataaagtta
+      181 gcttgatatg cttaactata ggatatttaa aaataaaatt atagaattta ttggtatttt
+      241 cattcgatca ttatagactt tattatttgt taataatttg aggattaata tttcactaag
+      301 gggaacatag agtcagagta aataaaattg ctaattctga ttagaaaaaa agaataaata
+      361 tcaagcgtta tagtataatt ttgaatacta taaaaaagta agacgggagg tgggggagat
+      421 aaaaactttt ggatatattg attcggattg aattgcaaat acatcaagga tagaatcaat
+      481 tcaattctga attgcaataa gcaagcgggg tctctcaaat agagtcgaac tgaactgcta
+      541 gactacgttg agtgatgaac tcaatgattc aaaaaaaaaa ctaagagatg gatgaaatta
+      601 cacaaggaat cctggtctca aagaagaggg aaatggggat atggcgaaan nnntagacgc
+      661 tacggacttg attgtattga gccttggtat ggaaacctgc taagtggtaa cttccaaatt
+      721 cagagaaacc ctggaattaa aaaagggcaa tcctgagcca aatccgtgtt ttgagaaaac
+      781 aaggggttct cgaactagaa tacaaaggaa aaggataggt gcagagactc aatggaagct
+      841 gttctaacga atcgagttaa ttacgttgtg ttgttagtgg aattccttct aattctaaat
+      901 tagagaaaga ggggttttat actttataca tttaataaac acgtatagat actgacatag
+      961 caaacgatta atcacagaac tcatattata ttataatata ggttctttat ctttttttaa
+     1021 aatgaaatta gaaatgataa tgattatgaa ataaaaaact catatcataa tttttttttt
+     1081 aattattgtg aatccactcc aatcgaatat tgaataatca aattcttcaa ttcaaattca
+     1141 aagttttcga gatctttaaa aaagtggatt aatcggacga ggacaaagag agagtcccat
+     1201 tctacatgtc aatactgaca acaatgaaat ttctagtaaa aggaaaatcc gtcgacttta
+     1261 taagttgtga gggttcaagt ccctctatcc ccaaatcctc ttttattccc taactatact
+     1321 atattattta tcctcttttt tttcttttta tcaatgggtt taagattcat tagctttctc
+     1381 attctactct ttcacaaagg aatgcgaaga gaactcaatg gatcttatcc tattcattga
+     1441 atagatttct tttttattag agtatcggca agaaatcttg gttattcact ctatttttaa
+     1501 gtattattta agtaaaccat gcacaatgca taggactacc ccccccattt tccaattttg
+     1561 aatttgaaat actttaatta attttttagt ccttttaatt gacatagata caaatactct
+     1621 actaggatga tgcacaagaa aaggtcagga tagctcagtt ggtagagcag aggactgaaa
+     1681 atc
+//
+

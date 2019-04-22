@@ -1,0 +1,92 @@
+LOCUS       EU385205                2226 bp    DNA     linear   PLN 26-JUL-2016
+DEFINITION  Senecio polypodioides NADH dehydrogenase subunit F (ndhF) gene,
+            complete cds; chloroplast.
+ACCESSION   EU385205
+VERSION     EU385205.1
+KEYWORDS    .
+SOURCE      chloroplast Senecio polypodioides
+  ORGANISM  Senecio polypodioides
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliophyta; eudicotyledons; Gunneridae;
+            Pentapetalae; asterids; campanulids; Asterales; Asteraceae;
+            Asteroideae; Senecioneae; Senecioninae; Senecio.
+REFERENCE   1  (bases 1 to 2226)
+  AUTHORS   Panero,J.L. and Funk,V.A.
+  TITLE     The value of sampling anomalous taxa in phylogenetic studies: major
+            clades of the Asteraceae revealed
+  JOURNAL   Mol. Phylogenet. Evol. 47 (2), 757-782 (2008)
+   PUBMED   18375151
+REFERENCE   2  (bases 1 to 2226)
+  AUTHORS   Panero,J.L. and Funk,V.A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (06-JAN-2008) Section of Integrative Biology, University
+            of Texas, 1 University Station, A6700, Austin, TX 78712, USA
+FEATURES             Location/Qualifiers
+     source          1..2226
+                     /organism="Senecio polypodioides"
+                     /organelle="plastid:chloroplast"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:496646"
+     gene            1..2226
+                     /gene="ndhF"
+     CDS             1..2226
+                     /gene="ndhF"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="NADH dehydrogenase subunit F"
+                     /protein_id="ACC93286.1"
+                     /translation="MEQIYQYAWIIPFLPLPVPMLIGLGLLLFPTATKSLRRMWAFQS
+                     VLLLSIVMIFSMNLSIQQINSSSVYQYVWSWIINNDFSLEFGYLIDPLTSIMSILITT
+                     VGIMVLIYSDNYMSHDHGYLRFFAYMSFFSTSMLGLVTSSNLIQIYIFWELVGICSYL
+                     LIGFWFTRPVAAKACQKAFVTNRVGDFGLLLGILGFYWVTGSFEFRDLFQINNNLIYN
+                     NEVNFLFVTLCAVLLFAGAIAKSAQFPLHVWLPDAMEGPTPISALIHAATMVAAGIFL
+                     VARLMPLFIVIPHIMNFISLIGIITVFLGATLALAQKDIKRGLAYSTMSQLGYMMLAL
+                     GMGSYRSALFHLITHAYSKALLFLGSGSVIHSMETLVGYCPKKSQNMVLMGGLTKHVP
+                     ITKNSFLLGTLSLCGIPPFACFWSKDEILNDSWLYSPIFAIIAWSTAGLTAFYMFRIY
+                     LLTFEGHLNVHFQNYSGKRNTPFYSISIWGKEGSKISNKNFRLVTLLKMKKKGGPSFF
+                     SNKVSKFDENVRNMIQPVLSIPNFANIKTSLYPYESDNTMLFPILILILFTLFVGFLG
+                     IPFNEDMDILSKWLTPSINLLHKNSNNSIDWYEFCKDAVFSVSIASFGIFIAFFLYQP
+                     VYSSFQNLDLINSFVKMGPKRNFSDKIKNAIYDWSYNRGYIDAFYGTFFIAGMRKLAE
+                     FTHFFDRRIIDGIPNGVGLMSFFVAEVIKSVGGGRISSYLFFYFSYVLIFLLIYYFLN
+                     L"
+ORIGIN      
+        1 atggaacaga tatatcaata tgcgtggata ataccttttc ttccacttcc agttcctatg
+       61 ttaatagggt tgggacttct tctttttccg acggcaacaa aaagtcttcg tcgtatgtgg
+      121 gcttttcaaa gcgttttatt gttaagtata gtcatgattt tttccatgaa tctttctatt
+      181 cagcaaataa atagcagttc tgtctatcaa tatgtatggt cttggattat caataatgat
+      241 ttttctttag aattcggata cttgattgat ccacttactt ctattatgtc aatattaatc
+      301 actactgttg gaattatggt tcttatttat agtgataatt atatgtctca tgatcacgga
+      361 tatttgagat tttttgctta tatgagtttt ttcagtactt ccatgttggg attagttact
+      421 agttcaaatt tgatacaaat ttatattttt tgggaattag ttgggatatg ttcgtatcta
+      481 ttaatagggt tttggttcac acgacctgtt gcagcaaagg cttgtcaaaa agcgtttgta
+      541 actaatcgtg tgggcgattt tggtttatta ttaggcattt tagggtttta ttgggtaacg
+      601 gggagtttcg aatttcgtga tttattccaa ataaataata acttgattta taataatgaa
+      661 gtaaattttt tatttgttac tttgtgcgct gttctattat ttgctggtgc cattgctaaa
+      721 tctgcacaat ttccccttca tgtatggtta cctgatgcaa tggaagggcc gactcctatt
+      781 tccgctctta tacatgctgc tacgatggta gcagcgggaa tttttcttgt agctcgactt
+      841 atgcctcttt tcatagtcat accccacata atgaatttta tctctttgat agggataata
+      901 acagtttttt taggagccac tttagctctt gctcaaaaag acattaagag gggtttagcc
+      961 tattccacaa tgtctcaatt gggttatatg atgttagctc taggtatggg gtcgtatcgc
+     1021 agtgctttat ttcatttgat tactcatgct tattctaaag cattattgtt tttaggatcg
+     1081 ggatccgtta ttcattcaat ggaaactctt gttggatatt gtccaaaaaa aagtcagaat
+     1141 atggtgctta tgggaggttt aacaaaacat gtaccaatta ctaaaaattc ttttttatta
+     1201 ggtacacttt ctctttgcgg tattccaccc tttgcttgtt tttggtccaa agatgaaatt
+     1261 cttaatgata gttggttgta ttcacctatt tttgcaataa tagcttggtc tacggcggga
+     1321 ttaaccgcat tttatatgtt tcggatctat ttacttactt ttgaaggaca tttaaacgtt
+     1381 cattttcaaa attacagtgg aaaaaggaat accccctttt attcaatatc tatatggggt
+     1441 aaagaaggtt caaaaataag taacaaaaac tttcgtttgg taactttatt aaaaatgaag
+     1501 aaaaaaggag gtccttcttt tttttcaaat aaagtatcta aatttgatga gaatgtaaga
+     1561 aatatgatcc aacctgttct ttctattcct aattttgcca atataaaaac ttctttgtat
+     1621 ccttatgaat cggataatac tatgttattt ccaatactta tattaattct atttactttg
+     1681 tttgttggat tcttaggaat tcctttcaat gaagacatgg atatattatc caaatggtta
+     1741 accccttcta taaatctttt acataaaaat tcaaacaatt caatagattg gtatgaattt
+     1801 tgtaaagatg cagttttttc ggttagtata gcctctttcg gaatatttat agcatttttt
+     1861 ttatatcaac ctgtttattc atcttttcaa aatttggact taattaattc atttgttaaa
+     1921 atgggtccta agagaaattt ttctgacaaa ataaaaaatg ctatatatga ttggtcatat
+     1981 aatcgaggtt acatagatgc cttttatgga acattcttta ttgcggggat gagaaaattg
+     2041 gccgaattca ctcatttttt tgatagacga ataattgatg gaattccaaa tggagttggt
+     2101 cttatgagtt tctttgtagc agaggttatt aaatcagtag gcggtggtcg tatttcttct
+     2161 tatctgttct tttatttttc ttatgtatta attttcttat taatttacta ttttttgaat
+     2221 ctttaa
+//
+

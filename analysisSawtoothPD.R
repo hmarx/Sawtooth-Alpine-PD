@@ -44,13 +44,13 @@ sawtooth.com.collect <- read.csv(file="data/speciespersummit_collect.csv", row.n
 head(sawtooth.com.collect)
 dim(sawtooth.com.collect)
 rownames(sawtooth.com.collect) <- sawtooth.com.collect[,1]
-split2 <- strsplit(as.character(sawtooth.com.collect$Annotated_Name), split="_", fixed=TRUE) #split names
+split2 <- strsplit(as.character(sawtooth.com.collect$Accepted.Name.GenBank), split="_", fixed=TRUE) #split names
 genus.name2 <- sapply(split2, "[", 1L)
 sawtooth.com.collect.tax <- cbind(sawtooth.com.collect[1], "genus"=genus.name2, sawtooth.com.collect[2:ncol(sawtooth.com.collect)])
 head(sawtooth.com.collect.tax)
-length(unique(sawtooth.com.collect.tax$Annotated_Name)) #162 species total collected 
-nrow(filter(sawtooth.com.collect.tax, Meadow == 0) %>% distinct(Annotated_Name)) #86 talus species 
-nrow(filter(sawtooth.com.collect.tax, Meadow == 1) %>% distinct(Annotated_Name)) #76 Meadow species 
+length(unique(sawtooth.com.collect.tax$Accepted.Name.GenBank)) #155 species total collected 
+nrow(filter(sawtooth.com.collect.tax, Meadow == 0) %>% distinct(Accepted.Name.GenBank)) #79 talus species 
+nrow(filter(sawtooth.com.collect.tax, Meadow == 1) %>% distinct(Accepted.Name.GenBank)) #76 Meadow species 
 
 ## Total Data Alpine
 sawtooth.total.alpine <- read.csv(file="data/speciespersummit_collectAlpine.csv", row.names=2, check.names=FALSE, header = T)
@@ -60,7 +60,7 @@ split2 <- strsplit(as.character(rownames(sawtooth.total.alpine)), split="_", fix
 genus.name2 <- sapply(split2, "[", 1L)
 sawtooth.total.alpine.tax <- cbind("genus"=genus.name2, sawtooth.total.alpine)
 head(sawtooth.total.alpine.tax)
-dim(sawtooth.total.alpine.tax) #131 alpine speices
+dim(sawtooth.total.alpine.tax) #123 alpine speices
 
 ## Total Data Meadow
 sawtooth.total.meadow <- read.csv(file="data/speciespersummit_collectMeadow.csv", row.names=2, check.names=FALSE, header = T)
@@ -73,12 +73,11 @@ head(sawtooth.total.meadow.tax)
 dim(sawtooth.total.meadow.tax) #76 meadow speices 
 
 
-
 ################################################## Trees ################################################## 
 
 ########## Total Data ML Phylogeny (species)
 saw.total.phy <- read.tree("output/09_Scaling/sawtooth.totalData.tre") 
-saw.total.phy$tip.label #155
+saw.total.phy$tip.label #149
 
 
 ################################################## Metadata ################################################## 
@@ -90,15 +89,18 @@ sawMeta <- read.csv("data/RAW/SawtoothMeta.csv", row.names=1)
 ################################################## Combine Datasets ################################################## 
 
 #### Total Data 
-dim(sawtooth.com.collect) #162
+dim(sawtooth.com.collect) #155
 sawTotal <- comparative.comm(phy = saw.total.phy, comm = as.matrix(t(sawtooth.com.collect[,-1])), env = sawMeta) 
-dim(sawTotal$comm) #154
+dim(sawTotal$comm) #149
+sawTotal$dropped$comm.sp.lost
+# Speices with missing sequence data and dropped ambiguous species
+#[1] "Agrostis_variabilis" "Carex_pachycarpa"    "Carex_proposita"     "Draba_crassifolia"   "Erigeron"            "Phlox"              
 
 sawTotal.alpine <- comparative.comm(phy = saw.total.phy, comm = as.matrix(t(sawtooth.total.alpine[,-1])), env = sawMeta) 
-dim(sawTotal.alpine$comm) #125
+dim(sawTotal.alpine$comm) #119
 
 sawTotal.meadow <- comparative.comm(phy = saw.total.phy, comm = as.matrix(t(sawtooth.total.meadow[,-1])), env = sawMeta) 
-dim(sawTotal.meadow$comm) #73
+dim(sawTotal.meadow$comm) #74
 
-rownames(sawtooth.com.collect)[which(!rownames(sawtooth.com.collect) %in% (saw.total.phy$tip.label))]
+
 

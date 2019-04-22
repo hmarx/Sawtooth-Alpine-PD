@@ -1,0 +1,14 @@
+starting log: 11/04/19 06:10
+concat
+in filename: matK1_R1.KF907876.fasta
+in filename: matK1_R2.KF907876.fasta
+in filename: matK2_R1.KF907876.fasta
+in filename: matK2_R2.KF907876.fasta
+outfile: matK.miseq.aln.nex
+starting log: 11/04/19 06:11
+concat
+in filename: matK1_R1.KF907876.aln.fasta
+in filename: matK1_R2.KF907876.aln.fasta
+in filename: matK2_R1.KF907876.aln.fasta
+in filename: matK2_R2.KF907876.aln.fasta
+outfile: matK.miseq.aln.nex

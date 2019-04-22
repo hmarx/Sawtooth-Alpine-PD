@@ -1,14 +1,4 @@
-starting log: 25/01/19 04:24
-clean
-cleannum: 0.5
-in filename: matK.total.aln.fasta
-outfile: matK.total.aln.clean.fasta
-starting log: 25/01/19 04:42
-clean
-cleannum: 0.5
-in filename: matK.total.aln.fasta
-outfile: matK.total.aln.clean.fasta
-starting log: 25/01/19 04:48
+starting log: 11/04/19 06:21
 clean
 cleannum: 0.5
 in filename: matK.total.aln.fasta

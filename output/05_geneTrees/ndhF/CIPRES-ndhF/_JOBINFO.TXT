@@ -1,8 +1,8 @@
 Task\ label=ndhF
-Task\ ID=1730607
+Task\ ID=1807314
 Tool=RAXMLHPC8_XSEDE
-created\ on=2019-01-25 14:25:18.0
-JobHandle=NGBW-JOB-RAXMLHPC8_XSEDE-53F68B64CCEE43D381DDA33B40861DC7
+created\ on=2019-04-12 11:17:24.0
+JobHandle=NGBW-JOB-RAXMLHPC8_XSEDE-2E096F690E404EA392B29B5E49C274F5
 resource=comet
 User\ ID=90014
 User\ Name=hmarx
@@ -10,5 +10,5 @@ email=h.marx.h@gmail.com
 
 Output=(all_outputfiles,*,UNKNOWN,UNKNOWN,UNKNOWN)
 ChargeFactor=1.000000
-cores=48
-JOBID=21199477
+cores=24
+JOBID=22563390

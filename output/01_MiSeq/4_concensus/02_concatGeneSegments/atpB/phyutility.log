@@ -1,0 +1,65 @@
+starting log: 11/04/19 10:57
+concat
+in filename: atpB2_R2.HQ384707.fasta
+in filename: atpB2_R1.HQ384707.fasta
+in filename: atpB1_R2.HQ384707.fasta
+in filename: atpB1_R1.HQ384707.fasta
+outfile: atpB.miseq.nex
+starting log: 11/04/19 11:02
+concat
+in filename: atpB2_R2.HQ384707.fasta
+in filename: atpB2_R1.HQ384707.fasta
+in filename: atpB1_R2.HQ384707.fasta
+in filename: atpB1_R1.HQ384707.fasta
+outfile: atpB.miseq.nex
+starting log: 11/04/19 11:02
+concat
+in filename: atpB2_R2.HQ384707.fasta
+in filename: atpB2_R1.HQ384707.fasta
+in filename: atpB1_R2.HQ384707.fasta
+in filename: atpB1_R1.HQ384707.fasta
+outfile: atpB.miseq.nex
+starting log: 11/04/19 11:06
+concat
+in filename: atpB2_R2.HQ384707.aln.fasta
+in filename: atpB2_R1.HQ384707.aln.fasta
+outfile: test.nex
+starting log: 11/04/19 11:08
+tree convert
+in filename: atpB2_R1.HQ384707.aln.fasta
+outfile: atpB2_R1.HQ384707.aln2.fasta
+starting log: 11/04/19 11:08
+tree convert
+in filename: atpB2_R1.HQ384707.fasta
+starting log: 11/04/19 11:08
+tree convert
+in filename: atpB2_R1.HQ384707.fasta
+outfile: atpB2_R1.HQ384707.aln2.fasta
+starting log: 11/04/19 11:18
+concat
+in filename: atpB2_R2.HQ384707.aln.fasta
+in filename: atpB2_R1.HQ384707.aln.fasta
+in filename: atpB1_R2.HQ384707.aln.fasta
+in filename: atpB1_R1.HQ384707.aln.fasta
+outfile: atpB.miseq.aln.nex
+starting log: 11/04/19 11:30
+concat
+in filename: atpB2_R2.HQ384707.aln.fasta
+in filename: atpB2_R1.HQ384707.aln.fasta
+in filename: atpB1_R2.HQ384707.aln.fasta
+in filename: atpB1_R1.HQ384707.aln.fasta
+outfile: atpB.miseq.aln.nex
+starting log: 11/04/19 11:48
+concat
+in filename: atpB2_R2.HQ384707.aln.fasta
+in filename: atpB2_R1.HQ384707.aln.fasta
+in filename: atpB1_R2.HQ384707.aln.fasta
+in filename: atpB1_R1.HQ384707.aln.fasta
+outfile: atpB.miseq.aln.nex
+starting log: 11/04/19 02:54
+concat
+in filename: atpB2_R2.HQ384707.aln.fasta
+in filename: atpB2_R1.HQ384707.aln.fasta
+in filename: atpB1_R2.HQ384707.aln.fasta
+in filename: atpB1_R1.HQ384707.aln.fasta
+outfile: atpB.miseq.aln.nex

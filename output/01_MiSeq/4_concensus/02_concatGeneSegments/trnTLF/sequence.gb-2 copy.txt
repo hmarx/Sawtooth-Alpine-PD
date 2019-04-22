@@ -1,0 +1,55 @@
+LOCUS       DQ353991                 540 bp    DNA     linear   PLN 27-APR-2016
+DEFINITION  Poa secunda subsp. secunda voucher Soreng 5812 US tRNA-Thr (trnT)
+            gene, partial sequence; trnT-trnL intergenic spacer, tRNA-Leu
+            (trnL) gene, and trnL-trnF intergenic spacer, complete sequence;
+            and tRNA-Phe (trnF) gene, partial sequence; chloroplast.
+ACCESSION   DQ353991 REGION: 601..1140
+VERSION     DQ353991.1
+KEYWORDS    .
+SOURCE      chloroplast Poa secunda subsp. secunda
+  ORGANISM  Poa secunda subsp. secunda
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliophyta; Liliopsida; Poales; Poaceae; BOP
+            clade; Pooideae; Poodae; Poeae; Poeae Chloroplast Group 2 (Poeae
+            type); Poinae; Poa.
+REFERENCE   1  (bases 1 to 540)
+  AUTHORS   Gillespie,L.J., Archambault,A. and Soreng,R.J.
+  TITLE     Phylogeny of Poa (Poaceae) based on trnT-trnF sequence data: major
+            clades and basal relationships
+  JOURNAL   Aliso 23, 420-434 (2007)
+REFERENCE   2  (bases 1 to 540)
+  AUTHORS   Gillespie,L.J., Archambault,A. and Soreng,R.J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2006) Research Division, Canadian Museum of
+            Nature, P.O. Box 3443, Station D, Ottawa, Ontario K1P 6P4, Canada
+FEATURES             Location/Qualifiers
+     source          1..540
+                     /organism="Poa secunda subsp. secunda"
+                     /organelle="plastid:chloroplast"
+                     /mol_type="genomic DNA"
+                     /sub_species="secunda"
+                     /specimen_voucher="Soreng 5812 US"
+                     /db_xref="taxon:368387"
+                     /country="USA"
+                     /note="authority: Poa secunda subsp. secunda J. Presl."
+     misc_feature    <1..252
+                     /note="trnT-trnL intergenic spacer"
+     gene            253..>540
+                     /gene="trnL"
+     tRNA            253..>287
+                     /gene="trnL"
+                     /product="tRNA-Leu"
+     intron          288..>540
+                     /gene="trnL"
+ORIGIN      
+        1 tgatttagaa tactttaaaa aagtaataca ggaggtatgg gagagaaaaa cttttggata
+       61 tattgattcg gattgaattg caaatacatc aacgatacaa tcaattcaat tctgaattgc
+      121 aataaacaag cggggtctct caaatagagt cgaactgcta gactacctcg agtgatgaat
+      181 tcaatgattc aaaaaaaact aagagatgga tgaaattaca caagaaatct ttgtctcaaa
+      241 gaagaggaaa aaggggatat ggcgaaatcg gtagacgcta cggacttgat tgtattgagc
+      301 cttggtatgg aaacctgcta agtggtaact tccaaattca gagaaaccct ggaattaaaa
+      361 aagggcaatc ctgagccaaa tccgtgtttt gagaaaacaa gggggttctc gaactagaat
+      421 acaaaggaaa aggataggtg cagagactca atggaagctg ttctaacgaa tcgagttaat
+      481 tacgttgtgt tgttagtgga attccttcga aattctaaaa agaagggctt tatacagcta
+//
+

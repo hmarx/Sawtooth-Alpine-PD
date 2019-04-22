@@ -1,0 +1,83 @@
+LOCUS       DQ180412                1790 bp    DNA     linear   PLN 13-AUG-2009
+DEFINITION  Solanum tridynamum voucher Olmstead S-102 WTU tRNA-Thr (trnT) gene,
+            partial sequence; trnT-trnL intergenic spacer, tRNA-Leu (trnL)
+            gene, and trnL-trnF intergenic spacer, complete sequence; and
+            tRNA-Phe (trnF) gene, partial sequence; chloroplast.
+ACCESSION   DQ180412
+VERSION     DQ180412.1
+KEYWORDS    .
+SOURCE      chloroplast Solanum tridynamum
+  ORGANISM  Solanum tridynamum
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliophyta; eudicotyledons; Gunneridae;
+            Pentapetalae; asterids; lamiids; Solanales; Solanaceae;
+            Solanoideae; Solaneae; Solanum.
+REFERENCE   1  (bases 1 to 1790)
+  AUTHORS   Weese,T.L. and Bohs,L.
+  TITLE     A Three-Gene Phylogeny of the Genus Solanum (Solanaceae)
+  JOURNAL   Syst. Bot. 32 (2), 445-463 (2007)
+REFERENCE   2  (bases 1 to 1790)
+  AUTHORS   Weese,T.L. and Bohs,L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (24-AUG-2005) Department of Biology, University of Utah,
+            257 South 1400 East, Salt Lake City, UT 84112, USA
+FEATURES             Location/Qualifiers
+     source          1..1790
+                     /organism="Solanum tridynamum"
+                     /organelle="plastid:chloroplast"
+                     /mol_type="genomic DNA"
+                     /isolate="RGO 261"
+                     /specimen_voucher="Olmstead S-102 WTU"
+                     /db_xref="taxon:205587"
+     gene            <1
+                     /gene="trnT"
+     tRNA            <1
+                     /gene="trnT"
+                     /product="tRNA-Thr"
+     misc_feature    2..700
+                     /note="trnT-trnL intergenic spacer"
+     gene            701..1283
+                     /gene="trnL"
+     tRNA            join(701..736,1234..1283)
+                     /gene="trnL"
+                     /product="tRNA-Leu"
+     misc_feature    1284..1744
+                     /note="trnL-trnF intergenic spacer"
+     gene            1745..>1790
+                     /gene="trnF"
+     tRNA            1745..>1790
+                     /gene="trnF"
+                     /product="tRNA-Phe"
+ORIGIN      
+        1 taacctctga gctaagcggg cccacatcac agaaatctta tatgcatagt aattgactaa
+       61 actattggaa ttggaatctt agttattaac tagtcaatct agtcaatatt atattgaata
+      121 ttctagagca taaggattaa tatagcgatc tagaatttcg atttatcaca attctaatac
+      181 taatattatt aaatagtgat tgtaaatatt gttaatattc ttttattttc aattattttc
+      241 aatttgaatt gaatggtaaa tattattttt catttctttt tttggcattg gaaatacttt
+      301 ttattacagt tctatattta atttatttca aattctaatt gtttaatgga atggttagtt
+      361 ataactaatg agacattcct ccgcttttag gcgaaattta aaaaacaaga atcgatcgtt
+      421 caagtattcc aaattgaatg gcaaaatgac aggaagcgag acatatagat cgggtatata
+      481 tccatctata ttgaattgcg gattccgaaa tgataaaatc atttttgatt ggacaaaaaa
+      541 agggtctcct atagaagata gttaagaaaa tcaaagagga gaaaacacgt tttcgagata
+      601 ggaatcggta tctaatgaat tcaatggttc cagtataaat gaaagaaaaa gaaaaaggaa
+      661 tgacatccca acgagatcct aatctcaaaa caaaaagaaa gggggatatg gcgaaattgg
+      721 tagacgctac ggacttaatt ggattgagcc ttggtatgga aacttactaa gtgatcactt
+      781 tcaaattcag agaaaccctg gaattaacaa aaatgggcaa tcctgagcca aatcctgttt
+      841 tctcaaaaca aacaaaggtt cagaaaaaaa ggataggtgc agagactcaa tggaagctat
+      901 tctaacaaat ggagttaaat acgttggtag aggactcttt acatcgaaac ttcagaaaga
+      961 aaaagaatga agtgaaggat aaacgtatat acatacgtat tgaatactat atcaaatgat
+     1021 taatgacgac ccgaatccgt agtttttcta taaaaaatag aagaattggt gtgaatccat
+     1081 tctacattga agaaagaatc gaatattcat tgatcaaaac attcactcca tagtctgata
+     1141 gatcttttga agaactgatt aatcggacga gaataaagat agagtcccgt tctacatgtc
+     1201 aataccggca acaatgaaat ttatagtaaa aggaaaatcc gtcgacttta aaaatcgtga
+     1261 gggttcaagt ccctctatcc ccaaaaagac tatttaactc cccaactatt tatccgaccc
+     1321 cctttcctta acggttccaa attccttatc tttcccattc actctattct tttagaaatg
+     1381 gatttttttc gaagagtaaa tggctttctc ttatcacaag ccttttgata tctatgatac
+     1441 acatagaaat gaacatcttt gagcaaggaa tccctagttg aatgattccc gatcaataca
+     1501 atatcattac tcatactgaa acttacaaag tcatcttttt gaagatcgaa gaaattcccc
+     1561 ggctttgata aaatttttta atcgacttac ttgacataga cccagttcta tgatagaatc
+     1621 aaataaaata aggataccac ccaaaggact cgaaatcctc atgttaacgg ttccaatttc
+     1681 caatccagat tgggaggata gaggactgga aatcctcgtt ccaatctaat ctgggttgga
+     1741 aatcgccggg atagctcagt tggtagagca gaggactgaa aatcctcgtg
+//
+

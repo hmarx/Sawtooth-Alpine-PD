@@ -1,0 +1,76 @@
+LOCUS       HQ384707                1449 bp    DNA     linear   PLN 25-FEB-2014
+DEFINITION  Castilleja linariifolia ATP synthase beta subunit (atpB) gene,
+            partial cds; chloroplast.
+ACCESSION   HQ384707
+VERSION     HQ384707.1
+KEYWORDS    .
+SOURCE      chloroplast Castilleja linariifolia
+  ORGANISM  Castilleja linariifolia
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliophyta; eudicotyledons; Gunneridae;
+            Pentapetalae; asterids; lamiids; Lamiales; Orobanchaceae;
+            Pedicularideae; Castillejinae; Castilleja.
+REFERENCE   1  (bases 1 to 1449)
+  AUTHORS   Refulio-Rodriguez,N.F. and Olmstead,R.G.
+  TITLE     Phylogeny of lamiidae
+  JOURNAL   Am. J. Bot. 101 (2), 287-299 (2014)
+   PUBMED   24509797
+REFERENCE   2  (bases 1 to 1449)
+  AUTHORS   Refulio-Rodriguez,N.F. and Olmstead,R.G.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (07-OCT-2010) Department of Biology, University of
+            Washington, PO Box 355325, Seattle, WA 98195, USA
+FEATURES             Location/Qualifiers
+     source          1..1449
+                     /organism="Castilleja linariifolia"
+                     /organelle="plastid:chloroplast"
+                     /mol_type="genomic DNA"
+                     /specimen_voucher="D. Tank 2001-49 (WTU)"
+                     /db_xref="taxon:46037"
+                     /tissue_type="leaf"
+                     /note="authority: Castilleja linariifolia Benth."
+     gene            <1..>1449
+                     /gene="atpB"
+     CDS             <1..>1449
+                     /gene="atpB"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="ATP synthase beta subunit"
+                     /protein_id="AEH26901.1"
+                     /translation="LEKKNLGRIIQIIGPVLDVAFPPGKMPNIYNALVVKGRDTVGQP
+                     INVTCEVQQLLGNNRVRAVAMSATEGLMRGMEVIDTGAPLSVPVGGATLGRIFNVLGE
+                     PVDNLGPVDTRTTFPIHRSAPAFIQLDTKLSIFETGIKVVDLLAPYRRGGKIGLFGGA
+                     GVGKTVLIMELINNIAKAHGGVSVFGGVGERTREGNDLYMEMKESGVINEENIAESKV
+                     ALVYGQMNEPPGARMRVGLTALTMAEYFRDVNEQDVLLFIDNIFRFVQAGSEVSALLG
+                     RMPSAVGYQPTLSTEMGTLQERITSTKEGSITSIQAVYVPADDLTDPAPATTFAHLDA
+                     TTVLSRGLAAKGIYPAVDPLDSTSTMLQPRIVGEEHYEIAQRVKQTLQRYKELQDIIA
+                     ILGLDELSEEDRLTVARARKIERFLSQPFFVAEVFTGSPGKYVGLAETIRGFQLILSG
+                     ELDGLPEQAFYLVGNIDEAAAKAMNLEMESNLK"
+ORIGIN      
+        1 cttgaaaaaa aaaatctggg gcgtatcatc caaatcatcg gtccggtact agatgtagcc
+       61 tttccgccgg gcaagatgcc taatatttat aacgctctag tagttaaagg ccgagatact
+      121 gttggtcaac caattaatgt gacttgtgag gtacagcaat tattaggaaa taatcgagtt
+      181 agagctgtag ctatgagtgc tacagaaggt ctgatgagag gaatggaagt gattgatacg
+      241 ggagctcctc taagtgttcc ggtcggtgga gcgactctgg gacgaatttt caacgtgctt
+      301 ggagagcccg ttgataattt aggtcctgta gatactcgta caacatttcc tattcatcga
+      361 tctgcgcctg cctttataca gttagataca aaattatcta tttttgaaac aggaattaaa
+      421 gtagtagatc ttttagcacc ttatcgccgc gggggaaaaa taggactctt tgggggagct
+      481 ggagttggta aaacggtact cattatggaa ttgattaaca atattgccaa agcccacggg
+      541 ggcgtatctg tatttggcgg ggtgggtgaa cggactcgtg aaggaaatga tctttacatg
+      601 gaaatgaaag aatctggggt tattaatgaa gaaaatattg ccgaatcgaa agtggctcta
+      661 gtttacggcc agatgaatga accaccggga gctcgcatga gagttggttt gactgcctta
+      721 acgatggcgg aatatttccg agatgttaat gaacaagacg tacttctatt tattgacaat
+      781 attttccgtt tcgttcaagc aggatcggaa gtatcggcct tgttgggtag aatgccttcc
+      841 gccgttggtt atcaaccaac cctgagtact gaaatgggta ctttacaaga aagaattact
+      901 tctaccaaag aagggtccat aacttctatt caagcagttt atgtacctgc agacgatttg
+      961 actgatcccg cccctgctac gacatttgca catttagatg ctactaccgt actatcaaga
+     1021 ggattagctg ccaaagggat ctatccagca gtagatcctt tagattcaac ttcaaccatg
+     1081 cttcaacctc ggatcgttgg tgaggaacat tatgaaattg cgcaaagagt taagcaaact
+     1141 ttacaacgtt ataaagagct tcaggacatt atagctatcc ttgggttgga cgaattatcg
+     1201 gaggaggatc ggttaaccgt agcaagagcg cgaaaaattg agcgtttctt atcacaaccc
+     1261 ttttttgtag ccgaagtatt taccggttct ccagggaaat atgttggtct agcagaaacc
+     1321 attcgagggt ttcaattgat cctttccgga gaattagatg gtcttcctga acaggccttt
+     1381 tatttggtag gtaatatcga tgaagctgcc gcgaaggcta tgaacttaga aatggagagc
+     1441 aatttgaag
+//
+

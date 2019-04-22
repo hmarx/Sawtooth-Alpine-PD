@@ -1,0 +1,80 @@
+LOCUS       KF907876                1533 bp    DNA     linear   PLN 08-NOV-2014
+DEFINITION  Androsace lactiflora voucher WU:M. Staudinger 5726 maturase K
+            (matK) gene, complete cds; chloroplast.
+ACCESSION   KF907876
+VERSION     KF907876.1
+KEYWORDS    .
+SOURCE      chloroplast Androsace lactiflora
+  ORGANISM  Androsace lactiflora
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliophyta; eudicotyledons; Gunneridae;
+            Pentapetalae; asterids; Ericales; Primulaceae; Androsace.
+REFERENCE   1  (bases 1 to 1533)
+  AUTHORS   de Vos,J.M., Hughes,C.E., Schneeweiss,G.M., Moore,B.R. and Conti,E.
+  TITLE     Heterostyly accelerates diversification via reduced extinction in
+            primroses
+  JOURNAL   Proc. Biol. Sci. 281 (1784), 20140075 (2014)
+   PUBMED   24759859
+REFERENCE   2  (bases 1 to 1533)
+  AUTHORS   de Vos,J.M., Hughes,C.E., Schneeweiss,G.M., Moore,B.R. and Conti,E.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-NOV-2013) Department of Ecology and Evolutionary
+            Biology, Brown University, 80 Waterman St., Providence, RI 02906,
+            USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1533
+                     /organism="Androsace lactiflora"
+                     /organelle="plastid:chloroplast"
+                     /mol_type="genomic DNA"
+                     /specimen_voucher="WU:M. Staudinger 5726"
+                     /db_xref="taxon:229445"
+     gene            1..1533
+                     /gene="matK"
+     CDS             1..1533
+                     /gene="matK"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="maturase K"
+                     /protein_id="AIW04617.1"
+                     /translation="MEEFKRYLGLNRSEQRDFLYPLIFQEYIYALAHDHSLTRSISLE
+                     LEKVGYDNNFSLLIVKRLITHLITQMDRQNHLSFLTNDSNQNLFLGHNTTLYSQIILE
+                     GFVVVVEIPFSLRVISSLEGKEIVKSHNLRSIHSIFPFLEDKLSHLNYVLDLVIPHSI
+                     HLEILIQTLRYWVKDASSLHLLRAFLHKYQNWTSLTTLKKSGFSFSKRNKRLFFFLYN
+                     FHVYEYESIFSFLCNQASHLQSKSYRPFLDRIYFYEKRDHFVEVFTKYFQAFLCSFKD
+                     PFMHYVRYQGKALLASKGTFLLMTKWNYYLVNFWQCYFYMWPQPERIHINQLSKHSLS
+                     LLGYLSSAGLNSSLVRNQMLENTFLIANASKKLDMIVPIIPLIGSLSKAKFCNLLGHP
+                     LSKPVWADLSDLDIIDRFGRIYRSISHYYSGSSKKMGLYRIKYILRLSCARTLARKHK
+                     STVRAFVKKGGSELLEEFFMEEERIFSLTFPKASSTSVGLYKGPLWYLDIFCINDLAN
+                     HE"
+ORIGIN      
+        1 atggaggaat tcaaaagata tttaggacta aatagatctg agcagcgcga cttcctctat
+       61 ccgcttatat ttcaggagta tatttatgca cttgctcatg atcatagttt aactagatca
+      121 atttcgttgg aattggaaaa ggtgggttat gacaataact tcagcttact aattgtgaaa
+      181 cgtttaatta ctcatttaat tactcaaatg gatcgacaga atcatttgag ttttttgact
+      241 aatgattcga accaaaatct atttttgggg cacaacacaa ctttgtattc tcaaattata
+      301 ttagaaggat ttgtagtcgt tgtggaaatt cccttttctc tacgagtaat atcttcccta
+      361 gaggggaaag aaatagtcaa atctcataat ttacgatcaa ttcattcaat atttcctttt
+      421 ttagaggaca aattgtcaca tttaaattat gtgttagatt tagtaatacc ccactctatc
+      481 catctggaaa tattgattca aactctgcgg tactgggtaa aagatgcttc ttctttgcat
+      541 ttattacgag cttttcttca caagtatcag aattggacca gtcttactac tctaaagaaa
+      601 tcaggttttt ctttttcaaa aagaaataaa cggttatttt ttttcttata taattttcat
+      661 gtatatgaat atgaatcgat cttctccttt ctctgcaatc aagcttccca tttacaatca
+      721 aaatcttatc gaccctttct tgaccgaata tatttctatg aaaaacgaga tcattttgta
+      781 gaagtattta ctaaatattt tcaggctttt ttatgttcgt tcaaggaccc tttcatgcat
+      841 tatgttaggt atcaaggaaa agcccttttg gcttcaaaag ggacgtttct tttgatgact
+      901 aaatggaact attatcttgt aaatttctgg caatgctatt tttacatgtg gcctcaacca
+      961 gaaaggatcc atataaatca attatctaaa cattccctca gcctgctggg atatctttca
+     1021 agtgcaggac taaactcttc attggtacgg aatcaaatgc tagaaaatac atttttaata
+     1081 gccaatgcta gtaagaagtt agatatgatc gttccaatta ttcctcttat tgggtcgttg
+     1141 tctaaagcta aattttgtaa cctattagga catcccctta gtaagccagt ctgggccgat
+     1201 ttatccgatt tggacattat tgaccgattt gggcgtatat atcgaagtat ttctcattat
+     1261 tatagcggat cctcaaaaaa aatgggtttg tatcgaataa agtatatact tcgactttct
+     1321 tgtgctagaa ctttggctcg taaacacaaa agtacggtac gtgcttttgt caaaaaagga
+     1381 ggctccgaat tattggaaga attctttatg gaggaagaac gcattttttc tttgaccttt
+     1441 ccaaaagctt cgtctacttc ggtaggttta tataaagggc ccctttggta tttggatatt
+     1501 ttttgtatca atgatttggc caatcatgaa tga
+//
+

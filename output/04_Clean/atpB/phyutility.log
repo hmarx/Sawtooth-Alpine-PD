@@ -1,5 +1,5 @@
-starting log: 24/01/19 12:26
+starting log: 11/04/19 03:22
 clean
 cleannum: 0.5
-in filename: atpB.rev.total.aln.fasta
-outfile: atpB.total.align.clean
+in filename: atpB.total.aln.fasta
+outfile: atpB.total.align.clean.fasta

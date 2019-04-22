@@ -21,7 +21,7 @@ write.csv(sp.permut.total$randomization.test, file="output/10_PhyloDiversity/bet
 
 #### plotting diversity turnover on trees
 pdf(file = "output/10_PhyloDiversity/beta/nodal/all/TotalPIst.phylo.nodes.pdf", 10, 10)
-spacodi.treeplot(sp.permut.total, com.beta.total$sp.tree, sig.plot=TRUE, add.id=FALSE, type="fan", tip=1, pch=.5)
+spacodi.treeplot(sp.permut.total, com.beta.total$sp.tree, sig.plot=TRUE, add.id=FALSE, type="fan", tip=1, pch=.5,  cut.off = 0.05)
 dev.off()
 
 
@@ -41,7 +41,7 @@ write.csv(sp.permut.alp.total$randomization.test, file="output/10_PhyloDiversity
 
 #### plotting diversity turnover on trees
 pdf(file = "output/10_PhyloDiversity/beta/nodal/talus/Total.talus.PIst.phylo.nodes.pdf", 10, 10)
-spacodi.treeplot(sp.permut.alp.total, com.beta.alp.total$sp.tree, sig.plot=TRUE, add.id=FALSE, type="fan", tip=1, pch=.5)
+spacodi.treeplot(sp.permut.alp.total, com.beta.alp.total$sp.tree, sig.plot=TRUE, add.id=FALSE, type="fan", tip=1, pch=.5, cut.off = 0.05)
 dev.off()
 
 

@@ -48,7 +48,7 @@ pheatmap(betadiv.dist.total.UniFrac.matrix, col=colors2, main="SES UniFrac", clu
          fontsize_row=fontsize_row,  fontsize_col = fontsize_row, fontsize=fontsize_row *1.75, border_color=NA,  
          display_numbers = mat, breaks=bk2)
 dev.off()
-length(which(betadiv.dist.total.UniFrac.matrix > 1.96))/2 #3
+length(which(betadiv.dist.total.UniFrac.matrix > 1.96))/2 #2
 length(which(betadiv.dist.total.UniFrac.matrix < -1.96))/2 #0
 
 ########## TURN
@@ -60,7 +60,7 @@ pheatmap(betadiv.dist.total.UniFracTurn.matrix, main="SES UniFrac_turn", cluster
          fontsize_row=fontsize_row,  fontsize_col = fontsize_row, fontsize=fontsize_row *1.75, border_color=NA,  
          display_numbers = mat, col=colors2, breaks=bk2)
 dev.off()
-length(which(betadiv.dist.total.UniFracTurn.matrix > 1.96))/2 #4 
+length(which(betadiv.dist.total.UniFracTurn.matrix > 1.96))/2 #4
 length(which(betadiv.dist.total.UniFracTurn.matrix < -1.96))/2 #0
 
 ######## PD
@@ -77,9 +77,9 @@ length(which(betadiv.dist.total.UniFracPD.matrix < -1.96))/2 #2
 
 
 ################################# Total dataset: Talus only ################################# 
-betadiv.dist.total.UniFrac.talus.tmp <- read.csv("figs/beta/Total_SES_UniFrac.csv")
-betadiv.dist.total.UniFracTurn.talus.tmp <- read.csv("figs/beta/Total_SES_UniFrac_turn.csv")
-betadiv.dist.total.UniFracPD.talus.tmp <- read.csv("figs/beta/Total_SES_UniFrac_PD.csv")
+betadiv.dist.total.UniFrac.talus.tmp <- read.csv("output/10_PhyloDiversity/beta/spatial/talus/Total_SES_UniFrac.csv")
+betadiv.dist.total.UniFracTurn.talus.tmp <- read.csv("output/10_PhyloDiversity/beta/spatial/talus/Total_SES_UniFrac_turn.csv")
+betadiv.dist.total.UniFracPD.talus.tmp <- read.csv("output/10_PhyloDiversity/beta/spatial/talus/Total_SES_UniFrac_PD.csv")
 
 betadiv.dist.total.UniFrac.talus.matrix <- betadiv.dist.total.UniFrac.talus.tmp[,-1]
 colnames(betadiv.dist.total.UniFrac.talus.matrix) <- betadiv.dist.total.UniFrac.talus.tmp$X
@@ -145,7 +145,7 @@ pheatmap(betadiv.dist.total.UniFracPD.talus.matrix, main="SES UniFrac_PD", clust
          fontsize_row=fontsize_row,  fontsize_col = fontsize_row, fontsize=fontsize_row *1.75, border_color=NA,  
          display_numbers = mat, col=colors2, breaks=bk2)
 dev.off()
-length(which(betadiv.dist.total.UniFracPD.talus.matrix > 1.96))/2 #4
+length(which(betadiv.dist.total.UniFracPD.talus.matrix > 1.96))/2 #3
 length(which(betadiv.dist.total.UniFracPD.talus.matrix < -1.96))/2 #0
 
 ################## Symmetric matrix:

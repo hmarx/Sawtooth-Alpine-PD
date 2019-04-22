@@ -18,35 +18,35 @@ tax=read.csv(file="data/fleshed_genera.csv", as.is=TRUE, row=1)
 
 sawtooth.asterales <- pruneCladeTaxonomyLookup(tip.labels = sawTotal$phy$tip.label, tax, level = "order", taxonomy = "Asterales")
 pruned.tree.saw.total.aster <-drop.tip(sawTotal$phy, sawTotal$phy$tip.label[!sawTotal$phy$tip.label %in% sawtooth.asterales])
-#39
+#37
 saw.total.aster <- treedata(pruned.tree.saw.total.aster, t(sawTotal$comm))
 astertotal.sesmpd.phylonull <- ses.mpd(t(saw.total.aster$data), cophenetic.phylo(saw.total.aster$phy), null.model = "phylogeny.pool", abundance.weighted = FALSE, runs = 10000)
 astertotal.sesmntd.phylonull <- ses.mntd(t(saw.total.aster$data), cophenetic.phylo(saw.total.aster$phy), null.model = "phylogeny.pool", abundance.weighted = FALSE, runs = 10000)
 
 sawtooth.caryophyllales <- pruneCladeTaxonomyLookup(tip.labels = sawTotal$phy$tip.label, tax, level = "order", taxonomy = "Caryophyllales")
 pruned.tree.saw.total.caryo <-drop.tip(sawTotal$phy, sawTotal$phy$tip.label[!sawTotal$phy$tip.label %in% sawtooth.caryophyllales])
-#22
+#19
 saw.total.caryo <- treedata(pruned.tree.saw.total.caryo, t(sawTotal$comm))
 caryototal.sesmpd.phylonull <- ses.mpd(t(saw.total.caryo$data), cophenetic.phylo(saw.total.caryo$phy), null.model = "phylogeny.pool", abundance.weighted = FALSE, runs = 10000)
 caryototal.sesmntd.phylonull <- ses.mntd(t(saw.total.caryo$data), cophenetic.phylo(saw.total.caryo$phy), null.model = "phylogeny.pool", abundance.weighted = FALSE, runs = 10000)
 
 sawtooth.poales <- pruneCladeTaxonomyLookup(tip.labels = sawTotal$phy$tip.label, tax, level = "order", taxonomy = "Poales")
 pruned.tree.saw.total.poales <-drop.tip(sawTotal$phy, sawTotal$phy$tip.label[!sawTotal$phy$tip.label %in% sawtooth.poales])
-#18
+#19
 saw.total.poales <- treedata(pruned.tree.saw.total.poales, t(sawTotal$comm))
 poalestotal.sesmpd.phylonull <- ses.mpd(t(saw.total.poales$data), cophenetic.phylo(saw.total.poales$phy), null.model = "phylogeny.pool", abundance.weighted = FALSE, runs = 10000)
 poalestotal.sesmntd.phylonull <- ses.mntd(t(saw.total.poales$data), cophenetic.phylo(saw.total.poales$phy), null.model = "phylogeny.pool", abundance.weighted = FALSE, runs = 10000)
 
 sawtooth.lamiales <- pruneCladeTaxonomyLookup(tip.labels = sawTotal$phy$tip.label, tax, level = "order", taxonomy = "Lamiales")
 pruned.tree.saw.total.lamiales <-drop.tip(sawTotal$phy, sawTotal$phy$tip.label[!sawTotal$phy$tip.label %in% sawtooth.lamiales])
-#11
+#12
 saw.total.lamiales <- treedata(pruned.tree.saw.total.lamiales, t(sawTotal$comm))
 lamialestotal.sesmpd.phylonull <- ses.mpd(t(saw.total.lamiales$data), cophenetic.phylo(saw.total.lamiales$phy), null.model = "phylogeny.pool", abundance.weighted = FALSE, runs = 10000)
 lamialestotal.sesmntd.phylonull <- ses.mntd(t(saw.total.lamiales$data), cophenetic.phylo(saw.total.lamiales$phy), null.model = "phylogeny.pool", abundance.weighted = FALSE, runs = 10000)
 
 sawtooth.brassicales <- pruneCladeTaxonomyLookup(tip.labels = sawTotal$phy$tip.label, tax, level = "order", taxonomy = "Brassicales")
 pruned.tree.saw.total.brassicales <-drop.tip(sawTotal$phy, sawTotal$phy$tip.label[!sawTotal$phy$tip.label %in% sawtooth.brassicales])
-#10
+#9
 saw.total.brassicales <- treedata(pruned.tree.saw.total.brassicales, t(sawTotal$comm))
 brassicalestotal.sesmpd.phylonull <- ses.mpd(t(saw.total.brassicales$data), cophenetic.phylo(saw.total.brassicales$phy), null.model = "phylogeny.pool", abundance.weighted = FALSE, runs = 10000)
 brassicalestotal.sesmntd.phylonull <- ses.mntd(t(saw.total.brassicales$data), cophenetic.phylo(saw.total.brassicales$phy), null.model = "phylogeny.pool", abundance.weighted = FALSE, runs = 10000)
@@ -216,7 +216,8 @@ phylogeny.pool.meadow.SES.total <- cbind(phylogeny.pool.meadow.SES.total, data =
 ###################### Master alpha phylogenetic diversity 
 alpha.ses <- rbind(phylogeny.pool.all.SES.total, phylogeny.pool.talus.SES.total, phylogeny.pool.meadow.SES.total)
 head(alpha.ses)     
-alpha.ses$clade <- factor(alpha.ses$clade, levels = c("Ericales", "Brassicales", "Lamiales", "Poales", "Caryophyllales", "Asterales", "Tracheophyta"))
+alpha.ses$clade <- factor(alpha.ses$clade, levels = c("Ericales", "Brassicales", "Lamiales", "Caryophyllales", "Poales","Asterales", "Tracheophyta"))
 alpha.ses <- cbind(alpha.ses, model = rep(x = "RD", times = nrow(alpha.ses)))
+
 write.csv(alpha.ses, file="output/10_PhyloDiversity/alpha/sawtooth.alpha.RD.SES.csv")
 

@@ -1,0 +1,14 @@
+Task\ label=atpB
+Task\ ID=1807296
+Tool=RAXMLHPC8_XSEDE
+created\ on=2019-04-12 10:58:17.0
+JobHandle=NGBW-JOB-RAXMLHPC8_XSEDE-4CDF7D5E2CEA41DCA760B63123DCC22E
+resource=comet
+User\ ID=90014
+User\ Name=hmarx
+email=h.marx.h@gmail.com
+
+Output=(all_outputfiles,*,UNKNOWN,UNKNOWN,UNKNOWN)
+ChargeFactor=1.000000
+cores=24
+JOBID=22563177

@@ -1,0 +1,7 @@
+starting log: 12/04/19 12:15
+concat
+in filename: trnTLF.ab_R1.EF571539.aln.fasta
+in filename: trnTLF.ab_R2.EF571539.aln.fasta
+in filename: trnTLF.cf_R1.EF571539.aln.fasta
+in filename: trnTLF.cf_R2.EF571539.aln.fasta
+outfile: trnTLF.miseq.aln.nex
