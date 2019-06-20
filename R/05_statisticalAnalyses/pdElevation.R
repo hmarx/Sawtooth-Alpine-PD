@@ -14,7 +14,7 @@ master.ses.alpha$sig
 master.ses.alpha$metric <- factor(master.ses.alpha$metric, labels = c("mntd"="MNTD", "mpd"="MPD"))
 master.ses.alpha$data <- factor(master.ses.alpha$data, labels = c("total"="Total Data"))
 #master.ses.alpha$clade <- factor(master.ses.alpha$clade, levels = c("Brassicales", "Ericales", "Caryophyllales", "Poales", "Asterales", "Tracheophyta"))
-master.ses.alpha$clade <- factor(master.ses.alpha$clade, levels = c("Tracheophyta", "Asterales", "Poales", "Caryophyllales", "Lamiales", "Ericales", "Brassicales"))
+master.ses.alpha$clade <- factor(master.ses.alpha$clade, levels = c("Tracheophyta", "Asterales", "Poales", "Caryophyllales", "Lamiales", "Brassicales", "Ericales"))
 master.ses.alpha$pool <- factor(master.ses.alpha$pool, levels = c("All Alpine", "Talus", "Meadow"))
 master.ses.alpha$summits <- factor(master.ses.alpha$summits, levels = c("Horstmann Peak",
                                                                         "Braxon Peak",
@@ -73,17 +73,19 @@ summary(lm.mntd.lam)
 par(mfrow=c(2,2)) 
 plot(lm.mntd.lam, which=1:4)  
 
+lm.mntd.bra <- lm(data = filter(master.ses.alpha, metric == "MNTD" & pool == "All Alpine" & data == "Total Data" & clade == "Brassicales") %>%
+                    select(summits, obs.z, Elevation), formula = obs.z ~ Elevation)
+summary(lm.mntd.bra) 
+par(mfrow=c(2,2)) 
+plot(lm.mntd.bra, which=1:4)  
+
 lm.mntd.eri <- lm(data = filter(master.ses.alpha, metric == "MNTD" & pool == "All Alpine" & data == "Total Data" & clade == "Ericales") %>%
              select(summits, obs.z, Elevation), formula = obs.z ~ Elevation)
 summary(lm.mntd.eri) 
 par(mfrow=c(2,2)) 
 plot(lm.mntd.eri, which=1:4)  
 
-lm.mntd.bra <- lm(data = filter(master.ses.alpha, metric == "MNTD" & pool == "All Alpine" & data == "Total Data" & clade == "Brassicales") %>%
-             select(summits, obs.z, Elevation), formula = obs.z ~ Elevation)
-summary(lm.mntd.bra) 
-par(mfrow=c(2,2)) 
-plot(lm.mntd.bra, which=1:4)  
+
 
 #### MPD TOTAL DATA
 lm.mpd.trach <- lm(data = filter(master.ses.alpha, metric == "MPD" & pool == "All Alpine" & data == "Total Data" & clade == "Tracheophyta") %>%
@@ -116,17 +118,20 @@ summary(lm.mpd.lam)
 par(mfrow=c(2,2)) 
 plot(lm.mpd.lam, which=1:4)  
 
+
+lm.mpd.bra <- lm(data = na.omit(filter(master.ses.alpha, metric == "MPD" & pool == "All Alpine" & data == "Total Data" & clade == "Brassicales") %>%
+                                  select(summits, obs.z, Elevation)), formula = obs.z ~ Elevation)
+summary(lm.mpd.bra) 
+par(mfrow=c(2,2)) 
+plot(lm.mpd.bra, which=1:4)  
+
+
 lm.mpd.eri <- lm(data = filter(master.ses.alpha, metric == "MPD" & pool == "All Alpine" & data == "Total Data" & clade == "Ericales") %>%
                     select(summits, obs.z, Elevation), formula = obs.z ~ Elevation)
 summary(lm.mpd.eri) 
 par(mfrow=c(2,2)) 
 plot(lm.mpd.eri, which=1:4)  
 
-lm.mpd.bra <- lm(data = na.omit(filter(master.ses.alpha, metric == "MPD" & pool == "All Alpine" & data == "Total Data" & clade == "Brassicales") %>%
-                    select(summits, obs.z, Elevation)), formula = obs.z ~ Elevation)
-summary(lm.mpd.bra) 
-par(mfrow=c(2,2)) 
-plot(lm.mpd.bra, which=1:4)  
 
 
 pdf(file = "figs/elevation/lm_elevationMax.pdf", width=4, height=10)
@@ -140,7 +145,7 @@ ggplot(filter(master.ses.alpha, pool == "All Alpine" & data == "Total Data"), ae
         axis.ticks.x=element_blank(), 
         legend.position="none", 
         axis.text.x = element_text(angle = -45, hjust = -.5)) +
-  labs( y = "SES", x = "Maximum Elevation (m)")
+  labs( y = "SES", x = "Maximum elevation (m)")
 dev.off()
 
 
@@ -153,7 +158,7 @@ lmm.mntd.trac <- lmer(obs.z ~ Elevation + (1 | Range), data = filter(master.ses.
              select(summits, obs.z, Elevation, Range))
 r.squaredGLMM(lmm.mntd.trac) 
 #R2m        R2c
-#[1,] 0.08376047 0.08376047
+#[1,] 0.07837618 0.07837618
 summary(lmm.mntd.trac)
 plot(lmm.mntd.trac)
 
@@ -169,17 +174,17 @@ plot(lmm.mntd.trac2) # much more heteroskedasticity
 lmm.mntd.ast <- lmer(obs.z ~ Elevation + (Elevation | Range), data = filter(master.ses.alpha, metric == "MNTD" & pool == "All Alpine" & data == "Total Data" & clade == "Asterales") %>%
                         select(summits, obs.z, Elevation, Range))
 r.squaredGLMM(lmm.mntd.ast) 
-#0.01432778 0.02112079
+#0.01603439 0.02264945
 
 lmm.mntd.car <- lmer(obs.z ~ Elevation + (Elevation | Range), data = filter(master.ses.alpha, metric == "MNTD" & pool == "All Alpine" & data == "Total Data" & clade == "Caryophyllales") %>%
                        select(summits, obs.z, Elevation, Range))
 r.squaredGLMM(lmm.mntd.car) 
-#0.130531 0.1348874
+#0.129531 0.1338998
 
 lmm.mntd.poa <- lmer(obs.z ~ Elevation + (Elevation | Range), data = filter(master.ses.alpha, metric == "MNTD" & pool == "All Alpine" & data == "Total Data" & clade == "Poales") %>%
                        select(summits, obs.z, Elevation, Range))
 r.squaredGLMM(lmm.mntd.poa) 
-#  0.001336877 0.00604363
+# 0.001379589 0.006149563
 
 lmm.mntd.lam <- lmer(obs.z ~ Elevation + (Elevation | Range), data = filter(master.ses.alpha, metric == "MNTD" & pool == "All Alpine" & data == "Total Data" & clade == "Lamiales") %>%
                        select(summits, obs.z, Elevation, Range))
@@ -189,7 +194,7 @@ r.squaredGLMM(lmm.mntd.lam)
 lmm.mntd.bra <- lmer(obs.z ~ Elevation + (Elevation | Range), data = filter(master.ses.alpha, metric == "MNTD" & pool == "All Alpine" & data == "Total Data" & clade == "Brassicales") %>%
                        select(summits, obs.z, Elevation, Range))
 r.squaredGLMM(lmm.mntd.bra)
-# 0.04065861 0.424099
+# 0.04582134 0.4426131
 
 
 ## MPD
@@ -197,22 +202,22 @@ lmm.mpd.trac <- lmer(obs.z ~ Elevation + (Elevation | Range), data = filter(mast
                         select(summits, obs.z, Elevation, Range))
 r.squaredGLMM(lmm.mpd.trac) 
 #R2m        R2c
-# 0.4038934 0.4080467
+# 0.4101094 0.4143077
 
 lmm.mpd.ast <- lmer(obs.z ~ Elevation + (Elevation | Range), data = filter(master.ses.alpha, metric == "MPD" & pool == "All Alpine" & data == "Total Data" & clade == "Asterales") %>%
                        select(summits, obs.z, Elevation, Range))
 r.squaredGLMM(lmm.mpd.ast) 
-#  0.00257367 0.6977087
+# 0.001391309 0.6898869
 
 lmm.mpd.car <- lmer(obs.z ~ Elevation + (Elevation | Range), data = filter(master.ses.alpha, metric == "MPD" & pool == "All Alpine" & data == "Total Data" & clade == "Caryophyllales") %>%
                        select(summits, obs.z, Elevation, Range))
 r.squaredGLMM(lmm.mpd.car) 
-#0.2213131 0.2245894
+#0.218952 0.2222388
 
 lmm.mpd.poa <- lmer(obs.z ~ Elevation + (Elevation | Range), data = filter(master.ses.alpha, metric == "MPD" & pool == "All Alpine" & data == "Total Data" & clade == "Poales") %>%
                        select(summits, obs.z, Elevation, Range))
 r.squaredGLMM(lmm.mpd.poa) 
-#  0.2889841 0.2929342
+# 0.2938108 0.2977528
 
 lmm.mpd.lam <- lmer(obs.z ~ Elevation + (Elevation | Range), data = filter(master.ses.alpha, metric == "MPD" & pool == "All Alpine" & data == "Total Data" & clade == "Lamiales") %>%
                        select(summits, obs.z, Elevation, Range))
@@ -222,7 +227,7 @@ r.squaredGLMM(lmm.mpd.lam)
 lmm.mpd.bra <- lmer(obs.z ~ Elevation + (Elevation | Range), data = filter(master.ses.alpha, metric == "MPD" & pool == "All Alpine" & data == "Total Data" & clade == "Brassicales") %>%
                        select(summits, obs.z, Elevation, Range))
 r.squaredGLMM(lmm.mpd.bra)
-#  2.932264e-10 0.003697514
+# 5.86372e-05 0.003750683
 
 
 

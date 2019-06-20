@@ -16,7 +16,7 @@ parsePHLAWD("output/01_MiSeq/4_concensus/02_concateReads/trnTLF/trnTLF.miseq.aln
 
 # number of unique species in concatenated MiSeq Data
 #  cat *unique.fasta > genesMiseq.fasta
-parsePHLAWD("output/01_MiSeq/4_concensus/02_concatGeneSegments/genesMiseq.fasta") #580...151
+parsePHLAWD(fasta.file = "output/01_MiSeq/4_concensus/02_concatGeneSegments/genesMiseq.fasta") #580...151
 
 ### Annotates .fasta alignment to updated nomenclature
 source("R/functions/annotate.fasta.R") 
@@ -30,7 +30,6 @@ ndhF.miseq  <- annotate.fasta(fastaFile= "output/01_MiSeq/4_concensus/02_concatG
 trnTLF.miseq  <- annotate.fasta(fastaFile= "output/01_MiSeq/4_concensus/02_concatGeneSegments/trnTLF.miseq.aln.fasta.rename.fasta", taxonomy = taxonomy.df) #81
 ITS.miseq  <- annotate.fasta(fastaFile= "output/01_MiSeq/4_concensus/02_concatGeneSegments/ITS.R1_R2.aln.fasta.rename.fasta", taxonomy = taxonomy.df) #100
 
-
 parsePHLAWD("output/01_MiSeq/4_concensus/02_concatGeneSegments/atpB.miseq.aln.fasta.rename.fasta") #246...107
 parsePHLAWD("output/01_MiSeq/4_concensus/02_concatGeneSegments/matK.miseq.aln.mod.fasta.rename.fasta") #220...88
 parsePHLAWD("output/01_MiSeq/4_concensus/02_concatGeneSegments/ITS.R1_R2.aln.fasta.rename.fasta.rename.fasta") #187...101
@@ -40,7 +39,7 @@ parsePHLAWD("output/01_MiSeq/4_concensus/02_concatGeneSegments/trnTLF.miseq.aln.
 
 # number of unique species in concatenated MiSeq Data
 #  cat *unique.fasta > genesMiseq.renamed.fasta
-parsePHLAWD("output/01_MiSeq/4_concensus/02_concatGeneSegments/genesMiseq.renamed.fasta") #575...152 
+parsePHLAWD(fasta.file = "output/01_MiSeq/4_concensus/02_concatGeneSegments/genesMiseq.renamed.fasta") #575...152 
 
 
 ############# output/02_GenBank/
@@ -223,7 +222,7 @@ sawtooth.tree.tmp <- drop.tip(phy = sawtooth.tree, tip = "Erigeron")
 sawtooth.tree.tmp <- drop.tip(phy = sawtooth.tree.tmp, tip = "Phlox")
 sawtooth.tree.tmp <- drop.tip(phy = sawtooth.tree.tmp, tip = "Draba_crassifolia") ## This was recenlty annotated as ambiguous
 
-#sawtooth.tree.tmp #150 taxa
+#sawtooth.tree.tmp #149 taxa
 
 # Write Final .tre file!! 
 write.tree(sawtooth.tree.tmp, file="output/09_Scaling/sawtooth.totalData.tre")
